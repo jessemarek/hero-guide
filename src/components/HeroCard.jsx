@@ -5,7 +5,7 @@ const HeroCard = props=> {
 
     return(
         <li className="hero-card">
-            <img src={`../assets/images/hero-cards/${name}.jpg`} />
+            <img src={`../assets/images/hero-cards/${name}.jpg`} alt={`Artwork card for ${name}. Link to this hero's guide`} />
             <p className="card-title">{name}</p>
         </li>
     )

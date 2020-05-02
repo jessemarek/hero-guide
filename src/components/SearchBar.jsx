@@ -16,7 +16,7 @@ const SearchBar = props => {
             <button className="filter-btn">Mid</button>
             <button className="filter-btn">Back</button>
 
-            <form>
+            <form className="filter-form">
                 <label name="search">
                     <input 
                         type="text"
