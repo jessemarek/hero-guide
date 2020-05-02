@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { NavLink, useRouteMatch } from 'react-router-dom'
 
 const SearchBar = props => {
+
+    const { url } = useRouteMatch()
 
     const [searchField, setSearchField] = useState('')
 
@@ -11,10 +14,10 @@ const SearchBar = props => {
 
     return(
         <div className="filter-btns">
-            <button className="filter-btn">All</button>
-            <button className="filter-btn">Front</button>
-            <button className="filter-btn">Mid</button>
-            <button className="filter-btn">Back</button>
+            <NavLink to={url} exact activeClassName="active-btn" className="filter-btn">All</NavLink>
+            <NavLink to={`${url}/front`} activeClassName="active-btn" className="filter-btn">Front</NavLink>
+            <NavLink to={`${url}/mid`} activeClassName="active-btn" className="filter-btn">Mid</NavLink>
+            <NavLink to={`${url}/back`} activeClassName="active-btn" className="filter-btn">Back</NavLink>
 
             <form className="filter-form">
                 <label name="search">
