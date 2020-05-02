@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import HeroCard from './HeroCard'
+import SearchBar from './SearchBar'
 
 const HeroMenu = props => {
 
@@ -10,6 +11,7 @@ const HeroMenu = props => {
             <header>
                 <h3>Hero Guides</h3>
                 <h5>Select a Hero</h5>
+                <SearchBar />
 
             </header>
 
