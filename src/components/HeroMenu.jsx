@@ -3,11 +3,32 @@ import { Route } from 'react-router-dom'
 
 //Components
 import HeroCard from './HeroCard'
+import AwakeningCard from './AwakeningCard'
 import SearchBar from './SearchBar'
 
 const HeroMenu = props => {
 
-    const [heroList, setHeroList] = useState(['konrad', 'magdor', 'tareth', 'desmond', 'slim', 'driller', 'ethera', 'magnus','xanos', 'elric', 'alana', 'goram', 'taurus'])
+    /******************** State ********************/
+    const [heroList, setHeroList] = useState([{name: 'konrad', awakened: true, position: 'front'},{name: 'tareth', awakened: false, position: 'front'}, {name: 'desmond', awakened: true, position: 'mid'}])
+
+    /******************** CallBacks ********************/
+    
+    //Callback for alphabetizing Hero names 
+    const compare = (a, b) => {
+        const heroA = a.name
+        const heroB = b.name
+
+        let comparison = 0
+
+        if(heroA > heroB){
+            comparison = 1
+        }
+        else if(heroA < heroB){
+            comparison = -1
+        }
+
+        return comparison
+    }
 
     return(
         <>
@@ -32,14 +53,20 @@ const HeroMenu = props => {
                         {
                             heroList && 
                             heroList
-                                .sort() //Alphabetize the Hero List by name
-                                .map((hero, idx) => <HeroCard key={idx + 1} name={hero} />) //Create a Hero Card for each hero in the list
+                                .sort(compare) //Alphabetize the Hero List by name
+                                .map((hero, idx) => <HeroCard key={idx + 1} hero={hero} />) //Create a Hero Card for each hero in the list
                         }
                     </Route>
 
                     {/* Displays for Awakening Quest Menu */}
                     <Route path={'/awakenings'}>
-
+                    {
+                            heroList && 
+                            heroList
+                                .filter(hero => hero.awakened)
+                                .sort(compare) //Alphabetize the Hero List by name
+                                .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />) //Create a Hero Card for each hero in the list
+                        }
                     </Route>
                 </ul>
             </section>

@@ -1,11 +1,21 @@
 import React, { useState } from 'react'
 import { NavLink, useRouteMatch } from 'react-router-dom'
+import FilterButton from './FilterButton'
 
 const SearchBar = props => {
 
     const { url } = useRouteMatch()
 
+    /******************** State ********************/
+    const [activeBtn, setActiveBtn] = useState('all')
+
     const [searchField, setSearchField] = useState('')
+
+    /******************** CallBacks ********************/
+    const buttonHandler = e => {
+        const name = e.target.name
+        setActiveBtn(name)
+    }
 
     const inputHandler = e =>{
         const value = e.target.value
@@ -14,10 +24,26 @@ const SearchBar = props => {
 
     return(
         <div className="filter-btns">
-            <NavLink to={url} exact activeClassName="active-btn" className="filter-btn">All</NavLink>
-            <NavLink to={`${url}/front`} activeClassName="active-btn" className="filter-btn">Front</NavLink>
-            <NavLink to={`${url}/mid`} activeClassName="active-btn" className="filter-btn">Mid</NavLink>
-            <NavLink to={`${url}/back`} activeClassName="active-btn" className="filter-btn">Back</NavLink>
+            <FilterButton 
+                name={'all'} 
+                activeBtn={activeBtn} 
+                buttonHandler={buttonHandler} 
+            />
+            <FilterButton 
+                name={'front'} 
+                activeBtn={activeBtn} 
+                buttonHandler={buttonHandler} 
+            />
+            <FilterButton 
+                name={'mid'} 
+                activeBtn={activeBtn} 
+                buttonHandler={buttonHandler} 
+            />
+            <FilterButton 
+                name={'back'} 
+                activeBtn={activeBtn} 
+                buttonHandler={buttonHandler} 
+            />
 
             <form className="filter-form">
                 <label name="search">

@@ -1,12 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useRouteMatch } from 'react-router-dom'
 
 const HeroCard = props=> {
-    const { name } = props
+    const {
+        name,
+        awakened,
+        position
+        
+    } = props.hero
+
+    const { url } = useRouteMatch()
 
     return(
         <li className="hero-card">
-            <Link to={`/${name}`}>
+            <Link to={`${url}/${name}`}>
                 <img 
                     src={`../assets/images/hero-cards/${name}.jpg`} 
                     alt={`Artwork card for ${name}. Link to this hero's guide`} 

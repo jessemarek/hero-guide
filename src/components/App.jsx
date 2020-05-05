@@ -11,7 +11,7 @@ function App() {
     return(
         <Router>
             <Navbar />
-            <Route path='/(heroes|awakenings)/' component={HeroMenu} />
+            <Route exact path='/(heroes|awakenings)/' component={HeroMenu} />
             <Footer />
         </Router>
     )
