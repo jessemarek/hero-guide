@@ -4,25 +4,14 @@ import FilterButton from './FilterButton'
 const SearchBar = props => {
     const {
         activeBtn,
-        setActiveBtn
+        searchField,
+        buttonHandler,
+        inputHandler
 
     } = props
 
-    /******************** State ********************/
-    const [searchField, setSearchField] = useState('')
-
-    /******************** CallBacks ********************/
-    const buttonHandler = e => {
-        const name = e.target.name
-        setActiveBtn(name)
-    }
-
-    const inputHandler = e =>{
-        const value = e.target.value
-        setSearchField(value)
-    }
-
     return(
+        //Buttons for sorting heroes by battlefield position
         <div className="filter-btns">
             <FilterButton 
                 name={'all'} 
@@ -45,6 +34,7 @@ const SearchBar = props => {
                 buttonHandler={buttonHandler} 
             />
 
+            {/* Input for searching by hero name */}
             <form className="filter-form">
                 <label name="search">
                     <input 

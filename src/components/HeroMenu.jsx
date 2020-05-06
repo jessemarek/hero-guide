@@ -6,14 +6,34 @@ import HeroCard from './HeroCard'
 import AwakeningCard from './AwakeningCard'
 import SearchBar from './SearchBar'
 
+//Dummy data
+import heroData from '../heroData'
+
 const HeroMenu = props => {
 
     /******************** State ********************/
-    const [heroList, setHeroList] = useState([{ name: 'konrad', awakened: true, position: 'front' }, { name: 'tareth', awakened: false, position: 'front' }, { name: 'desmond', awakened: true, position: 'mid' }, { name: 'magnus', awakened: true, position: 'back' }, { name: 'garrick', awakened: true, position: 'mid' }, { name: 'magdor', awakened: false, position: 'front' }, { name: 'gizmo', awakened: false, position: 'back' }])
+    //List of Heroes
+    const [heroList, setHeroList] = useState(heroData)
 
+    //Active filter button
     const [activeBtn, setActiveBtn] = useState('all')
 
+    //Search input value
+    const [searchField, setSearchField] = useState('')
+
     /******************** CallBacks ********************/
+
+    //Filter button handler
+    const buttonHandler = e => {
+        const name = e.target.name
+        setActiveBtn(name)
+    }
+
+    //Search input handler
+    const inputHandler = e =>{
+        const value = e.target.value
+        setSearchField(value)
+    }
 
     //Callback for alphabetizing Hero names 
     const compare = (a, b) => {
@@ -32,6 +52,7 @@ const HeroMenu = props => {
         return comparison
     }
 
+    /******************** JSX ********************/
     return (
         <>
             <header>
@@ -43,7 +64,12 @@ const HeroMenu = props => {
 
                 <h5>Select a Hero</h5>
 
-                <SearchBar activeBtn={activeBtn} setActiveBtn={setActiveBtn} />
+                <SearchBar 
+                    activeBtn={activeBtn} 
+                    searchField={searchField}
+                    buttonHandler={buttonHandler}
+                    inputHandler={inputHandler} 
+                />
 
             </header>
 
@@ -64,6 +90,8 @@ const HeroMenu = props => {
                                    }
                                    else return hero
                                 })
+                                //Filter by search input value
+                                .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
                                 .sort(compare)
                                 //Create a Hero Card for each hero in the list
@@ -87,6 +115,8 @@ const HeroMenu = props => {
                                     }
                                     else return hero
                                  })
+                                 //Filter by search input value
+                                .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
                                 .sort(compare)
                                 //Create a Hero Card for each hero in the list
