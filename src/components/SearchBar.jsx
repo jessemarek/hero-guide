@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import { NavLink, useRouteMatch } from 'react-router-dom'
 import FilterButton from './FilterButton'
 
 const SearchBar = props => {
+    const {
+        activeBtn,
+        setActiveBtn
 
-    const { url } = useRouteMatch()
+    } = props
 
     /******************** State ********************/
-    const [activeBtn, setActiveBtn] = useState('all')
-
     const [searchField, setSearchField] = useState('')
 
     /******************** CallBacks ********************/
