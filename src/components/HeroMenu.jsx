@@ -36,7 +36,7 @@ const HeroMenu = props => {
     }
 
     //Callback for alphabetizing Hero names 
-    const compare = (a, b) => {
+    const alphabetize = (a, b) => {
         const heroA = a.name
         const heroB = b.name
 
@@ -93,7 +93,7 @@ const HeroMenu = props => {
                                 //Filter by search input value
                                 .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
-                                .sort(compare)
+                                .sort(alphabetize)
                                 //Create a Hero Card for each hero in the list
                                 .map((hero, idx) => <HeroCard key={idx + 1} hero={hero} />)
                         }
@@ -118,7 +118,7 @@ const HeroMenu = props => {
                                  //Filter by search input value
                                 .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
-                                .sort(compare)
+                                .sort(alphabetize)
                                 //Create a Hero Card for each hero in the list
                                 .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />)
                         }

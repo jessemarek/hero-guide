@@ -16,10 +16,10 @@ const HeroCard = props=> {
             <Link to={`${url}/${name}`}>
                 <img 
                     src={`../assets/images/hero-cards/${name}.jpg`} 
-                    alt={`Artwork card for ${name}. Link to this hero's guide`} 
+                    alt={`Artwork card for ${name.split('-').join(' ')}. Link to this hero's guide`} 
                 />
             </Link>
-            <p className="card-title">{name}</p>
+            <p className="card-title">{name.split('-').join(' ')}</p>
         </li>
     )
 }

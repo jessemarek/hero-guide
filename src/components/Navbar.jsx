@@ -8,12 +8,6 @@ const Navbar = props => {
             <div className="menubar"></div>
             <div className="menubar shadowbox"></div>
 
-            <div id="mobile-nav-btn" className="mobile-menu-btn">
-                <div id="bar-one" className="menu-bar"></div>
-                <div id="bar-two" className="menu-bar"></div>
-                <div id="bar-three" className="menu-bar"></div>
-            </div>
-
             <ul className="nav-links">
                 <li>
                     <Link to="/">Home</Link>

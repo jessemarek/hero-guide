@@ -18,16 +18,16 @@ const AwakeningCard = props => {
                     <div className="card-back">
                         <img
                             src={`../assets/images/hero-cards/${name}.jpg`}
-                            alt={`Artwork card for ${name}. Link to this hero's awakening quest`}
+                            alt={`Artwork card for ${name.split('-').join(' ')}. Link to this hero's awakening quest`}
                         />
-                        <p className="card-title">{name}</p>
+                        <p className="card-title">{name.split('-').join(' ')}</p>
                     </div>
                     <div className="card-face">
                         <img
                             src={`../assets/images/hero-cards-aw/${name}-aw.jpg`}
-                            alt={`Awakened artwork card for ${name}. Link to this hero's awakening quest`}
+                            alt={`Awakened artwork card for ${name.split('-').join(' ')}. Link to this hero's awakening quest`}
                         />
-                        <p className="card-title">{name}</p>
+                        <p className="card-title">{name.split('-').join(' ')}</p>
                     </div>
                 </div>
             </Link>
