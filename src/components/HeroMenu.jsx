@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { Route } from 'react-router-dom'
 
 //Components
+import SearchBar from './SearchBar'
 import HeroCard from './HeroCard'
 import AwakeningCard from './AwakeningCard'
-import SearchBar from './SearchBar'
 
 //Dummy data
-import heroData from '../heroData'
+import { heroData } from '../heroData'
 
-const HeroMenu = props => {
+const HeroMenu = () => {
 
     /******************** State ********************/
     //List of Heroes
@@ -30,7 +30,7 @@ const HeroMenu = props => {
     }
 
     //Search input handler
-    const inputHandler = e =>{
+    const inputHandler = e => {
         const value = e.target.value
         setSearchField(value)
     }
@@ -64,11 +64,11 @@ const HeroMenu = props => {
 
                 <h5>Select a Hero</h5>
 
-                <SearchBar 
-                    activeBtn={activeBtn} 
+                <SearchBar
+                    activeBtn={activeBtn}
                     searchField={searchField}
                     buttonHandler={buttonHandler}
-                    inputHandler={inputHandler} 
+                    inputHandler={inputHandler}
                 />
 
             </header>
@@ -82,14 +82,7 @@ const HeroMenu = props => {
                             heroList &&
                             heroList
                                 //Sort through the hero list by battlefield position
-                                .filter(hero => {
-                                   if(activeBtn !== 'all'){
-                                    if(hero.position === activeBtn){
-                                        return hero
-                                    }
-                                   }
-                                   else return hero
-                                })
+                                .filter(hero => activeBtn === 'all' ? hero : hero.position === activeBtn)
                                 //Filter by search input value
                                 .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
@@ -107,15 +100,8 @@ const HeroMenu = props => {
                                 //Filter out heroes that don't have an awakening
                                 .filter(hero => hero.awakened)
                                 //Sort through the hero list by battlefield position
-                                .filter(hero => {
-                                    if(activeBtn !== 'all'){
-                                     if(hero.position === activeBtn){
-                                         return hero
-                                     }
-                                    }
-                                    else return hero
-                                 })
-                                 //Filter by search input value
+                                .filter(hero => activeBtn === 'all' ? hero : hero.position === activeBtn)
+                                //Filter by search input value
                                 .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
                                 //Alphabetize the Hero List by name
                                 .sort(alphabetize)

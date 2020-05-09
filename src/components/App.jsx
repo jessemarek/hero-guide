@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 import HeroMenu from './HeroMenu'
 import Footer from './Footer'
 
-function App() {
+const App = () => {
 
     return(
         <Router>

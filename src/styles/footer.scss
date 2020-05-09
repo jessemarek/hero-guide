@@ -10,14 +10,14 @@ footer {
     text-align: center;
     font-size: 1.2rem;
 
-    @media (min-width: $desktop) {
+    @include MQ(XL) {
         padding: 1%;
     }
 }
 
 .side-footer {
 
-    @media (min-width: $desktop) {
+    @include MQ(XL) {
         width: 15%;
         position: fixed;
         bottom: 0;

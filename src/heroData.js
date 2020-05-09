@@ -1,4 +1,4 @@
-const heroData = [
+export const heroData = [
     {
         name: 'konrad',
         awakened: true,
@@ -90,5 +90,3 @@ const heroData = [
         position: 'front'
     }
 ]
-
-export default heroData

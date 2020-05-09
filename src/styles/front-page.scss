@@ -27,7 +27,7 @@
 
     section {
         width: 100%;
-        @include flexBox(row wrap, start, center);
+        @include flexBox(row wrap, flex-start, center);
         margin: 2% 0;
 
         @media (min-width: $desktop) {

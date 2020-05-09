@@ -1,0 +1,39 @@
+//Media Query Mixin from Dan Marek of Sugar Geek Show
+
+// Variables
+$S: 600px;
+$M: 720px;
+$L: 960px;
+$XL: 1200px;
+$XXL: 1400px;
+
+// Mixin
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == XL {
+    @media only screen and (min-width: $XL) { @content; }
+  }
+  @else if $canvas == XXL {
+    @media only screen and (min-width: $XXL) { @content; }
+  }
+  @else if $canvas == MHS {
+    @media only screen and (min-height: 560px) { @content; }
+  }
+  @else if $canvas == MHSM {
+    @media only screen and (min-height: 650px) { @content; }
+  }
+  @else if $canvas == MHM {
+    @media only screen and (min-height: 750px) { @content; }
+  }
+  @else if $canvas == MHL {
+    @media only screen and (min-height: 850px) { @content; }
+  }
+}
