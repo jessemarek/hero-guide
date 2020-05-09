@@ -3,9 +3,7 @@ import { Link, useRouteMatch } from 'react-router-dom'
 
 const HeroCard = props=> {
     const {
-        name,
-        awakened,
-        position
+        name
         
     } = props.hero
 
@@ -15,7 +13,7 @@ const HeroCard = props=> {
         <li className="hero-card">
             <Link to={`${url}/${name}`}>
                 <img 
-                    src={`../assets/images/hero-cards/${name}.jpg`} 
+                    src={`/assets/images/hero-cards/${name}.jpg`} 
                     alt={`Artwork card for ${name.split('-').join(' ')}. Link to this hero's guide`} 
                 />
             </Link>
