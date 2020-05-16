@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom'
 
 //Components
@@ -13,7 +13,7 @@ const HeroMenu = () => {
 
     /******************** State ********************/
     //List of Heroes
-    const [heroList, setHeroList] = useState(heroData)
+    const [heroList, setHeroList] = useState([])
 
     //Active filter button
     const [activeBtn, setActiveBtn] = useState('all')
@@ -22,6 +22,10 @@ const HeroMenu = () => {
     const [searchField, setSearchField] = useState('')
 
     /******************** CallBacks ********************/
+
+    useEffect(() => {
+        setHeroList(heroData)
+    }, [])
 
     //Filter button handler
     const buttonHandler = e => {
@@ -50,6 +54,16 @@ const HeroMenu = () => {
         }
 
         return comparison
+    }
+
+    //Filter heroList by the active filter button type
+    const filterByButton = (hero, button) => {
+        return button !== 'all' ? hero.position === button : hero
+    }
+
+    //Filter heroList if text in the search input matches heroes name
+    const filterByName = (hero, input) => {
+        return input.trim() !== '' ? hero.name.toLowerCase().startsWith(input.trim().toLowerCase()) : hero
     }
 
     /******************** JSX ********************/
@@ -82,9 +96,9 @@ const HeroMenu = () => {
                             heroList &&
                             heroList
                                 //Sort through the hero list by battlefield position
-                                .filter(hero => activeBtn === 'all' ? hero : hero.position === activeBtn)
+                                .filter(hero => filterByButton(hero, activeBtn))
                                 //Filter by search input value
-                                .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
+                                .filter(hero => filterByName(hero, searchField))
                                 //Alphabetize the Hero List by name
                                 .sort(alphabetize)
                                 //Create a Hero Card for each hero in the list
@@ -100,9 +114,9 @@ const HeroMenu = () => {
                                 //Filter out heroes that don't have an awakening
                                 .filter(hero => hero.awakened)
                                 //Sort through the hero list by battlefield position
-                                .filter(hero => activeBtn === 'all' ? hero : hero.position === activeBtn)
+                                .filter(hero => filterByButton(hero, activeBtn))
                                 //Filter by search input value
-                                .filter(hero => searchField === "" ? hero : hero.name.toLowerCase().includes(searchField.toLowerCase()))
+                                .filter(hero => filterByName(hero, searchField))
                                 //Alphabetize the Hero List by name
                                 .sort(alphabetize)
                                 //Create a Hero Card for each hero in the list
