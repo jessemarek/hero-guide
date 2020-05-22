@@ -7,13 +7,13 @@ import HeroCard from './HeroCard'
 import AwakeningCard from './AwakeningCard'
 
 //Dummy data
-import { heroData } from '../heroData'
+import { heroData } from '../../heroData'
 
 const HeroMenu = () => {
 
     const { url } = useRouteMatch()
 
-    /******************** State ********************/
+    /************************* STATE *************************/
     //List of Heroes
     const [heroList, setHeroList] = useState([])
 
@@ -23,8 +23,7 @@ const HeroMenu = () => {
     //Search input value
     const [searchField, setSearchField] = useState('')
 
-    /******************** CallBacks ********************/
-
+    /*********************** SIDE EFFECTS ***********************/
     //Change title
     useEffect(() => {
         document.title = `SH Hero Guide -- ${url.includes('heroes') ? 'Heroes' : ''}${url.includes('awakenings') ? 'Awakenings' : ''}`
@@ -39,6 +38,7 @@ const HeroMenu = () => {
         setHeroList(heroData)
     }, [])
 
+    /*********************** CALLBACKS ***********************/
     //Filter button handler
     const buttonHandler = e => {
         const name = e.target.name
@@ -78,7 +78,7 @@ const HeroMenu = () => {
         return input.trim() !== '' ? hero.name.toLowerCase().startsWith(input.trim().toLowerCase()) : hero
     }
 
-    /******************** JSX ********************/
+    /************************* JSX *************************/
     return (
         <>
             <header>

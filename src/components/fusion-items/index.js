@@ -1,3 +1,5 @@
+
+//Red Items
 import CloakOfWisdom from './red-items/CloakOfWisdom'
 import CrescentStaff from './red-items/CrescentStaff'
 import HurricaneBlade from './red-items/HurricaneBlade'
