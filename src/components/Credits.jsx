@@ -12,7 +12,11 @@ const Credits = () => {
 
     //Change Title
     useEffect(() => {
-        document.title = 'Soul Hunters Hero Guide - Credits'
+        document.title = 'SH Hero Guide -- Credits'
+
+        return () => {
+            document.title = 'Soul Hunters Hero Guide'
+        }
     })
 
     //Change <body> class for credits page styling and remove when <Credits /> unmounts

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, useRouteMatch } from 'react-router-dom'
 
 //Components
 import SearchBar from './SearchBar'
@@ -10,6 +10,8 @@ import AwakeningCard from './AwakeningCard'
 import { heroData } from '../heroData'
 
 const HeroMenu = () => {
+
+    const { url } = useRouteMatch()
 
     /******************** State ********************/
     //List of Heroes
@@ -23,6 +25,16 @@ const HeroMenu = () => {
 
     /******************** CallBacks ********************/
 
+    //Change title
+    useEffect(() => {
+        document.title = `SH Hero Guide -- ${url.includes('heroes') ? 'Heroes' : ''}${url.includes('awakenings') ? 'Awakenings' : ''}`
+
+        return () => {
+            document.title = 'Soul Hunters Hero Guide'
+        }
+    }, [url])
+
+    //Load Hero data from menu
     useEffect(() => {
         setHeroList(heroData)
     }, [])
