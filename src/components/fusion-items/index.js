@@ -1,3 +1,6 @@
+//Blue Items
+import BansheeEssence from './blue-items/BansheeEssence'
+import BlackDragonTailbone from './blue-items/BlackDragonsTailbone'
 
 //Red Items
 import CloakOfWisdom from './red-items/CloakOfWisdom'

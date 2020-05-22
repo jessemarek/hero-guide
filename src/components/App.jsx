@@ -19,7 +19,7 @@ import TyrantsHelmet from './fusion-items/red-items/TyrantsHelmet'
 import Widowmaker from './fusion-items/red-items/Widowmaker'
 
 
-const fusionItems = {
+const components = {
     "cloak-of-wisdom": CloakOfWisdom,
     "crescent-staff": CrescentStaff,
     "hurricane-blade": HurricaneBlade,
@@ -57,7 +57,7 @@ const App = () => {
                 <div className="fusion-box">
                     {
                         testArr.map((i, idx) => {
-                            const TagName = fusionItems[i]
+                            const TagName = components[i]
                             return <TagName key={idx} />
                         })
                     }
