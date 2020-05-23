@@ -29,6 +29,66 @@ import SoothsayerHandwraps from './blue-items/SoothsayerHandwraps'
 import ThornedPauldrons from './blue-items/ThornedPauldrons'
 import VikingHelmet from './blue-items/VikingHelmet'
 
+//Purple Items
+import AdamantiteScimitar from './purple-items/AdamantiteScimitar'
+import AncientRoyalSword from './purple-items/AncientRoyalSword'
+import AncientRune from './purple-items/AncientRune'
+import ArtOfWar from './purple-items/ArtOfWar'
+import AthenasBlessing from './purple-items/AthenasBlessing'
+import AzraelsRoar from './purple-items/AzraelsRoar'
+import ButterflySwords from './purple-items/ButterflySwords'
+import CapOfSouls from './purple-items/CapOfSouls'
+import CarnageMallet from './purple-items/CarnageMallet'
+import ChainPendant from './purple-items/ChainPendant'
+import ClaspOfLife from './purple-items/ClaspOfLife'
+import ConjuringChains from './purple-items/ConjuringChains'
+import ConquerorsChestplate from './purple-items/ConquerorsChestplate'
+import CrystalStaff from './purple-items/CrystalStaff'
+import DarkWizardsFigurine from './purple-items/DarkWizardsFigurine'
+import Demolisher from './purple-items/Demolisher'
+import Destruction from './purple-items/Destruction'
+import DoomsdayArmor from './purple-items/DoomsdayArmor'
+import DoomsdayBlade from './purple-items/DoomsdayBlade'
+import ElvishEtude from './purple-items/ElvishEtude'
+import ExplosiveScepter from './purple-items/ExplosiveScepter'
+import EyeOfDeath from './purple-items/EyeOfDeath'
+import FireRuby from './purple-items/FireRuby'
+import FrozenTeardrop from './purple-items/FrozenTeardrop'
+import GhostlyMantle from './purple-items/GhostlyMantle'
+import GobletOfTheAncients from './purple-items/GobletOfTheAncients'
+import GoblinsScimitar from './purple-items/GoblinsScimitar'
+import GrandStaff from './purple-items/GrandStaff'
+import GrimSlasher from './purple-items/GrimSlasher'
+import GuardianPlate from './purple-items/GuardianPlate'
+import HealingStone from './purple-items/HealingStone'
+import HeavenlyAmulet from './purple-items/HeavenlyAmulet'
+import HeavyBallista from './purple-items/HeavyBallista'
+import HeavyClub from './purple-items/HeavyClub'
+import IceSmasher from './purple-items/IceSmasher'
+import LightBattleaxe from './purple-items/LightBattleaxe'
+import LilithStaff from './purple-items/LilithStaff'
+import MaidensTrinket from './purple-items/MaidensTrinket'
+import NaturalRemedy from './purple-items/NaturalRemedy'
+import NaturesPower from './purple-items/NaturesPower'
+import PhantomJar from './purple-items/PhantomJar'
+import PridesProtector from './purple-items/PridesProtector'
+import RecoveryPotion from './purple-items/RecoveryPotion'
+import RunicCrystalBall from './purple-items/RunicCrystalBall'
+import SageWand from './purple-items/SageWand'
+import SapphireBracelet from './purple-items/SapphireBracelet'
+import ScepterOfTheAbyss from './purple-items/ScepterOfTheAbyss'
+import ScepterOfTime from './purple-items/ScepterOfTime'
+import ScorchingSpear from './purple-items/ScorchingSpear'
+import Shuriken from './purple-items/Shuriken'
+import SoulStealingNecklace from './purple-items/SoulStealingNecklace'
+import SpartanDagger from './purple-items/SpartanDagger'
+import StealthCape from './purple-items/StealthCape'
+import TribalBattleaxe from './purple-items/TribalBattleaxe'
+import TriSpiritOrb from './purple-items/TriSpiritOrb'
+import VoodooManuscript from './purple-items/VoodooManuscript'
+import WellspringWater from './purple-items/WellspringWater'
+import WhisperwindBow from './purple-items/WhisperwindBow'
+
 //Orange Items
 import Aegis from './orange-items/Aegis'
 import AresSpear from './orange-items/AresSpear'
@@ -89,8 +149,6 @@ import SphereOfTheSands from './red-items/SphereOfTheSands'
 import TyrantsHelmet from './red-items/TyrantsHelmet'
 import Widowmaker from './red-items/Widowmaker'
 
-
-
 //Components Object used for dynamic component creation
 export const equipment = {
 
@@ -124,6 +182,66 @@ export const equipment = {
     "soothsayer-handwraps": SoothsayerHandwraps,
     "thorned-pauldrons": ThornedPauldrons,
     "viking-helmet": VikingHelmet,
+
+    //Purple Items
+    "adamantite-scimitar": AdamantiteScimitar,
+    "ancient-royal-sword": AncientRoyalSword,
+    "ancient-rune": AncientRune,
+    "art-of-war": ArtOfWar,
+    "athena's-blessing": AthenasBlessing,
+    "azrael's-roar": AzraelsRoar,
+    "butterfly-swords": ButterflySwords,
+    "cap-of-souls": CapOfSouls,
+    "carnage-mallet": CarnageMallet,
+    "chain-pendant": ChainPendant,
+    "clasp-of-life": ClaspOfLife,
+    "conjuring-chains": ConjuringChains,
+    "conqueror's-chesplate": ConquerorsChestplate,
+    "crystal-staff": CrystalStaff,
+    "darkwizard's-figurine": DarkWizardsFigurine,
+    "demolisher": Demolisher,
+    "destruction": Destruction,
+    "doomsday-armor": DoomsdayArmor,
+    "doomsday-blade": DoomsdayBlade,
+    "elvish-etude": ElvishEtude,
+    "explosive-scepter": ExplosiveScepter,
+    "eye-of-death": EyeOfDeath,
+    "fire-ruby": FireRuby,
+    "frozen-teardrop": FrozenTeardrop,
+    "ghostly-mantle": GhostlyMantle,
+    "goblet-of-the-ancients": GobletOfTheAncients,
+    "goblin's-scimitar": GoblinsScimitar,
+    "grand-staff": GrandStaff,
+    "grim-slasher": GrimSlasher,
+    "guardian-plate": GuardianPlate,
+    "healing-stone": HealingStone,
+    "heavenly-amulet": HeavenlyAmulet,
+    "heavy-ballista": HeavyBallista,
+    "heavy-club": HeavyClub,
+    "ice-smasher": IceSmasher,
+    "light-battleaxe": LightBattleaxe,
+    "lilith-staff": LilithStaff,
+    "maiden's-trinket": MaidensTrinket,
+    "natural-remedy": NaturalRemedy,
+    "nature's-power": NaturesPower,
+    "phantom-jar": PhantomJar,
+    "pride's-protector": PridesProtector,
+    "recovery-potion": RecoveryPotion,
+    "runic-crystal-ball": RunicCrystalBall,
+    "sage-wand": SageWand,
+    "sapphire-bracelet": SapphireBracelet,
+    "scepter-of-the-abyss": ScepterOfTheAbyss,
+    "scepter-of-time": ScepterOfTime,
+    "scorching-spear": ScorchingSpear,
+    "shuriken": Shuriken,
+    "soul-stealing-necklace": SoulStealingNecklace,
+    "spartan-dagger": SpartanDagger,
+    "stealth-cape": StealthCape,
+    "tribal-battleaxe": TribalBattleaxe,
+    "tri-spirit-orb": TriSpiritOrb,
+    "voodoo-manuscript": VoodooManuscript,
+    "wellspring-water": WellspringWater,
+    "whisperwind-bow": WhisperwindBow,
 
     //Orange Items
     "aegis": Aegis,

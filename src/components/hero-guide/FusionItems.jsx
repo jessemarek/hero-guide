@@ -1,7 +1,11 @@
 import React from 'react'
 
+//Components
 import { equipment } from '../fusion-items/index'
-import Unknown from '../fusion-items/Unknown'
+import FusionBox from './FusionBox'
+
+//Utils
+import { returnComponent } from '../../utils/index'
 
 const FusionItems = props => {
 
@@ -79,14 +83,6 @@ const FusionItems = props => {
     
         } = props */
 
-    const returnComponent = (item, idx) => {
-        const TagName = equipment[item]
-        if (TagName) return <TagName key={idx} />
-
-        else return <Unknown key={idx} />
-    }
-
-
     return (
         <section id="fusion-items" className="guide-section">
             <div className="section-header">
@@ -94,73 +90,81 @@ const FusionItems = props => {
             </div>
             <div className="section-body">
                 <div className="purple-fusions">
-                    <div className="fusion-box">
-                        <h4><span className="prp-txt">Purple</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.purple &&
-                            fusion_items.purple.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="prp-txt">Purple+1</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.purple1 &&
-                            fusion_items.purple1.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="prp-txt">Purple+2</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.purple2 &&
-                            fusion_items.purple2.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="prp-txt">Purple+3</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.purple3 &&
-                            fusion_items.purple3.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="prp-txt">Purple+4</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.purple4 &&
-                            fusion_items.purple4.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
+
+                    <FusionBox
+                        name={"Purple"}
+                        color={"prp"}
+                        items={fusion_items.purple}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Purple+1"}
+                        color={"prp"}
+                        items={fusion_items.purple1}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Purple+2"}
+                        color={"prp"}
+                        items={fusion_items.purple2}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Purple+3"}
+                        color={"prp"}
+                        items={fusion_items.purple3}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Purple+4"}
+                        color={"prp"}
+                        items={fusion_items.purple4}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
                 </div>
 
                 <div className="orange-fusions">
-                    <div className="fusion-box">
-                        <h4><span className="org-txt">Orange</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.orange &&
-                            fusion_items.orange.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="org-txt">Orange+1</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.orange1 &&
-                            fusion_items.orange1.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
-                    <div className="fusion-box">
-                        <h4><span className="org-txt">Orange+2</span></h4>
-                        {
-                            //Dynamically load components from hero data
-                            fusion_items.orange2 &&
-                            fusion_items.orange2.map((i, idx) => returnComponent(i, idx))
-                        }
-                    </div>
+                    <FusionBox
+                        name={"Orange"}
+                        color={"org"}
+                        items={fusion_items.orange}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Orange+1"}
+                        color={"org"}
+                        items={fusion_items.orange1}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
+
+                    <FusionBox
+                        name={"Orange+2"}
+                        color={"org"}
+                        items={fusion_items.orange2}
+                        componentList={equipment}
+                        defaultComponent={equipment["unknown"]}
+                        returnComponent={returnComponent}
+                    />
                 </div>
             </div>
         </section>

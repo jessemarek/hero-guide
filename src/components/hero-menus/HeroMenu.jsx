@@ -6,6 +6,9 @@ import SearchBar from './SearchBar'
 import HeroCard from './HeroCard'
 import AwakeningCard from './AwakeningCard'
 
+//Utils
+import { alphabetize } from '../../utils/index'
+
 //Dummy data
 import { heroData } from '../../heroData'
 
@@ -49,23 +52,6 @@ const HeroMenu = () => {
     const inputHandler = e => {
         const value = e.target.value
         setSearchField(value)
-    }
-
-    //Callback for alphabetizing Hero names 
-    const alphabetize = (a, b) => {
-        const heroA = a.name
-        const heroB = b.name
-
-        let comparison = 0
-
-        if (heroA > heroB) {
-            comparison = 1
-        }
-        else if (heroA < heroB) {
-            comparison = -1
-        }
-
-        return comparison
     }
 
     //Filter heroList by the active filter button type
