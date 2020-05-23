@@ -134,11 +134,11 @@
 
     .tooltip {
         visibility: hidden;
-        max-width: 200%;
-        width: 200%;
+        max-width: 220%;
+        width: 215%;
         position: absolute;
         top: 100%;
-        left: -53%;
+        left: -60%;
         z-index: 3;
         border-radius: 7px;
         padding: 5%;
@@ -146,6 +146,7 @@
         color: $white;
         text-align: center;
         font-size: 1.2rem;
+        line-height: 1.5;
         opacity: 0;
         transition: all 0.5s ease-in-out;
 
@@ -166,7 +167,11 @@
             }
         }
 
-        h3, p, img {
+        h3 {
+            margin-top: 3%;
+        }
+
+        p, img {
             margin: 1%;
         }
 
@@ -198,7 +203,7 @@
             position: absolute;
             bottom: 1rem;
             right: 1rem;
-            color:$white;
+            color: #fff;
             font-weight: bold;
             text-shadow: 
                 2px 2px 8px $black, 

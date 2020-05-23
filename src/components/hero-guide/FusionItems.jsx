@@ -10,7 +10,7 @@ import { returnComponent } from '../../utils/index'
 const FusionItems = props => {
 
     //dummy data for testing would be passed in via props
-    const fusion_items = {
+    const fusionItems = {
 
         purple: [
             "tribal-battleaxe",
@@ -79,7 +79,7 @@ const FusionItems = props => {
 
     }
     /*     const {
-            fusion_items
+            fusionItems
     
         } = props */
 
@@ -94,7 +94,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Purple"}
                         color={"prp"}
-                        items={fusion_items.purple}
+                        items={fusionItems.purple}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -103,7 +103,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Purple+1"}
                         color={"prp"}
-                        items={fusion_items.purple1}
+                        items={fusionItems.purple1}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -112,7 +112,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Purple+2"}
                         color={"prp"}
-                        items={fusion_items.purple2}
+                        items={fusionItems.purple2}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -121,7 +121,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Purple+3"}
                         color={"prp"}
-                        items={fusion_items.purple3}
+                        items={fusionItems.purple3}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -130,7 +130,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Purple+4"}
                         color={"prp"}
-                        items={fusion_items.purple4}
+                        items={fusionItems.purple4}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -142,7 +142,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Orange"}
                         color={"org"}
-                        items={fusion_items.orange}
+                        items={fusionItems.orange}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -151,7 +151,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Orange+1"}
                         color={"org"}
-                        items={fusion_items.orange1}
+                        items={fusionItems.orange1}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
@@ -160,7 +160,7 @@ const FusionItems = props => {
                     <FusionBox
                         name={"Orange+2"}
                         color={"org"}
-                        items={fusion_items.orange2}
+                        items={fusionItems.orange2}
                         componentList={equipment}
                         defaultComponent={equipment["unknown"]}
                         returnComponent={returnComponent}
