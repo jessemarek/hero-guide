@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
+
+import SideBar from './SideBar'
 
 const Navbar = () => {
 
@@ -40,6 +42,8 @@ const Navbar = () => {
                     <Link to="/credits">Credits</Link>
                 </li>
             </ul>
+
+            <Route path='/(heroes|awakenings|guides)/:guide' component={SideBar} />
         </nav>
     )
 }
