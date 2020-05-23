@@ -8,10 +8,10 @@ const AresSpear = () => {
 
             <div className="tooltip">
                 <h3>Stats</h3>
-                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" />
+                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" />
                 <p>Physical Attack 90 <span className="grn-txt">+70</span></p><p>Physical Pierce Rating 50 <span className="grn-txt">+40</span></p><p>Physical Hit Bonus 100 <span className="grn-txt">+75</span></p>
                 <h3>Recipe</h3>
-                <img src="/assets/images/icons/equipment/spartan-dagger.png" width="36" height="36" /><img src="/assets/images/icons/equipment/destruction.png" width="36" height="36" /><img src="/assets/images/icons/equipment/charger-boots.png" width="36" height="36" /><p>Level 88 Required</p>
+                <img src="/assets/images/icons/equipment/spartan-dagger.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/destruction.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/charger-boots.png" width="36" height="36" alt="equipment icon" /><p>Level 88 Required</p>
             </div>
         </div>
     )

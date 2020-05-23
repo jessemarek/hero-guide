@@ -41,7 +41,7 @@ import CapOfSouls from './purple-items/CapOfSouls'
 import CarnageMallet from './purple-items/CarnageMallet'
 import ChainPendant from './purple-items/ChainPendant'
 import ClaspOfLife from './purple-items/ClaspOfLife'
-import ConjuringChains from './purple-items/ConjuringChains'
+import ConjuringChain from './purple-items/ConjuringChain'
 import ConquerorsChestplate from './purple-items/ConquerorsChestplate'
 import CrystalStaff from './purple-items/CrystalStaff'
 import DarkWizardsFigurine from './purple-items/DarkWizardsFigurine'
@@ -91,6 +91,8 @@ import WhisperwindBow from './purple-items/WhisperwindBow'
 
 //Orange Items
 import Aegis from './orange-items/Aegis'
+import AngelicFan from './orange-items/AngelicFan'
+import AngelsWings from './orange-items/AngelsWings'
 import AresSpear from './orange-items/AresSpear'
 import ArmorOfShadows from './orange-items/ArmorOfShadows'
 import AtlanteanBattleaxe from './orange-items/AtlanteanBattleaxe'
@@ -110,6 +112,7 @@ import DemonsSkull from './orange-items/DemonsSkull'
 import EtherealCloak from './orange-items/EtherealCloak'
 import FireHardenedSteel from './orange-items/FireHardenedSteel'
 import GaiasCutlass from './orange-items/GaiasCutlass'
+import HelirasMask from './orange-items/HelirasMask'
 import HelmetOfDarkness from './orange-items/HelmetOfDarkness'
 import IronbarkWarbow from './orange-items/IronbarkWarbow'
 import JewelOfHelios from './orange-items/JewelOfHelios'
@@ -133,6 +136,7 @@ import SwordOfOlympus from './orange-items/SwordOfOlympus'
 import Thunderbolt from './orange-items/Thunderbolt'
 import TitanicAxe from './orange-items/TitanicAxe'
 import TorchOfDestruction from './orange-items/TorchOfDestruction'
+import TransformingMask from './orange-items/TransformingMask'
 import UnderworldSaber from './orange-items/UnderworldSaber'
 import VictorysScepter from './orange-items/VictorysScepter'
 import ZealotBattleplate from './orange-items/ZealotBattleplate'
@@ -195,7 +199,7 @@ export const equipment = {
     "carnage-mallet": CarnageMallet,
     "chain-pendant": ChainPendant,
     "clasp-of-life": ClaspOfLife,
-    "conjuring-chains": ConjuringChains,
+    "conjuring-chain": ConjuringChain,
     "conqueror's-chesplate": ConquerorsChestplate,
     "crystal-staff": CrystalStaff,
     "darkwizard's-figurine": DarkWizardsFigurine,
@@ -245,6 +249,8 @@ export const equipment = {
 
     //Orange Items
     "aegis": Aegis,
+    "angelic-fan": AngelicFan,
+    "angel's-wings": AngelsWings,
     "ares'-spear": AresSpear,
     "armor-of-shadows": ArmorOfShadows,
     "atlantean-battleaxe": AtlanteanBattleaxe,
@@ -264,6 +270,7 @@ export const equipment = {
     "ethereal-cloak": EtherealCloak,
     "fire-hardened-steel": FireHardenedSteel,
     "gaia's-cutlass": GaiasCutlass,
+    "helira's-mask": HelirasMask,
     "helmet-of-darkness": HelmetOfDarkness,
     "ironbark-warbow": IronbarkWarbow,
     "jewel-of-helios": JewelOfHelios,
@@ -287,6 +294,7 @@ export const equipment = {
     "thunderbolt": Thunderbolt,
     "titanic-axe": TitanicAxe,
     "torch-of-destruction": TorchOfDestruction,
+    "transforming-mask": TransformingMask,
     "underworld-saber": UnderworldSaber,
     "victory's-scepter": VictorysScepter,
     "zealot-battleplate": ZealotBattleplate,

@@ -8,10 +8,10 @@ const SoothsayerHandwraps = () => {
 
             <div className="tooltip">
                 <h3>Stats</h3>
-                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" />
+                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" />
                 <p>Max Health 200 <span className="grn-txt">+81</span></p><p>Magic Attack 47 <span className="grn-txt">+18</span></p><p>Energy Recovery 100 <span className="grn-txt">+42</span></p>
                 <h3>Recipe</h3>
-                <img src="/assets/images/icons/equipment/gem-of-fortitude.png" width="36" height="36" /><img src="/assets/images/icons/equipment/wizardry-codex.png" width="36" height="36" /><br></br><img src="/assets/images/icons/equipment/mending-pearl.png" width="36" height="36" /><img src="/assets/images/icons/equipment/twilight-orb.png" width="36" height="36" /><p>Level 51 Required</p>
+                <img src="/assets/images/icons/equipment/gem-of-fortitude.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/wizardry-codex.png" width="36" height="36" alt="equipment icon" /><br></br><img src="/assets/images/icons/equipment/mending-pearl.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/twilight-orb.png" width="36" height="36" alt="equipment icon" /><p>Level 51 Required</p>
             </div>
         </div>
     )
