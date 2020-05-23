@@ -1,8 +1,5 @@
 import React from 'react'
 
-import { returnComponent } from '../../utils/index'
-import { equipment } from '../fusion-items/index'
-
 const KeyItem = props => {
     const {
         item,
@@ -12,9 +9,7 @@ const KeyItem = props => {
 
     return (
         <div className="key-item-icon">
-            {/* Dynamically load item component */}
-            {returnComponent(item, props.id, equipment, equipment["unknown"])}
-
+            <img src={`/assets/images/icons/equipment/${item}.png`} alt="equipment icon" />
             <p><span className="item-quantity">{quantity}</span></p>
         </div>
     )

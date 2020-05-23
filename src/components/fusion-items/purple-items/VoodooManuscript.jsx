@@ -7,7 +7,11 @@ const VoodooManuscript = () => {
             <img src="/assets/images/icons/equipment/voodoo-manuscript.png" alt="equipment icon" />
 
             <div className="tooltip">
-
+                <h3>Stats</h3>
+                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" />
+                <p>Magic Attack 78 <span className="grn-txt">+65</span></p><p>Magic Armor 30 <span className="grn-txt">+25</span></p><p>Magic Crit Rating 30 <span className="grn-txt">+25</span></p>
+                <h3>Recipe</h3>
+                <img src="/assets/images/icons/equipment/lilith-staff.png" width="36" height="36" /><img src="/assets/images/icons/equipment/obsidian-tome.png" width="36" height="36" /><br></br><img src="/assets/images/icons/equipment/casket-of-time.png" width="36" height="36" /><img src="/assets/images/icons/equipment/disciple's-mask.png" width="36" height="36" /><p>Level 66 Required</p>
             </div>
         </div>
     )
