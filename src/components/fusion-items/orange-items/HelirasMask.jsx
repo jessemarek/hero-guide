@@ -1,20 +1,20 @@
 import React from 'react'
 
-const BladeOfTime = () => {
+const HelirasMask = () => {
 
     return (
         <div className="fusion-item">
-            <img src="/assets/images/icons/equipment/blade-of-time.png" alt="equipment icon" />
+            <img src="/assets/images/icons/equipment/helira's-mask.png" alt="equipment icon" />
 
             <div className="tooltip">
                 <h3>Stats</h3>
                 <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" />
-                <p>Physical Armor 60 <span className="grn-txt">+45</span></p><p>Physical Crit Rating 160 <span className="grn-txt">+120</span></p><p>Lifesteal 20 <span className="grn-txt">+15</span></p>
+                <p>Physical Attack 125 <span className="grn-txt">+80</span></p><p>Physical Armor 70 <span className="grn-txt">+45</span></p><p>Physical Hit Bonus 60 <span className="grn-txt">+40</span></p>
                 <h3>Recipe</h3>
-                <img src="/assets/images/icons/equipment/ironbark-warbow.png" width="36" height="36" /><img src="/assets/images/icons/equipment/carnage-mallet.png" width="36" height="36" /><img src="/assets/images/icons/equipment/berserker's-claymore.png" width="36" height="36" /><p>Level 86 Required</p>
+                <img src="/assets/images/icons/equipment/kretonian-talisman.png" width="36" height="36" /><img src="/assets/images/icons/equipment/mystic-dragonscale.png" width="36" height="36" /><img src="/assets/images/icons/equipment/blade-of-chaos.png" width="36" height="36" /><p>Level 91 Required</p>
             </div>
         </div>
     )
 }
 
-export default BladeOfTime
+export default HelirasMask

@@ -7,7 +7,11 @@ const Thunderbolt = () => {
             <img src="/assets/images/icons/equipment/thunderbolt.png" alt="equipment icon" />
 
             <div className="tooltip">
-
+                <h3>Stats</h3>
+                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" />
+                <p>Magic Attack 100 <span className="grn-txt">+75</span></p><p>Magic Pierce Rating 100 <span className="grn-txt">+75</span></p>
+                <h3>Recipe</h3>
+                <img src="/assets/images/icons/equipment/shuriken.png" width="36" height="36" /><img src="/assets/images/icons/equipment/crystal-staff.png" width="36" height="36" /><p>Level 85 Required</p>
             </div>
         </div>
     )
