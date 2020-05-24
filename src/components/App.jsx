@@ -7,6 +7,7 @@ import HeroMenu from './hero-menus/HeroMenu'
 import Credits from './Credits'
 import Footer from './Footer'
 
+import Abilities from './hero-guide/Abilities'
 import FusionItems from './hero-guide/FusionItems'
 import KeyFusionItems from './hero-guide/KeyFusionItems'
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route exact path='/credits' component={Credits} />
 
             <div className="wrapper">
+                <Abilities />
                 <FusionItems />
                 <KeyFusionItems />
             </div>
