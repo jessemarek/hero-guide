@@ -75,6 +75,10 @@
     h4 {
         font-size: 1.6rem;
     }
+
+    ul {
+        display: block;
+    }
 }
 
 .ability-details {
@@ -83,7 +87,8 @@
 
     @media (min-width: $desktop) {
         .ability-icon {
-            align-self: center;
+            //align-self: center;
+            padding: 3rem;
         }
 
         .ability-text,

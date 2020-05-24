@@ -9,80 +9,10 @@ import { returnComponent } from '../../utils/index'
 
 const FusionItems = props => {
 
-    //dummy data for testing would be passed in via props
-    const fusionItems = {
+    const {
+        fusionItems
 
-        purple: [
-            "tribal-battleaxe",
-            "stealth-cape",
-            "clasp-of-life",
-            "golden-mallet",
-            "luna's-boots",
-            "emerald-cuirass"
-        ],
-        purple1: [
-            "ice-smasher",
-            "destruction",
-            "tribal-battleaxe",
-            "heavy-club",
-            "carnage-mallet",
-            "banshee-essence"
-        ],
-        purple2: [
-            "goblet-of-the-ancients",
-            "doomsday-blade",
-            "heavenly-amulet",
-            "elvish-etude",
-            "guardian-plate",
-            "clasp-of-life"
-        ],
-        purple3: [
-            "spartan-dagger",
-            "goblin's-scimitar",
-            "healing-stone",
-            "pride's-protector",
-            "adamantite-scimitar",
-            "runic-crystal-ball"
-        ],
-        purple4: [
-            "zealot-battleplate",
-            "cosmic-shield",
-            "demonic-visage",
-            "azrael's-roar",
-            "whisperwind-bow",
-            "cap-of-souls"
-        ],
-        orange: [
-            "unknown",
-            "aegis",
-            "nemean-hide",
-            "titanic-axe",
-            "demon's-skull",
-            "cap-of-souls"
-        ],
-        orange1: [
-            "unknown",
-            "renegade's-armor",
-            "atlantean-battleaxe",
-            "commander's-blade",
-            "armor-of-shadows",
-            "mystic-dragonscale"
-        ],
-        orange2: [
-            "unknown",
-            "master's-cap",
-            "sphere-of-the-sands",
-            "stormrider-armor",
-            "shadow-slayer",
-            "beastly-guardian"
-        ]
-
-    }
-
-    /*     const {
-            fusionItems
-    
-        } = props */
+    } = props
 
     return (
         <section id="fusion-items" className="guide-section">

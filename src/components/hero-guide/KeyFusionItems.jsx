@@ -4,88 +4,11 @@ import KeyItem from './KeyItem'
 
 const KeyFusionItems = props => {
 
-    //Dummy data for testing
-    const heroAwakened = true
-    const keyItems = [
-        {
-            item: 'commander\'s-blade',
-            quantity: 5
-        },
-        {
-            item: 'stormrider-armor',
-            quantity: 2
-        },
-        {
-            item: 'kretonian-talisman',
-            quantity: 2
-        },
-        {
-            item: 'bandit\'s-dagger',
-            quantity: 2
-        },
-        {
-            item: 'staff-of-illumination',
-            quantity: 2
-        },
-        {
-            item: 'primordial-stone',
-            quantity: 1
-        },
-        {
-            item: 'champion\'s-cloak',
-            quantity: 1
-        },
-        {
-            item: 'titanic-axe',
-            quantity: 3
-        },
-        {
-            item: 'nemean-hide',
-            quantity: 2
-        },
-        {
-            item: 'mystic-dragonscale',
-            quantity: 1
-        },
-        {
-            item: 'ethereal-cloak',
-            quantity: 1
-        },
-        {
-            item: 'ironbark-warbow',
-            quantity: 1
-        },
-        {
-            item: 'blade-of-chaos',
-            quantity: 1
-        },
-        {
-            item: 'clasp-of-life',
-            quantity: 5
-        },
-        {
-            item: 'healing-stone',
-            quantity: 4
-        },
-        {
-            item: 'stealth-cape',
-            quantity: 4
-        },
-        {
-            item: 'destruction',
-            quantity: 2
-        },
-        {
-            item: 'spartan-dagger',
-            quantity: 1
-        }
-    ]
+    const {
+        keyItems,
+        heroAwakened
 
-    /*     const {
-            keyItems,
-            heroAwakened
-    
-        } = props */
+    } = props
 
     return (
         <section id="key-items" className="guide-section">
