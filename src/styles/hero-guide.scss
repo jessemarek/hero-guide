@@ -3,8 +3,16 @@
     margin-bottom: 5%;
 }
 
+.hero-title, .hero-details p {
+    text-transform: capitalize;
+}
+
 #hero-info,
 #awakening {
+
+    ul {
+        display: block;
+    }
     
     .hero-card {
         display: none;
@@ -74,10 +82,6 @@
         
     h4 {
         font-size: 1.6rem;
-    }
-
-    ul {
-        display: block;
     }
 }
 

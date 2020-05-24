@@ -7,10 +7,10 @@ export const hero = {
     position: 'front',
     role: 'Front Line Tank',
     description: 'Large amount of Health, can use a variety of sword-based skills to inflict major Physical Damage on the enemy',
-    first_appeared: 'original',
-    card_type: '2 star',
+    first_appeared: 'original-hero',
+    card_type: 2,
     chest_type: 'gold',
-    availible_in: 'campaign',
+    available_in: 'not-released',
     stat_growth: [
         {
             health: 73,
@@ -27,7 +27,7 @@ export const hero = {
             m_armor: 4.2
         }
     ],
-    medalions: [],
+    medallions: [],
     abilities: [
         {
             name: 'Dragon Strike',

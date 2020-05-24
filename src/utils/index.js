@@ -44,6 +44,25 @@ export const returnType = num => {
 
         case 5:
             return <>Unlocks with <span className="org-txt">Awakening</span></>
+
+        default:
+            return 'Hero Ability'
+    }
+
+}
+
+//Returns a number of star icon <img>s
+export const returnStars = num => {
+    if (num > 0) {
+        return (
+            <>
+                <img src="/assets/images/icons/hero-info/star.png" width="16" height="16" alt="" />
+                {
+                    returnStars(num - 1)
+                }
+            </>
+
+        )
     }
 
 }

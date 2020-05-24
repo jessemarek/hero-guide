@@ -26,7 +26,7 @@ const KeyFusionItems = props => {
 
                 <div className="key-item-note">
                     <p>*Key items required to fuse up to <span className="org-txt">Orange+2</span> and fully equip. Not all
-						items required for fusions listed.{heroAwakened ? 'Signature Item not included.' : ''}</p>
+						items required for fusions listed.{heroAwakened ? ' Signature Item not included.' : ''}</p>
                 </div>
             </div>
         </section>
