@@ -234,7 +234,7 @@ export const hero = {
         },
         quest2: {
             trial_name: 'Bloody Arena',
-            trial_icon: 'url',
+            trial_icon: 'bloody-arena',
             completions: 10
         },
         quest3: {
