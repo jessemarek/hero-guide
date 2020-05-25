@@ -16,16 +16,39 @@
     
     .hero-card {
         display: none;
+
+        @include MQ(XL) {
+            display: block;
+            width: 80%;
+        }
+    }
+}
+
+#hero-info{
+
+    .section-body {
+        @include MQ(XL) {
+            display: flex;
+            align-items: flex-start;
+        }
     }
 }
 
 .hero-art {
     @include flexBox(row wrap, center, center);
 
+    @include MQ(XL) {
+        width: 33%;
+    }
+
     .hero-portrait {
         position: relative;
         align-self: center;
         margin: 0 auto;
+
+        @include MQ(XL) {
+            display: none;
+        }
     }
 
     .hero-quote {
@@ -34,18 +57,33 @@
         font-style: italic;
         font-size: 1.4rem;
     }
+
+    
 }
 
 .hero-details {
     @include flexBox(row wrap, center, center);
 
+    @include MQ(XL) {
+        width: 60%;
+    }
+
     .hero-role {
         width: 90%;
         margin: 5% auto;
+
+        @include MQ(XL) {
+            margin: 0;
+        }
     }
 
     .hero-ss-details {
         @include flexBox(row wrap, center, center);
+
+        @include MQ(XL) {
+            width: 100%;
+            justify-content: space-around;
+        }
 
         div {
             width: 50%;
@@ -54,14 +92,34 @@
             text-align: center;
             font-size: 1.2rem;
 
+            @include MQ(XL) {
+                width: 25%;
+                margin: 3% 0 0;
+            }
+
             ul {
                 line-height: 2.5;
+            }
+        }
+
+        .details-icon {
+            padding: 5%;
+        }
+
+        .card-details {
+            @include MQ(XL) {
+                width: 30%;
             }
         }
     }
 
     .hero-growth-box {
         @include flexBox(row wrap, center, center);
+        
+        @include MQ(XL) {
+            width: 100%;
+            justify-content: space-around;
+        }
 
         div {
             width: 50%;
@@ -69,10 +127,20 @@
             padding: 1.25%;
             text-align: center;
             font-size: 1.2rem;
+
+            @include MQ(XL) {
+                width: 30%;
+                margin: 2.5% 0 0;
+            }
         }
 
         .stat-growth {
             width: 90%;
+
+            @include MQ(XL) {
+                width: 61%;
+                margin: 2% 0 0;
+            }
         }
     }
 }

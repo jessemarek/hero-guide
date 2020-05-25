@@ -8,7 +8,7 @@ import KeyFusionItems from './KeyFusionItems'
 
 const HeroGuide = ({ hero }) => {
 
-    //Extract props need by <HeroInfo />
+    //Extract props needed by <HeroInfo />
     const heroInfo = {
         name: hero.name,
         title: hero.title,

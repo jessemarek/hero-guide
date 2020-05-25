@@ -10,7 +10,7 @@ export const hero = {
     first_appeared: 'original-hero',
     card_type: 2,
     chest_type: 'gold',
-    available_in: 'not-released',
+    available_in: 'campaign',
     stat_growth: [
         {
             health: 73,

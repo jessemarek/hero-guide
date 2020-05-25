@@ -13,7 +13,7 @@ const Footer = () => {
                 pathname.includes('/guides/')) ?
                 'side-footer' : ''}
         >
-            <p>Copyright 2020 The Last Sentinel™ -- All Rights Reserved</p>
+            <p>© 2017 - 2020 The Last Sentinel™ -- All Rights Reserved</p>
         </footer>
     )
 }

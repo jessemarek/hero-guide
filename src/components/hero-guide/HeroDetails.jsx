@@ -17,7 +17,7 @@ const HeroDetails = props => {
         <div className="hero-ss-details">
             <div className="hero-details-icon">
                 <h4>First Appeared</h4>
-                <img src={`/assets/images/icons/hero-info/${first_appeared}.png`} width="86" height="86" alt="" />
+                <img className="details.icon" src={`/assets/images/icons/hero-info/${first_appeared}.png`} width="86" height="86" alt="" />
                 <p>{first_appeared.split('-').join(' ')}</p>
             </div>
 
@@ -31,7 +31,7 @@ const HeroDetails = props => {
             </div>
 
             <div className="hero-details-icon">
-                <h4><img src="/assets/images/icons/hero-info/ss.png" width="16" height="16" alt="soulstones" /> Available In</h4>
+                <h4><img className="details.icon" src="/assets/images/icons/hero-info/ss.png" width="16" height="16" alt="soulstones" /> Available In</h4>
                 <img src={`/assets/images/icons/shops/${available_in === 'not-released' ? 'unknown' : available_in}.png`} width="86" height="86" alt="" />
                 <p>{available_in.split('-').join(' ')}</p>
             </div>
