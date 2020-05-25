@@ -66,3 +66,12 @@ export const returnStars = num => {
     }
 
 }
+
+//Format text from hero and item data from kabob case into 
+//regular strings with spaces and capitalize the first letters
+export const formatText = (text) => {
+    return text.split('-')
+        .map(i => (i !== 'of' && i !== 'the') ? i.charAt(0).toUpperCase() + i.slice(1) : i)
+        .join(' ')
+
+}

@@ -5,6 +5,9 @@ import HeroArt from './HeroArt'
 import HeroDetails from './HeroDetails'
 import HeroStats from './HeroStats'
 
+//Utils
+import { formatText } from '../../utils/index'
+
 const HeroInfo = props => {
     const {
         name,
@@ -25,7 +28,7 @@ const HeroInfo = props => {
         <section id="hero-info" className="guide-section">
 
             <div className="section-header">
-                <h2 className="hero-title">{name.split('-').join(' ')} - {title}</h2>
+                <h2 className="hero-title">{formatText(name)} - {title}</h2>
             </div>
 
             <div className="section-body">

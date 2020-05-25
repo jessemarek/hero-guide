@@ -1,5 +1,8 @@
 import React from 'react'
 
+//Utils
+import { formatText } from '../../utils/index'
+
 const AwakeningQuest = props => {
 
     const {
@@ -7,11 +10,6 @@ const AwakeningQuest = props => {
         awakening
 
     } = props
-
-    const formatText = (text) => {
-        return text.split('-').map(i => (i !== 'of' && i !== 'the') ? i.charAt(0).toUpperCase() + i.slice(1) : i).join(' ')
-
-    }
 
     return (
         <section id="awakening" className="guide-section">
@@ -24,19 +22,19 @@ const AwakeningQuest = props => {
 
                     <div className="hero-card spoiler-card spoiler-off">
                         <div className="card-back">
-                            <img src={`/assets/images/hero-cards/${name}.jpg`} alt={`Artwork card for ${name.split('-').join(' ')}`} />
+                            <img src={`/assets/images/hero-cards/${name}.jpg`} alt={`Artwork card for ${formatText(name)}`} />
                         </div>
                         <div className="card-face">
-                            <img src={`/assets/images/hero-cards-aw/${name}-aw.jpg`} alt={`Awakened artwork card for ${name.split('-').join(' ')}`} />
+                            <img src={`/assets/images/hero-cards-aw/${name}-aw.jpg`} alt={`Awakened artwork card for ${formatText(name)}`} />
                         </div>
                     </div>
 
                     <div className="hero-portrait spoiler-card spoiler-off">
                         <div className="card-back">
-                            <img src={`/assets/images/icons/portraits/${name}.png`} alt={`Portrait for ${name.split('-').join(' ')}`} />
+                            <img src={`/assets/images/icons/portraits/${name}.png`} alt={`Portrait for ${formatText(name)}`} />
                         </div>
                         <div className="card-face">
-                            <img src={`/assets/images/icons/portraits-aw/${name}-aw.png`} alt={`Awakened portrait for ${name.split('-').join(' ')}`} />
+                            <img src={`/assets/images/icons/portraits-aw/${name}-aw.png`} alt={`Awakened portrait for ${formatText(name)}`} />
                         </div>
 
                     </div>
@@ -46,30 +44,21 @@ const AwakeningQuest = props => {
 
                 <div className="quest-details">
 
-                    <div className="icon-column">
-
-                        <div id="quest-icon1" className="item-icon">
-                            <img src="/assets/images/icons/chapter-icons/campaign/14-empty-handed.png" width="86" height="86" alt="" />
-                        </div>
-
-                        <div id="quest-icon2" className="item-icon">
-                            <img src="/assets/images/icons/chapter-icons/dojo/tidal-temple.png" width="86" height="86" alt="" />
-                        </div>
-
-                        <div id="quest-icon3" className="item-icon">
-                            <img src="/assets/images/icons/chapter-icons/campaign/14-mt-rathscar.png" width="86" height="86" alt="" />
-                        </div>
-
-                    </div>
-
                     <div className="aw-quests">
 
                         <div id="aw-quest1" className="textbox">
                             <h4>{`1st Quest - Craft Signature Item: ${formatText(awakening.sig_item)}`}</h4>
+                            <div id="quest-icon1" className="item-icon">
+                                <img src="/assets/images/icons/chapter-icons/campaign/14-empty-handed.png" width="86" height="86" alt="" />
+                            </div>
                             <p>{`Collect 80 fragments of ${formatText(awakening.quest1.fragment)} from`}<br></br>{`${awakening.quest1.chapter} (Heroic Difficulty)`}</p>
                         </div>
 
                         <div className="sig-item-recipe">
+                            <div id="sig-item" className="item-icon">
+                                <img src={`/assets/images/icons/signature-items/signature/${awakening.sig_item}.png`} alt="item icon" />
+                                <p>{formatText(awakening.sig_item)}</p>
+                            </div>
                             <div id="aw-item1" className="item-icon">
                                 <img src={`/assets/images/icons/signature-items/quest1/${awakening.quest1.fragment}.png`} alt="item icon" />
                                 <p>{formatText(awakening.quest1.fragment)}</p>
@@ -93,11 +82,17 @@ const AwakeningQuest = props => {
 
                         <div id="aw-quest2" className="textbox">
                             <h4>{`2nd Quest - ${formatText(awakening.quest2.trial_name)}`}</h4>
+                            <div id="quest-icon2" className="item-icon">
+                                <img src="/assets/images/icons/chapter-icons/dojo/tidal-temple.png" width="86" height="86" alt="" />
+                            </div>
                             <p>{`Complete ${awakening.quest2.completions} times with ${formatText(name)} in your party`}<br></br>(Extreme+ Difficulty)</p>
                         </div>
 
                         <div id="aw-quest3" className="textbox">
                             <h4>{`3rd Quest - ${awakening.quest3.chapter}`}</h4>
+                            <div id="quest-icon3" className="item-icon">
+                                <img src="/assets/images/icons/chapter-icons/campaign/14-mt-rathscar.png" width="86" height="86" alt="" />
+                            </div>
                             <p>{`Complete the stage with ${formatText(name)} in your party`}<br></br><b>Requirement: </b>{awakening.quest3.requirement}</p>
                         </div>
 
@@ -106,11 +101,6 @@ const AwakeningQuest = props => {
                 </div>
 
                 <div className="sig-item-stats">
-
-                    <div id="sig-item" className="item-icon">
-                        <img src={`/assets/images/icons/signature-items/signature/${awakening.sig_item}.png`} alt="item icon" />
-                        <p>{formatText(awakening.sig_item)}</p>
-                    </div>
 
                     <div className="stat-tables">
 

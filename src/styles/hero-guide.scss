@@ -409,34 +409,102 @@
     display: none;
 }
 
+#awakening {
+    @include MQ(XL) {
+
+        .section-header {
+            margin: 0;
+        }
+
+        .section-body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+} 
+
+.quest-details {
+    @include MQ(XL) {
+        width: 60%;
+    }
+}
+
 .aw-quests {
     .textbox {
         margin: 5% auto;
+
+        .item-icon {
+            width: 100%;
+            text-align: center;
+        }
+
+        @include MQ(XL) {
+            @include flexBox(row wrap, space-evenly, initial);
+            margin: 2% auto;
+
+            h4 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                width: 60%;
+                align-self: center;
+                font-size: 1.4rem;
+            }
+
+            .item-icon {
+                width: 15%;
+                text-align: left;
+            }
+        }
+
     }
+
+
 }
 
 .sig-item-recipe {
     @include flexBox(row wrap, space-evenly, initial);
     margin: 5% auto;
-
+ 
     .item-icon {
         width: 20%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    @include MQ(XL) {
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0 10% 0 7%;
+
+        #sig-item {
+            margin: 0 10% 0 0;
+        }
+    }
+
 }
 
 .sig-item-stats {
-
-    #sig-item {
-        width: 25%;
-        margin: 5% auto;
-        text-align: center;
-        font-size: 1.2rem;
+    @include MQ(XL) {
+        width: 100%;
     }
 
     .stat-tables {
         width: 75%;
         margin: 5% auto;
+
+        @include MQ(XL) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+            .statbox {
+                width: 30%;
+                margin: 2% 4%;
+            }
+        }
     }
 }

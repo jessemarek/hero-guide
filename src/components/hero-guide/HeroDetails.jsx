@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Utils
-import { returnStars } from '../../utils/index'
+import { returnStars, formatText } from '../../utils/index'
 
 const HeroDetails = props => {
 
@@ -18,7 +18,7 @@ const HeroDetails = props => {
             <div className="hero-details-icon">
                 <h4>First Appeared</h4>
                 <img className="details.icon" src={`/assets/images/icons/hero-info/${first_appeared}.png`} width="86" height="86" alt="" />
-                <p>{first_appeared.split('-').join(' ')}</p>
+                <p>{formatText(first_appeared)}</p>
             </div>
 
             <div className="card-details">
@@ -26,14 +26,14 @@ const HeroDetails = props => {
                 <ul>
                     <li>{`Requires ${card_type === 1 ? 10 : (card_type === 2 ? 30 : 80)}`} <img src="/assets/images/icons/hero-info/ss.png" width="12" height="12" alt="soulstones" /> to summon</li>
                     <li>{`Additional Cards grant ${card_type === 1 ? 7 : (card_type === 2 ? 18 : 30)} `}<img src="/assets/images/icons/hero-info/ss.png" width="12" height="12" alt="soulstones" /></li>
-                    <li><img src={`/assets/images/icons/shops/${chest_type}-chest.png`} width="30" height="30" alt="" /> {`Drops in ${chest_type.charAt(0).toUpperCase() + chest_type.slice(1)} Chest`}</li>
+                    <li><img src={`/assets/images/icons/shops/${chest_type}-chest.png`} width="30" height="30" alt="" /> {`Drops in ${formatText(chest_type)} Chest`}</li>
                 </ul>
             </div>
 
             <div className="hero-details-icon">
                 <h4><img className="details.icon" src="/assets/images/icons/hero-info/ss.png" width="16" height="16" alt="soulstones" /> Available In</h4>
                 <img src={`/assets/images/icons/shops/${available_in === 'not-released' ? 'unknown' : available_in}.png`} width="86" height="86" alt="" />
-                <p>{available_in.split('-').join(' ')}</p>
+                <p>{formatText(available_in)}</p>
             </div>
 
         </div>
