@@ -241,6 +241,45 @@ export const hero = {
             chapter: 'Chapter 14 - Predator and Prey',
             requirement: 'All heroes must survive (Heroic Difficulty)'
         },
-        sig_item: 'dragon-spaulders'
+        sig_item: 'dragon-spaulders',
+        sig_stats: [
+            {
+                stat: 'max-health',
+                value: 1100,
+                enchant: 987
+            },
+            {
+                stat: 'magic-attack',
+                value: 200,
+                enchant: 182
+            },
+            {
+                stat: 'physical-armor',
+                value: 20,
+                enchant: 21
+            },
+            {
+                stat: 'magic-armor',
+                value: 15,
+                enchant: 14
+            }
+        ],
+        forge_bonus: [
+            {
+                stat: 'm-attack',
+                bonus: 'm-pierce',
+                value: 30
+            },
+            {
+                stat: 'm-armor',
+                bonus: 'max-health',
+                value: 900
+            },
+            {
+                stat: 'p-armor',
+                bonus: 'm-attack',
+                value: 150
+            }
+        ]
     }
 }

@@ -67,6 +67,20 @@ export const returnStars = num => {
 
 }
 
+//Returns a number of enchantment star icon <img>s
+export const returnEnchantStars = num => {
+    if (num > 0) {
+        return (
+            <>
+                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="" />
+                {
+                    returnEnchantStars(num - 1)
+                }
+            </>
+        )
+    }
+}
+
 //Format text from hero and item data from kabob case into 
 //regular strings with spaces and capitalize the first letters
 export const formatText = (text) => {

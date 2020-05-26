@@ -1,4 +1,5 @@
 import React from 'react'
+import { returnEnchantStars } from '../../../utils/index'
 
 const ScorchingSpear = () => {
 
@@ -8,7 +9,7 @@ const ScorchingSpear = () => {
 
             <div className="tooltip">
                 <h3>Stats</h3>
-                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" />
+                {returnEnchantStars(5)}
                 <p>Physical Pierce Rating 85 <span className="grn-txt">+65</span></p>
                 <h3>Recipe</h3>
                 <img src="/assets/images/icons/equipment/mask-of-sacrifice.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/dragon's-fang.png" width="36" height="36" alt="equipment icon" /><br></br><img src="/assets/images/icons/equipment/bloody-hatchet.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/aurora-torch.png" width="36" height="36" alt="equipment icon" /><p>Level 55 Required</p>

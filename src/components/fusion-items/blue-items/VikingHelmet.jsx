@@ -1,4 +1,5 @@
 import React from 'react'
+import { returnEnchantStars } from '../../../utils/index'
 
 const VikingHelmet = () => {
 
@@ -8,7 +9,7 @@ const VikingHelmet = () => {
 
             <div className="tooltip">
                 <h3>Stats</h3>
-                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" /><img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="star icon" />
+                {returnEnchantStars(3)}
                 <p>Max Health 450 <span className="grn-txt">+351</span></p><p>Physical Armor 15 <span className="grn-txt">+12</span></p>
                 <h3>Recipe</h3>
                 <img src="/assets/images/icons/equipment/warrior's-gloves.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/crimson-staff.png" width="36" height="36" alt="equipment icon" /><br></br><img src="/assets/images/icons/equipment/mending-pearl.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/savage-dagger.png" width="36" height="36" alt="equipment icon" /><p>Level 34 Required</p>

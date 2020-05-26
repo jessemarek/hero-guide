@@ -32,7 +32,10 @@ const HeroGuide = ({ hero }) => {
             <FusionItems fusionItems={hero.fusion_items} />
             <KeyFusionItems keyItems={hero.key_items} heroAwakened={hero.awakened} />
 
-            <AwakeningQuest name={hero.name} awakening={hero.awakening} />
+            {
+                hero.awakened &&
+                <AwakeningQuest name={hero.name} awakening={hero.awakening} />
+            }
         </div>
     )
 }
