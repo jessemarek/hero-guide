@@ -13,9 +13,9 @@ const HeroStats = ({ card_type, stat_growth, medallions }) => {
                 <table>
                     <tbody>
                         <tr>
-                            <th colSpan="2">{returnStars(card_type)}</th>
+                            <th colSpan="2">{returnStars(card_type, 'star')}</th>
                             <th><img src="/assets/images/icons/hero-info/stat-growth-arrow.png" width="24" height="12" alt="" /></th>
-                            <th colSpan="2" >{returnStars(7)}</th>
+                            <th colSpan="2" >{returnStars(7, 'star')}</th>
                         </tr>
 
                         <tr>

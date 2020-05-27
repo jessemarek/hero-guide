@@ -1,7 +1,7 @@
 import React from 'react'
 
 //Utils
-import { formatText, returnEnchantStars } from '../../utils/index'
+import { formatText, returnStars } from '../../utils/index'
 
 const SigItemRecipe = props => {
 
@@ -20,7 +20,7 @@ const SigItemRecipe = props => {
                 <p>{formatText(sig_item)}</p>
                 <div className="tooltip">
                     <h3>Stats <span className="grn-txt">+ Max Enchant</span></h3>
-                    {returnEnchantStars(7)}
+                    {returnStars(7, 'enchant')}
                     {
                         sig_stats.map((s, idx) => <p key={idx}>{`${formatText(s.stat)} ${s.value} `}<span className="grn-txt">{`+ ${s.value}`}</span></p>)
                     }

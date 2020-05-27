@@ -1,5 +1,5 @@
 import React from 'react'
-import { returnEnchantStars } from '../../../utils/index'
+import { returnStars } from '../../../utils/index'
 
 const RecoveryPotion = () => {
 
@@ -8,8 +8,8 @@ const RecoveryPotion = () => {
             <img src="/assets/images/icons/equipment/recovery-potion.png" alt="equipment icon" />
 
             <div className="tooltip">
-                <h3>Stats</h3>
-                {returnEnchantStars(5)}
+                <h3>Stats <span className="grn-txt">+ Max Enchant</span></h3>
+                {returnStars(5, 'enchant')}
                 <p>Max Health 2300 <span className="grn-txt">+1575</span></p><p>Health Recovery 1020 <span className="grn-txt">+700</span></p>
                 <h3>Recipe</h3>
                 <img src="/assets/images/icons/equipment/clasp-of-life.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/clasp-of-life.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/sapphire-bracelet.png" width="36" height="36" alt="equipment icon" /><p>Level 78 Required</p>

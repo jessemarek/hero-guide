@@ -22,7 +22,7 @@ const HeroDetails = props => {
             </div>
 
             <div className="card-details">
-                <h4>{returnStars(card_type)} Hero Card</h4>
+                <h4>{returnStars(card_type, 'star')} Hero Card</h4>
                 <ul>
                     <li>{`Requires ${card_type === 1 ? 10 : (card_type === 2 ? 30 : 80)}`} <img src="/assets/images/icons/hero-info/ss.png" width="12" height="12" alt="soulstones" /> to summon</li>
                     <li>{`Additional Cards grant ${card_type === 1 ? 7 : (card_type === 2 ? 18 : 30)} `}<img src="/assets/images/icons/hero-info/ss.png" width="12" height="12" alt="soulstones" /></li>

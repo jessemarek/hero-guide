@@ -51,30 +51,14 @@ export const returnType = num => {
 
 }
 
-//Returns a number of star icon <img>s
-export const returnStars = num => {
+//Returns a number of star icon <img>s of a specified type
+export const returnStars = (num, type) => {
     if (num > 0) {
         return (
             <>
-                <img src="/assets/images/icons/hero-info/star.png" width="16" height="16" alt="" />
+                <img src={`/assets/images/icons/hero-info/${type === 'enchant' ? 'enchantment-' : ''}star.png`} width={`${type === 'enchant' ? '12' : '16'}`} height={`${type === 'enchant' ? '12' : '16'}`} alt="" />
                 {
-                    returnStars(num - 1)
-                }
-            </>
-
-        )
-    }
-
-}
-
-//Returns a number of enchantment star icon <img>s
-export const returnEnchantStars = num => {
-    if (num > 0) {
-        return (
-            <>
-                <img src="/assets/images/icons/hero-info/enchantment-star.png" width="12" height="12" alt="" />
-                {
-                    returnEnchantStars(num - 1)
+                    returnStars(num - 1, type)
                 }
             </>
         )
