@@ -6,25 +6,24 @@ import ElementalMastery from '../talents/ElementalMastery'
 
 import SpellResistance from '../talents/SpellResistance'
 import Forcefields from '../talents/Forcefields'
-import PoisonPreparation from '../talents/PoisonPreparation'
 import SummoningSkills from '../talents/SummoningSkills'
 
 import MysticArts from '../talents/MysticArts'
 import ArmorCrafting from '../talents/ArmorCrafting'
 
 import PhysicalConditioning from '../talents/PhysicalConditioning'
-import Marksmanship from '../talents/Marksmanship'
+import SpellMastery from '../talents/SpellMastery'
 
 import GeneralTactics from '../talents/GeneralTactics'
 import DefensiveTactics from '../talents/DefensiveTactics'
 import DamageResistance from '../talents/DamageResistance'
 
-const Defense = ({ type }) => {
+const Determination = ({ type }) => {
 
     return (
         <>
             <div className="section-header">
-                <h2>Heroic Academy - Defense</h2>
+                <h2>Heroic Academy - Determination</h2>
             </div>
 
             <div className="talent-tree">
@@ -40,7 +39,7 @@ const Defense = ({ type }) => {
                     <h4 className="tier-title">Intermediate 1</h4>
                     <SpellResistance />
                     {(type) ? <Forcefields /> : (<div></div>)}
-                    {(type === 'DoT') ? (<PoisonPreparation />) : ((type === 'summon') ? <SummoningSkills /> : <Forcefields />)}
+                    {(type === 'summon') ? <SummoningSkills /> : <Forcefields />}
                 </div>
 
                 <div className="tree-tier-column col-type-2">
@@ -53,7 +52,7 @@ const Defense = ({ type }) => {
                     <h4 className="tier-title">Advanced</h4>
                     <PhysicalConditioning />
                     <div></div>
-                    <Marksmanship />
+                    <SpellMastery />
                 </div>
 
                 <div className="tree-tier-column col-type-3">
@@ -68,4 +67,4 @@ const Defense = ({ type }) => {
     )
 }
 
-export default Defense
+export default Determination

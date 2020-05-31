@@ -22,8 +22,7 @@ import OffensiveSpells from '../talents/OffensiveSpells'
 const Mysticism = ({ type }) => {
 
     return (
-        <div className="section-body">
-
+        <>
             <div className="section-header">
                 <h2>Heroic Academy - Mysticism</h2>
             </div>
@@ -40,7 +39,7 @@ const Mysticism = ({ type }) => {
                 <div className="tree-tier-column col-type-3">
                     <h4 className="tier-title">Intermediate 1</h4>
                     <HealingPotions />
-                    {(type === 'normal') ? (<div></div>) : <SpellResistance />}
+                    {(type) ? <SpellResistance /> : (<div></div>)}
                     {(type === 'DoT') ? (<PoisonPreparation />) : ((type === 'summon') ? <SummoningSkills /> : <SpellResistance />)}
                 </div>
 
@@ -65,8 +64,7 @@ const Mysticism = ({ type }) => {
                 </div>
 
             </div>
-
-        </div>
+        </>
     )
 }
 

@@ -1,66 +1,65 @@
 import React from 'react'
 
 //Talent Components
-import EnergyRegeneration from '../talents/EnergyRegeneration'
-import ElementalMastery from '../talents/ElementalMastery'
+import SilenceResistance from '../talents/SilenceResistance'
+import FinalStruggle from '../talents/FinalStruggle'
 
-import SpellResistance from '../talents/SpellResistance'
-import Forcefields from '../talents/Forcefields'
+import BattleSorcery from '../talents/BattleSorcery'
+import ExplosiveMagic from '../talents/ExplosiveMagic'
 import PoisonPreparation from '../talents/PoisonPreparation'
-import SummoningSkills from '../talents/SummoningSkills'
+
+import DamageResistance from '../talents/DamageResistance'
+import Stealth from '../talents/Stealth'
 
 import MysticArts from '../talents/MysticArts'
 import ArmorCrafting from '../talents/ArmorCrafting'
 
-import PhysicalConditioning from '../talents/PhysicalConditioning'
-import Marksmanship from '../talents/Marksmanship'
-
 import GeneralTactics from '../talents/GeneralTactics'
-import DefensiveTactics from '../talents/DefensiveTactics'
-import DamageResistance from '../talents/DamageResistance'
+import SpellResistance from '../talents/SpellResistance'
+import Forcefields from '../talents/Forcefields'
 
-const Defense = ({ type }) => {
+const Discipline = ({ type }) => {
 
     return (
         <>
             <div className="section-header">
-                <h2>Heroic Academy - Defense</h2>
+                <h2>Heroic Academy - Discipline</h2>
             </div>
 
             <div className="talent-tree">
 
                 <div className="tree-tier-column col-type-1">
                     <h4 className="tier-title">Basic</h4>
-                    <EnergyRegeneration />
+                    <SilenceResistance />
                     <div></div>
-                    <ElementalMastery />
+                    <FinalStruggle />
                 </div>
 
                 <div className="tree-tier-column col-type-3">
                     <h4 className="tier-title">Intermediate 1</h4>
-                    <SpellResistance />
-                    {(type) ? <Forcefields /> : (<div></div>)}
-                    {(type === 'DoT') ? (<PoisonPreparation />) : ((type === 'summon') ? <SummoningSkills /> : <Forcefields />)}
+                    <BattleSorcery />
+                    {(type) ? <ExplosiveMagic /> : (<div></div>)}
+                    {(type === 'DoT') ? <PoisonPreparation /> : <ExplosiveMagic />}
                 </div>
 
                 <div className="tree-tier-column col-type-2">
                     <h4 className="tier-title">Intermediate 2</h4>
-                    <MysticArts />
-                    <ArmorCrafting />
+                    <DamageResistance />
+                    <Stealth />
                 </div>
 
                 <div className="tree-tier-column col-type-1">
                     <h4 className="tier-title">Advanced</h4>
-                    <PhysicalConditioning />
+                    <MysticArts />
                     <div></div>
-                    <Marksmanship />
+                    <ArmorCrafting />
                 </div>
 
                 <div className="tree-tier-column col-type-3">
                     <h4 className="tier-title">Expert</h4>
                     <GeneralTactics />
-                    <DefensiveTactics />
-                    <DamageResistance />
+                    <SpellResistance />
+                    <Forcefields />
                 </div>
 
             </div>
@@ -68,4 +67,4 @@ const Defense = ({ type }) => {
     )
 }
 
-export default Defense
+export default Discipline
