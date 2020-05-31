@@ -5,6 +5,7 @@ import HeroInfo from './HeroInfo'
 import Abilities from './Abilities'
 import FusionItems from './FusionItems'
 import KeyFusionItems from './KeyFusionItems'
+import HeroicAcademyTrees from './HeroicAcademyTrees'
 import AwakeningQuest from '../awakenings/AwakeningQuest'
 
 const HeroGuide = ({ hero }) => {
@@ -31,7 +32,7 @@ const HeroGuide = ({ hero }) => {
             <Abilities hero={hero.name} abilities={hero.abilities} />
             <FusionItems fusionItems={hero.fusion_items} />
             <KeyFusionItems keyItems={hero.key_items} heroAwakened={hero.awakened} />
-
+            <HeroicAcademyTrees trees={hero.academy_trees} />
             {
                 hero.awakened &&
                 <AwakeningQuest name={hero.name} awakening={hero.awakening} />
