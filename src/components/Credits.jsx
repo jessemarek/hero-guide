@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react'
 import { v4 as uuid } from 'uuid'
 
+//Components
 import CreditCard from './CreditCard'
 
-//Dummy data
-import { creditsData } from '../creditsData'
+//Utils
+import { axiosWithAuth } from '../utils/axiosWithAuth'
+import { returnCreditsData } from '../utils/returnCreditsData'
 
 const Credits = () => {
 
-    const [credits] = useState(creditsData)
+    const [credits, setCredits] = useState(null)
+
+    //Load data from server
+    useEffect(() => {
+        axiosWithAuth()
+            .get('/api/credits')
+            .then(res => {
+                setCredits(returnCreditsData(res.data))
+            })
+            .catch(err => console.log(err.response))
+    }, [])
 
     //Change Title
     useEffect(() => {
@@ -48,6 +60,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.images.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -64,6 +77,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.code_monkies.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -80,6 +94,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.data_mining.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -95,6 +110,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.testing.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -111,6 +127,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.forge.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -127,6 +144,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.furnace.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -144,6 +162,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.academy.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -157,6 +176,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.built_by.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>
@@ -170,6 +190,7 @@ const Credits = () => {
 
                         <ul className="hero-menus">
                             {
+                                credits &&
                                 credits.special_thanks.map(item => <CreditCard key={uuid()} data={item} />)
                             }
                         </ul>

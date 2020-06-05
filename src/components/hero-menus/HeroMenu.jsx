@@ -7,10 +7,8 @@ import HeroCard from './HeroCard'
 import AwakeningCard from './AwakeningCard'
 
 //Utils
-import { alphabetize } from '../../utils/index'
-
-//Dummy data
-import { heroData } from '../../heroData'
+import { axiosWithAuth } from '../../utils/axiosWithAuth'
+import { sortByProp } from '../../utils/index'
 
 const HeroMenu = () => {
 
@@ -38,7 +36,12 @@ const HeroMenu = () => {
 
     //Load Hero data from menu
     useEffect(() => {
-        setHeroList(heroData)
+        axiosWithAuth()
+            .get('/api/heroes')
+            .then(res => {
+                setHeroList(res.data)
+            })
+            .catch(err => console.log(err.response))
     }, [])
 
     /*********************** CALLBACKS ***********************/
@@ -91,14 +94,14 @@ const HeroMenu = () => {
                     {/* Displays for Hero Guide Menu */}
                     <Route path={'/heroes'}>
                         {
-                            heroList &&
+                            heroList.length &&
                             heroList
                                 //Sort through the hero list by battlefield position
                                 .filter(hero => filterByButton(hero, activeBtn))
                                 //Filter by search input value
                                 .filter(hero => filterByName(hero, searchField))
                                 //Alphabetize the Hero List by name
-                                .sort(alphabetize)
+                                .sort(sortByProp('name'))
                                 //Create a Hero Card for each hero in the list
                                 .map((hero, idx) => <HeroCard key={idx + 1} hero={hero} />)
                         }
@@ -107,7 +110,7 @@ const HeroMenu = () => {
                     {/* Displays for Awakening Quest Menu */}
                     <Route path={'/awakenings'}>
                         {
-                            heroList &&
+                            heroList.length &&
                             heroList
                                 //Filter out heroes that don't have an awakening
                                 .filter(hero => hero.awakened)
@@ -116,7 +119,7 @@ const HeroMenu = () => {
                                 //Filter by search input value
                                 .filter(hero => filterByName(hero, searchField))
                                 //Alphabetize the Hero List by name
-                                .sort(alphabetize)
+                                .sort(sortByProp('name'))
                                 //Create a Hero Card for each hero in the list
                                 .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />)
                         }

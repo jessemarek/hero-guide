@@ -12,7 +12,7 @@ const SoulStealingNecklace = () => {
                 {returnStars(5, 'enchant')}
                 <p>Physical Armor 35 <span className="grn-txt">+25</span></p><p>Lifesteal 50 <span className="grn-txt">+40</span></p>
                 <h3>Recipe</h3>
-                <img src="/assets/images/icons/equipment/demonic-longsword.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/skull-bonnet.png" width="36" height="36" alt="equipment icon" /><br></br><img src="/assets/images/icons/equipment/casket-of-time.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/bloody-hatchet.png" width="36" height="36" alt="equipment icon" /><p>Level 52 Required</p>
+                <img src="/assets/images/icons/equipment/demonic-longsword.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/skull-bonnet.png" width="36" height="36" alt="equipment icon" /><br /><img src="/assets/images/icons/equipment/casket-of-time.png" width="36" height="36" alt="equipment icon" /><img src="/assets/images/icons/equipment/bloody-hatchet.png" width="36" height="36" alt="equipment icon" /><p>Level 52 Required</p>
             </div>
         </div>
     )

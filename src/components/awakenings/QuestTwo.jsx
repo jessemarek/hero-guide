@@ -11,7 +11,7 @@ const QuestTwo = ({ name, quest2 }) => {
             <div id="quest-icon2" className="item-icon">
                 <img src={`/assets/images/icons/chapter-icons/dojo/${quest2.trial_icon}.png`} width="86" height="86" alt="" />
             </div>
-            <p>{`Complete ${quest2.completions} times with ${formatText(name)} in your party`}<br></br>(Extreme+ Difficulty)</p>
+            <p>{`Complete ${quest2.completions} times with ${formatText(name)} in your party`}<br />(Extreme+ Difficulty)</p>
         </div>
     )
 }

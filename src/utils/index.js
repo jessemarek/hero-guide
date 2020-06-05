@@ -10,7 +10,11 @@ export const returnComponent = (key, id, componentList, DefaultComponent) => {
 }
 
 //Callback for alphabetizing Hero names 
-export const alphabetize = (a, b) => {
+export const sortByProp = prop => {
+    return (a, b) => a[prop] < b[prop] ? -1 : 1
+}
+
+/* export const alphabetize = (a, b) => {
     const heroA = a.name
     const heroB = b.name
 
@@ -24,7 +28,7 @@ export const alphabetize = (a, b) => {
     }
 
     return comparison
-}
+} */
 
 //Takes in a number from the hero's abilities array and returns the corresponding ability type
 export const returnType = num => {
@@ -48,7 +52,6 @@ export const returnType = num => {
         default:
             return 'Hero Ability'
     }
-
 }
 
 //Returns a number of star icon <img>s of a specified type
@@ -71,5 +74,4 @@ export const formatText = (text) => {
     return text.split('-')
         .map(i => (i !== 'of' && i !== 'the') ? i.charAt(0).toUpperCase() + i.slice(1) : i)
         .join(' ')
-
 }

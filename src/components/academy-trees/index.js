@@ -4,8 +4,16 @@ import Combat from './trees/Combat'
 import Defense from './trees/Defense'
 import Determination from './trees/Determination'
 import Discipline from './trees/Discipline'
+import ElementalMagic from './trees/ElementalMagic'
 import Fearlessness from './trees/Fearlessness'
+import Heroism from './trees/Heroism'
+import Honor from './trees/Honor'
+import Leadership from './trees/Leadership'
 import Mysticism from './trees/Mysticism'
+import Poise from './trees/Poise'
+import Resolve from './trees/Resolve'
+import Support from './trees/Support'
+import Tactics from './trees/Tactics'
 
 //Components Object for dynamic academy tree creation
 export const academyTrees = {
@@ -15,14 +23,14 @@ export const academyTrees = {
     "defense": Defense,
     "determination": Determination,
     "discipline": Discipline,
-    /* "elemental-magic": ElementalMagic, */
+    "elemental-magic": ElementalMagic,
     "fearlessness": Fearlessness,
-    /* "heroism": Heroism,
+    "heroism": Heroism,
     "honor": Honor,
-    "leadership": Leadership, */
+    "leadership": Leadership,
     "mysticism": Mysticism,
-    /* "poise": Poise,
+    "poise": Poise,
     "resolve": Resolve,
     "support": Support,
-    "tactics": Tactics */
+    "tactics": Tactics
 }

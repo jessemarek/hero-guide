@@ -4,9 +4,9 @@ const PhysicalConditioning = () => {
 
     return (
         <div className="talent-item">
-            <img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" />
+            <img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" alt="" />
             <h4>Physical Conditioning</h4>
-            <p className="grn-txt">Max Health<br></br>Lvl 5 +2000</p>
+            <p className="grn-txt">Max Health<br />Lvl 5 +2000</p>
         </div>
     )
 }

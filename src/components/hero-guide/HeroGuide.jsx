@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 //Components
 import HeroInfo from './HeroInfo'
@@ -8,36 +9,42 @@ import KeyFusionItems from './KeyFusionItems'
 import HeroicAcademyTrees from './HeroicAcademyTrees'
 import AwakeningQuest from '../awakenings/AwakeningQuest'
 
-const HeroGuide = ({ hero }) => {
+//Utils
+import { axiosWithAuth } from '../../utils/axiosWithAuth'
 
-    //Extract props needed by <HeroInfo />
-    const heroInfo = {
-        name: hero.name,
-        title: hero.title,
-        quote: hero.quote,
-        role: hero.role,
-        description: hero.description,
-        first_appeared: hero.first_appeared,
-        card_type: hero.card_type,
-        chest_type: hero.chest_type,
-        available_in: hero.available_in,
-        stat_growth: hero.stat_growth,
-        medallions: hero.medallions
+const HeroGuide = () => {
 
-    }
+    const { hero } = useParams()
+
+    const [heroData, setHeroData] = useState(null)
+
+    useEffect(() => {
+        axiosWithAuth()
+            .get(`/api/heroes/${hero}`)
+            .then(res => {
+                setHeroData(res.data)
+            })
+            .catch(err => console.log(err.response))
+    }, [hero])
 
     return (
-        <div className="wrapper">
-            <HeroInfo heroInfo={heroInfo} />
-            <Abilities hero={hero.name} abilities={hero.abilities} />
-            <FusionItems fusionItems={hero.fusion_items} />
-            <KeyFusionItems keyItems={hero.key_items} heroAwakened={hero.awakened} />
-            <HeroicAcademyTrees trees={hero.academy_trees} />
+        <>
             {
-                hero.awakened &&
-                <AwakeningQuest name={hero.name} awakening={hero.awakening} />
+                heroData ?
+
+                    (<div className="wrapper">
+                        <HeroInfo heroInfo={heroData} />
+                        <Abilities hero={heroData.name} abilities={heroData.abilities} />
+                        <FusionItems fusionItems={heroData.fusion_items} />
+                        <KeyFusionItems keyItems={heroData.key_items} heroAwakened={heroData.awakened} />
+                        <HeroicAcademyTrees trees={heroData.academy_trees} />
+                        {
+                            heroData.awakened &&
+                            <AwakeningQuest name={heroData.name} awakening={heroData.awakening} />
+                        }
+                    </div>) : null
             }
-        </div>
+        </>
     )
 }
 
