@@ -19,7 +19,7 @@ const Navbar = () => {
                     <ul className="sub-links">
                         <li><Link to="/heroes">Heroes</Link></li>
                         <li><Link to="/awakenings">Awakenings</Link></li>
-                        <li><Link to="/skins">Skins</Link></li>
+                        {/* <li><Link to="/skins">Skins</Link></li> */}
                     </ul>
                 </li>
                 <li className="nav-dropdown">

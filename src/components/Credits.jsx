@@ -29,7 +29,7 @@ const Credits = () => {
         return () => {
             document.title = 'Soul Hunters Hero Guide'
         }
-    })
+    }, [])
 
     //Change <body> class for credits page styling and remove when <Credits /> unmounts
     useEffect(() => {
