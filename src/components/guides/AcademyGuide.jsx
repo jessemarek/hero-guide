@@ -21,7 +21,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="intro-text">
-                    <p>The <b>Heroic Academy</b> is part of the <b>Heroes' Village</b>. Once a player reaches Level 85 they are granted access to the Village and its buildings. The core function of the Heroic Academy is for Heroes to study “Skills” that increase their Stats. Each Hero has access to 2 Talent Trees, which are a set of Skills that they may study. Each Talent Tree has 5 Tiers: Basic, Intermediate 1, Intermediate 2, Advanced, and Expert. Each Tier of the Talent Tree will have 2-3 Skills to choose from. Once a Hero's Skill has reached level 5, that Hero will gain access to the next Tier of Skills in that particular Talent Tree. A Hero may only have 1 Skill per Tier active at a time. The active Skill may be swapped for the cost of 1,000 <img src="/assets/images/icons/heroic-academy/resources/wood.png" width="16" height="16" /> and 1,000 <img src="/assets/images/icons/heroic-academy/resources/iron.png" width="16" height="16" /></p>
+                    <p>The <b>Heroic Academy</b> is part of the <b>Heroes' Village</b>. Once a player reaches Level 85 they are granted access to the Village and its buildings. The core function of the Heroic Academy is for Heroes to study “Skills” that increase their Stats. Each Hero has access to 2 Talent Trees, which are a set of Skills that they may study. Each Talent Tree has 5 Tiers: Basic, Intermediate 1, Intermediate 2, Advanced, and Expert. Each Tier of the Talent Tree will have 2-3 Skills to choose from. Once a Hero's Skill has reached level 5, that Hero will gain access to the next Tier of Skills in that particular Talent Tree. A Hero may only have 1 Skill per Tier active at a time. The active Skill may be swapped for the cost of 1,000 <img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="16" height="16" /> and 1,000 <img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="16" height="16" /></p>
                     <p>Upgrading the Heroic Academy increases the Level Cap of both the <b>Furnace</b> and the <b>Workshop</b>. This allows both buildings to be further upgraded unlocking new benefits in each building. Upgrading the Heroic Academy does not provide any increased benefit to the Academy itself. While the building is being upgraded you will be unable to use its features until the upgrade is complete.</p>
 
                 </div>
@@ -33,9 +33,9 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
                                 <th>Time</th>
                             </tr>
                             <tr>
@@ -99,10 +99,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -154,10 +154,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -209,10 +209,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -264,10 +264,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -319,10 +319,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b>Level</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -374,10 +374,10 @@ const AcademyGuide = () => {
                         <table>
                             <tr>
                                 <th><b># of Trees</b></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" width="24" height="24" /></th>
-                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/wood.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/iron.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/crystals.png" alt="" width="24" height="24" /></th>
+                                <th><img src="/assets/images/icons/heroic-academy/resources/gold.png" alt="" width="24" height="24" /></th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -405,7 +405,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#weapons-mastery"><img src="/assets/images/icons/heroic-academy/talents/weapons-mastery.png" width="36" height="36" /></a><a href="#swordsmanship"><img src="/assets/images/icons/heroic-academy/talents/swordsmanship.png" width="36" height="36" /></a><a href="#offensive-tactics"><img src="/assets/images/icons/heroic-academy/talents/offensive-tactics.png" width="36" height="36" /></a><a href="#martial-arts"><img src="/assets/images/icons/heroic-academy/talents/martial-arts.png" width="36" height="36" /></a><a href="#marksmanship"><img src="/assets/images/icons/heroic-academy/talents/marksmanship.png" width="36" height="36" /></a>
+                    <a href="#weapons-mastery"><img src="/assets/images/icons/heroic-academy/talents/weapons-mastery.png" alt="" width="36" height="36" /></a><a href="#swordsmanship"><img src="/assets/images/icons/heroic-academy/talents/swordsmanship.png" alt="" width="36" height="36" /></a><a href="#offensive-tactics"><img src="/assets/images/icons/heroic-academy/talents/offensive-tactics.png" alt="" width="36" height="36" /></a><a href="#martial-arts"><img src="/assets/images/icons/heroic-academy/talents/martial-arts.png" alt="" width="36" height="36" /></a><a href="#marksmanship"><img src="/assets/images/icons/heroic-academy/talents/marksmanship.png" alt="" width="36" height="36" /></a>
 
                 </div>
 
@@ -414,7 +414,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/weapons-mastery.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/weapons-mastery.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -430,7 +430,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/swordsmanship.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/swordsmanship.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -446,7 +446,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/offensive-tactics.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/offensive-tactics.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -462,7 +462,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/martial-arts.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/martial-arts.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -478,7 +478,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/marksmanship.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/marksmanship.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -498,7 +498,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#offensive-spells"><img src="/assets/images/icons/heroic-academy/talents/offensive-spells.png" width="36" height="36" /></a><a href="#explosive-magic"><img src="/assets/images/icons/heroic-academy/talents/explosive-magic.png" width="36" height="36" /></a><a href="#battle-sorcery"><img src="/assets/images/icons/heroic-academy/talents/battle-sorcery.png" width="36" height="36" /></a><a href="#dark-magic"><img src="/assets/images/icons/heroic-academy/talents/dark-magic.png" width="36" height="36" /></a><a href="#poison-preparation"><img src="/assets/images/icons/heroic-academy/talents/poison-preparation.png" width="36" height="36" /></a>
+                    <a href="#offensive-spells"><img src="/assets/images/icons/heroic-academy/talents/offensive-spells.png" alt="" width="36" height="36" /></a><a href="#explosive-magic"><img src="/assets/images/icons/heroic-academy/talents/explosive-magic.png" alt="" width="36" height="36" /></a><a href="#battle-sorcery"><img src="/assets/images/icons/heroic-academy/talents/battle-sorcery.png" alt="" width="36" height="36" /></a><a href="#dark-magic"><img src="/assets/images/icons/heroic-academy/talents/dark-magic.png" alt="" width="36" height="36" /></a><a href="#poison-preparation"><img src="/assets/images/icons/heroic-academy/talents/poison-preparation.png" alt="" width="36" height="36" /></a>
 
                 </div>
 
@@ -507,7 +507,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/offensive-spells.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/offensive-spells.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -523,7 +523,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/explosive-magic.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/explosive-magic.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -539,7 +539,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/battle-sorcery.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/battle-sorcery.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -555,7 +555,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/dark-magic.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/dark-magic.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -571,7 +571,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/poison-preparation.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/poison-preparation.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -591,7 +591,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#armor-crafting"><img src="/assets/images/icons/heroic-academy/talents/armor-crafting.png" width="36" height="36" /></a><a href="#damage-resistance"><img src="/assets/images/icons/heroic-academy/talents/damage-resistance.png" width="36" height="36" /></a><a href="#defensive-tactics"><img src="/assets/images/icons/heroic-academy/talents/defensive-tactics.png" width="36" height="36" /></a><a href="#mystic-arts"><img src="/assets/images/icons/heroic-academy/talents/mystic-arts.png" width="36" height="36" /></a><a href="#stealth"><img src="/assets/images/icons/heroic-academy/talents/stealth.png" width="36" height="36" /></a><a href="#blessing"><img src="/assets/images/icons/heroic-academy/talents/blessing.png" width="36" height="36" /></a>
+                    <a href="#armor-crafting"><img src="/assets/images/icons/heroic-academy/talents/armor-crafting.png" alt="" width="36" height="36" /></a><a href="#damage-resistance"><img src="/assets/images/icons/heroic-academy/talents/damage-resistance.png" alt="" width="36" height="36" /></a><a href="#defensive-tactics"><img src="/assets/images/icons/heroic-academy/talents/defensive-tactics.png" alt="" width="36" height="36" /></a><a href="#mystic-arts"><img src="/assets/images/icons/heroic-academy/talents/mystic-arts.png" alt="" width="36" height="36" /></a><a href="#stealth"><img src="/assets/images/icons/heroic-academy/talents/stealth.png" alt="" width="36" height="36" /></a><a href="#blessing"><img src="/assets/images/icons/heroic-academy/talents/blessing.png" alt="" width="36" height="36" /></a>
                 </div>
 
                 <div id="armor-crafting" className="talent-box">
@@ -599,7 +599,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/armor-crafting.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/armor-crafting.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -615,7 +615,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/damage-resistance.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/damage-resistance.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -631,7 +631,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/defensive-tactics.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/defensive-tactics.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -647,7 +647,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/mystic-arts.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/mystic-arts.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -663,7 +663,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/stealth.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/stealth.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -679,7 +679,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/blessing.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/blessing.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -699,7 +699,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#evasive-maneuvers"><img src="/assets/images/icons/heroic-academy/talents/evasive-maneuvers.png" width="36" height="36" /></a><a href="#forcefields"><img src="/assets/images/icons/heroic-academy/talents/forcefields.png" width="36" height="36" /></a><a href="#final-struggle"><img src="/assets/images/icons/heroic-academy/talents/final-struggle.png" width="36" height="36" /></a><a href="#spell-resistance"><img src="/assets/images/icons/heroic-academy/talents/spell-resistance.png" width="36" height="36" /></a><a href="#silence-resistance"><img src="/assets/images/icons/heroic-academy/talents/silence-resistance.png" width="36" height="36" /></a>
+                    <a href="#evasive-maneuvers"><img src="/assets/images/icons/heroic-academy/talents/evasive-maneuvers.png" alt="" width="36" height="36" /></a><a href="#forcefields"><img src="/assets/images/icons/heroic-academy/talents/forcefields.png" alt="" width="36" height="36" /></a><a href="#final-struggle"><img src="/assets/images/icons/heroic-academy/talents/final-struggle.png" alt="" width="36" height="36" /></a><a href="#spell-resistance"><img src="/assets/images/icons/heroic-academy/talents/spell-resistance.png" alt="" width="36" height="36" /></a><a href="#silence-resistance"><img src="/assets/images/icons/heroic-academy/talents/silence-resistance.png" alt="" width="36" height="36" /></a>
                 </div>
 
                 <div id="evasive-maneuvers" className="talent-box">
@@ -707,7 +707,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/evasive-maneuvers.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/evasive-maneuvers.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -723,7 +723,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/forcefields.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/forcefields.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -739,7 +739,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/final-struggle.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/final-struggle.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -755,7 +755,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/spell-resistance.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/spell-resistance.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -771,7 +771,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/silence-resistance.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/silence-resistance.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -791,7 +791,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#physical-conditioning"><img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" width="36" height="36" /></a><a href="#vitality-drain"><img src="/assets/images/icons/heroic-academy/talents/vitality-drain.png" width="36" height="36" /></a><a href="#healing-potions"><img src="/assets/images/icons/heroic-academy/talents/healing-potions.png" width="36" height="36" /></a><a href="#healing-spells"><img src="/assets/images/icons/heroic-academy/talents/healing-spells.png" width="36" height="36" /></a><a href="#first-aid"><img src="/assets/images/icons/heroic-academy/talents/first-aid.png" width="36" height="36" /></a>
+                    <a href="#physical-conditioning"><img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" alt="" width="36" height="36" /></a><a href="#vitality-drain"><img src="/assets/images/icons/heroic-academy/talents/vitality-drain.png" alt="" width="36" height="36" /></a><a href="#healing-potions"><img src="/assets/images/icons/heroic-academy/talents/healing-potions.png" alt="" width="36" height="36" /></a><a href="#healing-spells"><img src="/assets/images/icons/heroic-academy/talents/healing-spells.png" alt="" width="36" height="36" /></a><a href="#first-aid"><img src="/assets/images/icons/heroic-academy/talents/first-aid.png" alt="" width="36" height="36" /></a>
                 </div>
 
                 <div id="physical-conditioning" className="talent-box">
@@ -799,7 +799,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/physical-conditioning.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -815,7 +815,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/vitality-drain.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/vitality-drain.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -831,7 +831,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/healing-potions.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/healing-potions.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -847,7 +847,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/healing-spells.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/healing-spells.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -863,7 +863,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/first-aid.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/first-aid.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -883,7 +883,7 @@ const AcademyGuide = () => {
                 </div>
 
                 <div className="icon-bar">
-                    <a href="#energy-regeneration"><img src="/assets/images/icons/heroic-academy/talents/energy-regeneration.png" width="36" height="36" /></a><a href="#elemental-mastery"><img src="/assets/images/icons/heroic-academy/talents/elemental-mastery.png" width="36" height="36" /></a><a href="#spell-mastery"><img src="/assets/images/icons/heroic-academy/talents/spell-mastery.png" width="36" height="36" /></a><a href="#summoning-skills"><img src="/assets/images/icons/heroic-academy/talents/summoning-skills.png" width="36" height="36" /></a><a href="#general-tactics"><img src="/assets/images/icons/heroic-academy/talents/general-tactics.png" width="36" height="36" /></a>
+                    <a href="#energy-regeneration"><img src="/assets/images/icons/heroic-academy/talents/energy-regeneration.png" alt="" width="36" height="36" /></a><a href="#elemental-mastery"><img src="/assets/images/icons/heroic-academy/talents/elemental-mastery.png" alt="" width="36" height="36" /></a><a href="#spell-mastery"><img src="/assets/images/icons/heroic-academy/talents/spell-mastery.png" alt="" width="36" height="36" /></a><a href="#summoning-skills"><img src="/assets/images/icons/heroic-academy/talents/summoning-skills.png" alt="" width="36" height="36" /></a><a href="#general-tactics"><img src="/assets/images/icons/heroic-academy/talents/general-tactics.png" alt="" width="36" height="36" /></a>
                 </div>
 
                 <div id="energy-regeneration" className="talent-box">
@@ -891,7 +891,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/energy-regeneration.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/energy-regeneration.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -907,7 +907,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/elemental-mastery.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/elemental-mastery.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -923,7 +923,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/spell-mastery.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/spell-mastery.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -939,7 +939,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/summoning-skills.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/summoning-skills.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">
@@ -955,7 +955,7 @@ const AcademyGuide = () => {
 
                     <div className="ability-details">
                         <div className="ability-icon">
-                            <img src="/assets/images/icons/heroic-academy/talents/general-tactics.png" />
+                            <img src="/assets/images/icons/heroic-academy/talents/general-tactics.png" alt="" />
                         </div>
 
                         <div className="academy-skill-text">

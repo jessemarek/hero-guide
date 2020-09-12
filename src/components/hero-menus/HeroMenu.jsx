@@ -58,8 +58,8 @@ const HeroMenu = () => {
     }
 
     //Filter heroList by the active filter button type
-    const filterByButton = (hero, button) => {
-        return button !== 'all' ? hero.position === button : hero
+    const filterByButton = (hero, buttonType) => {
+        return buttonType !== 'all' ? hero.position === buttonType : hero
     }
 
     //Filter heroList if text in the search input matches heroes name

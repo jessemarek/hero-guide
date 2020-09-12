@@ -474,6 +474,10 @@
         font-size: 1rem;
     }
 
+    #sig-item {
+        margin: 0 40% 5%;
+    }
+
     @include MQ(XL) {
         flex-wrap: nowrap;
         margin: 0;

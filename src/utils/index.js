@@ -4,9 +4,8 @@ import React from 'react'
 //Otherwise returns <DefaultComponent /> if no match is found
 export const returnComponent = (key, id, componentList, DefaultComponent) => {
     const TagName = componentList[key]
-    if (TagName) return <TagName key={id} />
 
-    else return <DefaultComponent key={id} />
+    return TagName ? <TagName key={id} /> : <DefaultComponent key={id} />
 }
 
 //Callback for alphabetizing Hero names 

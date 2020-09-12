@@ -22,6 +22,7 @@ const HeroGuide = () => {
         axiosWithAuth()
             .get(`/api/heroes/${hero}`)
             .then(res => {
+                console.log(res.data)
                 setHeroData(res.data)
             })
             .catch(err => console.log(err.response))
@@ -33,13 +34,13 @@ const HeroGuide = () => {
                 heroData ?
 
                     (<div className="wrapper">
-                        <HeroInfo heroInfo={heroData} />
-                        <Abilities hero={heroData.name} abilities={heroData.abilities} />
+                        <HeroInfo heroInfo={heroData.hero_info} />
+                        {/* <Abilities hero={heroData.hero_info.name} abilities={heroData.abilities} /> */}
                         <FusionItems fusionItems={heroData.fusion_items} />
-                        <KeyFusionItems keyItems={heroData.key_items} heroAwakened={heroData.awakened} />
-                        <HeroicAcademyTrees trees={heroData.academy_trees} />
+                        <KeyFusionItems keyItems={heroData.key_items} heroAwakened={heroData.awakening.awakened} />
+                        {/* <HeroicAcademyTrees trees={heroData.academy_trees} /> */}
                         {
-                            heroData.awakened &&
+                            heroData/*.awakening*/.awakened &&
                             <AwakeningQuest name={heroData.name} awakening={heroData.awakening} />
                         }
                     </div>) : null

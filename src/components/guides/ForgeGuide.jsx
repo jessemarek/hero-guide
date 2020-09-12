@@ -102,146 +102,146 @@ const ForgeGuide = () => {
                         <tr>
                             <td>2</td>
                             <td>20xp</td>
-                            <td>5k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>5k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 40</td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>40xp</td>
-                            <td>25k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>25k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Basic Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>70xp</td>
-                            <td>30k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>30k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Specialist Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>100xp</td>
-                            <td>50k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>50k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 60</td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>150xp</td>
-                            <td>70k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>70k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Specialist Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>200xp</td>
-                            <td>120k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>120k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Master Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>8</td>
                             <td>300xp</td>
-                            <td>180k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>180k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 80</td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td>400xp</td>
-                            <td>250k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>250k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Master Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>10</td>
                             <td>600xp</td>
-                            <td>320k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>320k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Guru Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>11</td>
                             <td>800xp</td>
-                            <td>500k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>500k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 100</td>
                         </tr>
                         <tr>
                             <td>12</td>
                             <td>1,000xp</td>
-                            <td>800k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>800k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Guru Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>13</td>
                             <td>1,300xp</td>
-                            <td>1.0m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>1.0m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Legendary Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>14</td>
                             <td>1,600xp</td>
-                            <td>1.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>1.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 120</td>
                         </tr>
                         <tr>
                             <td>15</td>
                             <td>1,900xp</td>
-                            <td>2.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>2.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Legendary Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>16</td>
                             <td>2,300xp</td>
-                            <td>3.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>3.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Mystical Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>17</td>
                             <td>2,700xp</td>
-                            <td>5.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>5.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 140</td>
                         </tr>
                         <tr>
                             <td>18</td>
                             <td>3,100xp</td>
-                            <td>7.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>7.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Mystical Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>19</td>
                             <td>3,600xp</td>
-                            <td>9.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>9.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Glorious Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>20</td>
                             <td>4,100xp</td>
-                            <td>11.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>11.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 170</td>
                         </tr>
                         <tr>
                             <td>21</td>
                             <td>4,600xp</td>
-                            <td>13.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>13.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Glorious Forge Cost -10%</td>
                         </tr>
                         <tr>
                             <td>22</td>
                             <td>5,200xp</td>
-                            <td>15.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>15.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Ultimate Forge Unlocked</td>
                         </tr>
                         <tr>
                             <td>23</td>
                             <td>5,800xp</td>
-                            <td>17.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>17.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Stat Cap Raised to 200</td>
                         </tr>
                         <tr>
                             <td>24</td>
                             <td>6,400xp</td>
-                            <td>19.5m <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                            <td>19.5m <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                             <td>Ultimate Forge Cost -10%</td>
                         </tr>
                     </table>
                 </div>
 
                 <div className="intro-text">
-                    <p>Level 24 is the Max Level for the Forge. You can, however, continue to feed it another 7,100xp. Overhead for all upgrades is 110.85 Million <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /> and 46,280xp (does not include the 7,100xp to cap the Forge). If only using Basic Forges to earn the necessaryxp it will cost a total of 943.67 Million <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /> to max the Forge. That's right almost 1 Billion <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /> to max the Forge!! Of course every 22 Hours you are able to use a Free Forge of any type to help reduce the total amount ofxp and therefore it will actually cost less. If you plan on capping the Forge out at Level 24 in will cost an additional 127.8 Million <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" />, bringing the grand total to over 1.07 Billion <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" />!!!</p>
+                    <p>Level 24 is the Max Level for the Forge. You can, however, continue to feed it another 7,100xp. Overhead for all upgrades is 110.85 Million <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /> and 46,280xp (does not include the 7,100xp to cap the Forge). If only using Basic Forges to earn the necessaryxp it will cost a total of 943.67 Million <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /> to max the Forge. That's right almost 1 Billion <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /> to max the Forge!! Of course every 22 Hours you are able to use a Free Forge of any type to help reduce the total amount ofxp and therefore it will actually cost less. If you plan on capping the Forge out at Level 24 in will cost an additional 127.8 Million <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" />, bringing the grand total to over 1.07 Billion <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" />!!!</p>
                 </div>
 
                 <div className="intro-text">
@@ -322,49 +322,49 @@ const ForgeGuide = () => {
                             <tr>
                                 <td>Basic</td>
                                 <td>1xp</td>
-                                <td>20k <img src="/assets/images/icons/forge/gold.png" alt="Drawing of a stack of gold coins" width="16" height="16" /></td>
+                                <td>20k <img src="/assets/images/icons/forge/gold.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+2/2/2</span></td>
                             </tr>
                             <tr>
                                 <td>Specialist</td>
                                 <td>4xp</td>
-                                <td>20 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>20 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+3/3/3</span></td>
                             </tr>
                             <tr>
                                 <td>Master</td>
                                 <td>15xp</td>
-                                <td>50 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>50 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+4/4/4</span></td>
                             </tr>
                             <tr>
                                 <td>Guru</td>
                                 <td>40xp</td>
-                                <td>100 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>100 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+5/5/5</span></td>
                             </tr>
                             <tr>
                                 <td>Legendary</td>
                                 <td>75xp</td>
-                                <td>150 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>150 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+6/6/6</span></td>
                             </tr>
                             <tr>
                                 <td>Mystic</td>
                                 <td>120xp</td>
-                                <td>200 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>200 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+7/7/7</span></td>
                             </tr>
                             <tr>
                                 <td>Glorious</td>
                                 <td>200xp</td>
-                                <td>250 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>250 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+8/8/8</span></td>
                             </tr>
                             <tr>
                                 <td>Ultimate</td>
                                 <td>300xp</td>
-                                <td>300 <img src="/assets/images/icons/forge/diamond.png" alt="Drawing of a blue diamond" width="16" height="16" /></td>
+                                <td>300 <img src="/assets/images/icons/forge/diamond.png" alt="" width="16" height="16" /></td>
                                 <td><span className="grn-txt">+9/9/9</span></td>
                             </tr>
                         </table>
