@@ -38,7 +38,7 @@ const HeroGuide = () => {
                         {/* <Abilities hero={heroData.hero_info.name} abilities={heroData.abilities} /> */}
                         <FusionItems fusionItems={heroData.fusion_items} />
                         <KeyFusionItems keyItems={heroData.key_items} heroAwakened={heroData.awakening.awakened} />
-                        {/* <HeroicAcademyTrees trees={heroData.academy_trees} /> */}
+                        <HeroicAcademyTrees trees={heroData.academy_trees} />
                         {
                             heroData/*.awakening*/.awakened &&
                             <AwakeningQuest name={heroData.name} awakening={heroData.awakening} />
