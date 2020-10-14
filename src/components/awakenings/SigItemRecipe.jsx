@@ -6,7 +6,7 @@ import { formatText, returnStars } from '../../utils/index'
 const SigItemRecipe = props => {
 
     const {
-        quest1,
+        quest_1,
         sig_item,
         sig_stats,
         forge_bonus
@@ -31,23 +31,23 @@ const SigItemRecipe = props => {
                 </div>
             </div>
             <div id="aw-item1" className="item-icon">
-                <img src={`/assets/images/icons/signature-items/quest1/${quest1.fragment}.png`} alt="item icon" />
-                <p>{formatText(quest1.fragment)}</p>
+                <img src={`/assets/images/icons/signature-items/quest1/${quest_1.fragment}.png`} alt="item icon" />
+                <p>{formatText(quest_1.fragment)}</p>
             </div>
 
             <div id="aw-item2" className="item-icon">
-                <img src={`/assets/images/icons/equipment/${quest1.recipe[0]}.png`} alt="item icon" />
-                <p>{formatText(quest1.recipe[0])}</p>
+                <img src={`/assets/images/icons/equipment/${quest_1.recipe[0]}.png`} alt="item icon" />
+                <p>{formatText(quest_1.recipe[0])}</p>
             </div>
 
             <div id="aw-item3" className="item-icon">
-                <img src={`/assets/images/icons/equipment/${quest1.recipe[1]}.png`} alt="item icon" />
-                <p>{formatText(quest1.recipe[1])}</p>
+                <img src={`/assets/images/icons/equipment/${quest_1.recipe[1]}.png`} alt="item icon" />
+                <p>{formatText(quest_1.recipe[1])}</p>
             </div>
 
             <div id="aw-item4" className="item-icon">
-                <img src={`/assets/images/icons/equipment/${quest1.recipe[2]}.png`} alt="item icon" />
-                <p>{formatText(quest1.recipe[2])}</p>
+                <img src={`/assets/images/icons/equipment/${quest_1.recipe[2]}.png`} alt="item icon" />
+                <p>{formatText(quest_1.recipe[2])}</p>
             </div>
         </div>
     )

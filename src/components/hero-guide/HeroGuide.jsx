@@ -35,13 +35,13 @@ const HeroGuide = () => {
 
                     (<div className="wrapper">
                         <HeroInfo heroInfo={heroData.hero_info} />
-                        {/* <Abilities hero={heroData.hero_info.name} abilities={heroData.abilities} /> */}
+                        <Abilities hero={heroData.hero_info.name} abilities={heroData.abilities} />
                         <FusionItems fusionItems={heroData.fusion_items} />
                         <KeyFusionItems keyItems={heroData.key_items} heroAwakened={heroData.awakening.awakened} />
                         <HeroicAcademyTrees trees={heroData.academy_trees} />
                         {
-                            heroData/*.awakening*/.awakened &&
-                            <AwakeningQuest name={heroData.name} awakening={heroData.awakening} />
+                            heroData.awakening.awakened &&
+                            <AwakeningQuest name={heroData.hero_info.name} awakening={heroData.awakening} />
                         }
                     </div>) : null
             }

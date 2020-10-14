@@ -51,15 +51,15 @@ const AwakeningQuest = props => {
                 <div className="quest-details">
 
                     <div className="aw-quests">
-                        <QuestOne quest1={awakening.quest1} sig_item={awakening.sig_item} />
+                        <QuestOne quest_1={awakening.quest_1} sig_item={awakening.sig_item} />
                         <SigItemRecipe
-                            quest1={awakening.quest1}
+                            quest_1={awakening.quest_1}
                             sig_item={awakening.sig_item}
                             sig_stats={awakening.sig_stats}
                             forge_bonus={awakening.forge_bonus}
                         />
-                        <QuestTwo name={name} quest2={awakening.quest2} />
-                        <QuestThree name={name} quest3={awakening.quest3} />
+                        <QuestTwo name={name} quest_2={awakening.quest_2} />
+                        <QuestThree name={name} quest_3={awakening.quest_3} />
                     </div>
                 </div>
             </div>
