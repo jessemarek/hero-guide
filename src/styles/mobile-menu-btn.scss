@@ -52,6 +52,8 @@
 }
 
 .mobile-menu-btn.open {
+  top: 5px;
+
   .btn-bar {
     &:nth-child(1),
     &:nth-child(6) {
