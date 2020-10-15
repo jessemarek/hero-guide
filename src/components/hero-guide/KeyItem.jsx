@@ -1,6 +1,8 @@
 import React from "react";
 
-const KeyItem = ({ item, quantity }) => {
+const KeyItem = (props) => {
+  const { item, quantity } = props.item;
+
   return (
     <div className="key-item-icon">
       <img

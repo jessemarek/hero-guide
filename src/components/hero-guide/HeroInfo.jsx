@@ -8,19 +8,21 @@ import HeroStats from "./HeroStats";
 //Utils
 import { formatText } from "../../utils/index";
 
-const HeroInfo = ({
-  name,
-  title,
-  quote,
-  role,
-  description,
-  first_appeared,
-  card_type,
-  chest_type,
-  available_in,
-  stat_growth,
-  medallions,
-}) => {
+const HeroInfo = (props) => {
+  const {
+    name,
+    title,
+    quote,
+    role,
+    description,
+    first_appeared,
+    card_type,
+    chest_type,
+    available_in,
+    stat_growth,
+    medallions,
+  } = props.heroInfo;
+
   return (
     <section id="hero-info" className="guide-section">
       <div className="section-header">
