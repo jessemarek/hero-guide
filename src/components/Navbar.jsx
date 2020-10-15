@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Route, Link } from "react-router-dom";
 import MobileMenuBtn from "./MobileMenuBtn";
 
 import SideBar from "./SideBar";
 
 const Navbar = () => {
+  // Ref to the nav links element
+  const refNavLinks = useRef(null);
+
   return (
     <nav className="navbar">
       <div className="menubar"></div>
       <div className="menubar shadowbox"></div>
 
-      <MobileMenuBtn />
+      <MobileMenuBtn refNavLinks={refNavLinks} />
 
-      <ul className="nav-links">
+      <ul ref={refNavLinks} className="nav-links">
         <li>
           <Link to="/">Home</Link>
         </li>
