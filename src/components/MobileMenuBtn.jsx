@@ -1,9 +1,6 @@
 import React, { useRef } from "react";
 
-const MobileMenuBtn = ({ refNavLinks }) => {
-  // Ref to the mobile menu button in the DOM
-  const refMenuBtn = useRef(null);
-
+const MobileMenuBtn = ({ refMenuBtn, refNavLinks }) => {
   // Toggles the mobile menu button and nav links open/closed
   const toggleOpen = () => {
     refMenuBtn.current.classList.toggle("open");
