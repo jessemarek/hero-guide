@@ -1,18 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const KeyItem = props => {
-    const {
-        item,
-        quantity
+const KeyItem = ({ item, quantity }) => {
+  return (
+    <div className="key-item-icon">
+      <img
+        src={`/assets/images/icons/equipment/${item}.png`}
+        alt="equipment icon"
+      />
+      <p>
+        <span className="item-quantity">{quantity}</span>
+      </p>
+    </div>
+  );
+};
 
-    } = props.item
-
-    return (
-        <div className="key-item-icon">
-            <img src={`/assets/images/icons/equipment/${item}.png`} alt="equipment icon" />
-            <p><span className="item-quantity">{quantity}</span></p>
-        </div>
-    )
-}
-
-export default KeyItem
+export default KeyItem;

@@ -3,9 +3,12 @@ import React from "react";
 //Utils
 import { returnStars, formatText } from "../../utils/index";
 
-const HeroDetails = (props) => {
-  const { first_appeared, card_type, chest_type, available_in } = props;
-
+const HeroDetails = ({
+  first_appeared,
+  card_type,
+  chest_type,
+  available_in,
+}) => {
   return (
     <div className="hero-ss-details">
       <div className="hero-details-icon">
