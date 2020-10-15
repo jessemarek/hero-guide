@@ -1,21 +1,22 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const { pathname } = useLocation();
 
-    const { pathname } = useLocation()
+  return (
+    <footer
+      className={
+        pathname.includes("/heroes/") ||
+        pathname.includes("/awakenings/") ||
+        pathname.includes("/guides/")
+          ? "side-footer"
+          : ""
+      }
+    >
+      <p>© 2017 - 2020 The Last Sentinel™ -- All Rights Reserved</p>
+    </footer>
+  );
+};
 
-    return (
-        <footer
-            className={(
-                pathname.includes('/heroes/') ||
-                pathname.includes('/awakenings/') ||
-                pathname.includes('/guides/')) ?
-                'side-footer' : ''}
-        >
-            <p>© 2017 - 2020 The Last Sentinel™ -- All Rights Reserved</p>
-        </footer>
-    )
-}
-
-export default Footer
+export default Footer;
