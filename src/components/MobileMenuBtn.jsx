@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const MobileMenuBtn = ({ refMenuBtn, refNavLinks }) => {
   // Toggles the mobile menu button and nav links open/closed

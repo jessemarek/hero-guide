@@ -1,6 +1,8 @@
 import React from "react";
 
-const CreditCard = ({ avatar, member_name, guild }) => {
+const CreditCard = (props) => {
+  const { avatar, member_name, guild } = props.data;
+
   return (
     <li className="hero-card credits-card">
       <img src={avatar} alt="" />
