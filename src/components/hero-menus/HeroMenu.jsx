@@ -116,7 +116,7 @@ const HeroMenu = () => {
 
           {/* Displays for Awakening Quest Menu */}
           <Route path={"/awakenings"}>
-            {heroList.length &&
+            {heroList.length ? (
               heroList
                 //Filter out heroes that don't have an awakening
                 .filter((hero) => hero.awakened)
@@ -127,9 +127,10 @@ const HeroMenu = () => {
                 //Alphabetize the Hero List by name
                 .sort(sortByProp("name"))
                 //Create a Hero Card for each hero in the list
-                .map((hero, idx) => (
-                  <AwakeningCard key={idx + 1} hero={hero} />
-                ))}
+                .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />)
+            ) : (
+              <LoadingSpinner />
+            )}
           </Route>
         </ul>
       </section>

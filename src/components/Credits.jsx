@@ -1,205 +1,236 @@
-import React, { useState, useEffect } from 'react'
-import { v4 as uuid } from 'uuid'
+import React, { useState, useEffect } from "react";
+import { v4 as uuid } from "uuid";
 
 //Components
-import CreditCard from './CreditCard'
+import CreditCard from "./CreditCard";
+import LoadingSpinner from "./LoadingSpinner";
 
 //Utils
-import { axiosWithAuth } from '../utils/axiosWithAuth'
-import { returnCreditsData } from '../utils/returnCreditsData'
+import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { returnCreditsData } from "../utils/returnCreditsData";
 
 const Credits = () => {
+  const [credits, setCredits] = useState(null);
 
-    const [credits, setCredits] = useState(null)
+  //Load data from server
+  useEffect(() => {
+    axiosWithAuth()
+      .get("/api/credits")
+      .then((res) => {
+        setCredits(returnCreditsData(res.data));
+      })
+      .catch((err) => console.log(err.response));
+  }, []);
 
-    //Load data from server
-    useEffect(() => {
-        axiosWithAuth()
-            .get('/api/credits')
-            .then(res => {
-                setCredits(returnCreditsData(res.data))
-            })
-            .catch(err => console.log(err.response))
-    }, [])
+  //Change Title
+  useEffect(() => {
+    document.title = "SH Hero Guide -- Credits";
 
-    //Change Title
-    useEffect(() => {
-        document.title = 'SH Hero Guide -- Credits'
+    return () => {
+      document.title = "Soul Hunters Hero Guide";
+    };
+  }, []);
 
-        return () => {
-            document.title = 'Soul Hunters Hero Guide'
-        }
-    }, [])
+  //Change <body> class for credits page styling and remove when <Credits /> unmounts
+  useEffect(() => {
+    document.querySelector("body").classList.add("credits-page");
 
-    //Change <body> class for credits page styling and remove when <Credits /> unmounts
-    useEffect(() => {
-        document.querySelector('body').classList.add('credits-page')
+    return () => {
+      document.querySelector("body").classList.remove("credits-page");
+    };
+  }, []);
 
-        return () => {
-            document.querySelector('body').classList.remove('credits-page')
-        }
-    }, [])
+  /************************* JSX *************************/
+  return (
+    <>
+      <header>
+        <h1>Credits</h1>
+      </header>
 
-    /************************* JSX *************************/
-    return (
-        <>
-            <header>
-                <h1>Credits</h1>
-            </header>
+      <div className="wrapper">
+        <section>
+          <div>
+            <h4 className="credit-title">Images</h4>
 
-            <div className="wrapper">
-                <section>
-                    <div>
-                        <h4 className="credit-title">Images</h4>
+            <p className="credit-description-text">
+              These Heroes have helped with all the images on the Site by
+              extraction or editing
+            </p>
+          </div>
 
-                        <p className="credit-description-text">These Heroes have helped with all the images on the Site by
-                extraction or editing</p>
-                    </div>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.images.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                    <div className="credits-box">
+        <section>
+          <h4 className="credit-title">Code Monkies</h4>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.images.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
+          <p className="credit-description-text">
+            These Heroes have contributed by constructing HTML, CSS or JS code
+            for the Site
+          </p>
 
-                <section>
-                    <h4 className="credit-title">Code Monkies</h4>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.code_monkies.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                    <p className="credit-description-text">These Heroes have contributed by constructing HTML, CSS or JS code for
-            the Site</p>
+        <section>
+          <h4 className="credit-title">Data Mining</h4>
 
-                    <div className="credits-box">
+          <p className="credit-description-text">
+            These Heroes have contributed by providing data on numerous guide
+            elements such as: Awakening Quests, Hero Stats, Ability Details,
+            etc.
+          </p>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.code_monkies.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.data_mining.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                <section>
-                    <h4 className="credit-title">Data Mining</h4>
+        <section>
+          <h4 className="credit-title">QA | Testing</h4>
 
-                    <p className="credit-description-text">These Heroes have contributed by providing data on numerous guide
-            elements such as: Awakening Quests, Hero Stats, Ability Details, etc.</p>
+          <p className="credit-description-text">
+            These Heroes have contibuted by helping test the Site before release
+          </p>
 
-                    <div className="credits-box">
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.testing.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.data_mining.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
+        <section>
+          <h4 className="credit-title">Forge Master</h4>
 
-                <section>
-                    <h4 className="credit-title">QA | Testing</h4>
+          <p className="credit-description-text">
+            Our Heroic Forge Master compiled an exhaustive list of data on just
+            about everything relating to The Forge and Runestones
+          </p>
 
-                    <p className="credit-description-text">These Heroes have contibuted by helping test the Site before release</p>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.forge.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                    <div className="credits-box">
+        <section>
+          <h4 className="credit-title">Furnace Smelters</h4>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.testing.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
+          <p className="credit-description-text">
+            These Heroes have contributed by melting down precious equipment in
+            the Furnace... FOR SCIENCE!!!!
+          </p>
 
-                <section>
-                    <h4 className="credit-title">Forge Master</h4>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.furnace.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                    <p className="credit-description-text">Our Heroic Forge Master compiled an exhaustive list of data on just about
-            everything relating to The Forge and Runestones</p>
+        <section>
+          <h4 className="credit-title">Heroic Academy Instructor</h4>
 
-                    <div className="credits-box">
+          <p className="credit-description-text">
+            Our resident Heroic Academy Expert provided the details on the
+            Skills available in the Academy
+          </p>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.forge.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.academy.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                <section>
-                    <h4 className="credit-title">Furnace Smelters</h4>
+        <section>
+          <h4 className="credit-title">Built By</h4>
 
-                    <p className="credit-description-text">These Heroes have contributed by melting down precious equipment in the
-            Furnace... FOR SCIENCE!!!!</p>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.built_by.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
 
-                    <div className="credits-box">
+        <section>
+          <h4 className="credit-title">Special Thanks</h4>
 
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.furnace.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
+          <div className="credits-box">
+            <ul className="hero-menus">
+              {credits ? (
+                credits.special_thanks.map((item) => (
+                  <CreditCard key={uuid()} data={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
+            </ul>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
 
-                </section>
-
-                <section>
-                    <h4 className="credit-title">Heroic Academy Instructor</h4>
-
-                    <p className="credit-description-text">Our resident Heroic Academy Expert provided the details on the Skills
-            available in the Academy</p>
-
-                    <div className="credits-box">
-
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.academy.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h4 className="credit-title">Built By</h4>
-
-                    <div className="credits-box">
-
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.built_by.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h4 className="credit-title">Special Thanks</h4>
-
-                    <div className="credits-box">
-
-                        <ul className="hero-menus">
-                            {
-                                credits &&
-                                credits.special_thanks.map(item => <CreditCard key={uuid()} data={item} />)
-                            }
-                        </ul>
-                    </div>
-                </section>
-
-            </div>
-        </>
-    )
-}
-
-export default Credits
+export default Credits;
