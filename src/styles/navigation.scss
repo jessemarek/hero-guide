@@ -17,32 +17,6 @@
     box-shadow: 10px 10px 30px 10px $white;
   }
 
-  .mobile-menu-btn {
-    @include flexBox(column nowrap, space-evenly, initial);
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0 0 2%;
-    position: fixed;
-    top: 0.5rem;
-    left: 0.5rem;
-    z-index: 100;
-
-    @media (min-width: $desktop) {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    .menu-bar {
-      width: 100%;
-      background: $white;
-      height: 0.5rem;
-      transition: all 0.5s ease;
-    }
-  }
-
   #bookmarks-btn.mobile-menu-btn {
     right: 6rem;
     left: initial;
@@ -78,22 +52,6 @@
       opacity: 0;
       transition: all 0.5s ease;
     }
-  }
-
-  #bar-one.change {
-    width: 85%;
-    border-radius: 7px;
-    transform: rotate(-45deg) translate(-5px, 9px);
-  }
-
-  #bar-two.change {
-    opacity: 0;
-  }
-
-  #bar-three.change {
-    width: 85%;
-    border-radius: 7px;
-    transform: rotate(45deg) translate(-3px, -8px);
   }
 
   .nav-links {
@@ -225,11 +183,11 @@
     }
   }
 
-  .nav-links.change {
+  .nav-links.open {
     transform: translate(0, 100%);
   }
 
-  #bookmarks-btn.mobile-menu-btn.change {
+  #bookmarks-btn.mobile-menu-btn.open {
     img:nth-child(1) {
       opacity: 0;
     }
@@ -239,7 +197,7 @@
     }
   }
 
-  #settings-btn.mobile-menu-btn.change {
+  #settings-btn.mobile-menu-btn.open {
     img:nth-child(1) {
       opacity: 0;
     }
@@ -325,7 +283,7 @@
     }
   }
 
-  aside.change {
+  aside.open {
     transform: translate(0, 100%);
   }
 
@@ -369,7 +327,7 @@
     }
   }
 
-  .settings-menu.change {
+  .settings-menu.open {
     transform: translate(0, 120%);
   }
 }
