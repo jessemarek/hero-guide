@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //Components
@@ -22,20 +22,22 @@ import Credits from "./Credits";
 import Footer from "./Footer";
 
 const App = () => {
-  // Look for Dark Mode preference in local storage and apply styles
+  // Dark mode state initializes from local storage item to save preference
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(window.localStorage.getItem("dark-mode"))
+  );
+  // Apply Dark Mode preference
   useEffect(() => {
-    const darkMode = JSON.parse(window.localStorage.getItem("dark-mode"));
-
     if (darkMode) {
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
     }
-  }, []);
+  }, [darkMode]);
 
   return (
     <Router>
-      <Navbar />
+      <Navbar setDarkMode={setDarkMode} />
       <Route exact path="/" component={LoadingSpinner} />
       <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
       <Route exact path="/heroes/:hero" component={HeroGuide} />
