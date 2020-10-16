@@ -7,13 +7,13 @@ const FrontPage = () => {
   const [newHeroes] = useState({
     title: "new-heroes",
     guides: ["tareth", "jasper", "gizmo"],
-    message: "*Updated: 22 October 2017",
+    message: "",
   });
 
   const [newAwakenings] = useState({
     title: "new-awakenings",
     guides: ["elric", "serafine", "slim"],
-    message: "New Feature Coming Soon...",
+    message: "",
   });
 
   const [allGuides] = useState({

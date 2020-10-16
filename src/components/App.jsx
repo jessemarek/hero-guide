@@ -59,11 +59,11 @@ const App = () => {
         path="/guides/awakenings"
         component={() => <Redirect to="/awakenings" />}
       />
-      {/* Other guides */}
+      {/* Soulstone/Forge/Runestone guides */}
       <Route exact path="/guides/soulstones" component={SoulstoneGuide} />
       <Route exact path="/guides/forge" component={ForgeGuide} />
       <Route exact path="/guides/runestones" component={RunestoneGuide} />
-      {/* Village Guides */}
+      {/* Heroes Village Guides */}
       <Route exact path="/guides/furnace" component={FurnaceGuide} />
       <Route exact path="/guides/academy" component={AcademyGuide} />
       <Route exact path="/guides/workshop" component={WorkshopGuide} />
