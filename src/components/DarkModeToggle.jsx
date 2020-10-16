@@ -1,6 +1,7 @@
 import React from "react";
 
 const DarkModeToggle = ({ darkMode, setDarkMode }) => {
+  // Toggles Dark Mode on/off
   const toggleDarkMode = () => {
     // get the current value out of local storage
     const curValue = JSON.parse(window.localStorage.getItem("dark-mode"));

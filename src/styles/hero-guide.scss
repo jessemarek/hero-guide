@@ -1,514 +1,498 @@
 /********************** Hero Guides Page Styles ************************/
 .section-header {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .hero-title {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #hero-info,
 #awakening {
+  ul {
+    display: block;
+  }
 
-    ul {
-        display: block;
-    }
-    
-    .hero-card {
-        display: none;
+  .hero-card {
+    display: none;
 
-        @include MQ(XL) {
-            display: block;
-            width: 80%;
-        }
+    @include MQ(XL) {
+      display: block;
+      width: 80%;
     }
+  }
 }
 
-#hero-info{
-
-    .section-body {
-        @include MQ(XL) {
-            display: flex;
-            align-items: flex-start;
-        }
+#hero-info {
+  .section-body {
+    @include MQ(XL) {
+      display: flex;
+      align-items: flex-start;
     }
+  }
 }
 
 .hero-art {
-    @include flexBox(row wrap, center, center);
+  @include flexBox(row wrap, center, center);
+
+  @include MQ(XL) {
+    width: 33%;
+  }
+
+  .hero-portrait {
+    position: relative;
+    align-self: center;
+    margin: 0 auto;
 
     @include MQ(XL) {
-        width: 33%;
+      display: none;
     }
+  }
 
-    .hero-portrait {
-        position: relative;
-        align-self: center;
-        margin: 0 auto;
-
-        @include MQ(XL) {
-            display: none;
-        }
-    }
-
-    .hero-quote {
-        width: 100%;
-        text-align: center;
-        font-style: italic;
-        font-size: 1.4rem;
-    }
-
-    
+  .hero-quote {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
 }
 
 .hero-details {
+  @include flexBox(row wrap, center, center);
+
+  @include MQ(XL) {
+    width: 60%;
+  }
+
+  .hero-role {
+    width: 90%;
+    margin: 5% auto;
+
+    @include MQ(XL) {
+      margin: 0;
+    }
+  }
+
+  .hero-ss-details {
     @include flexBox(row wrap, center, center);
 
     @include MQ(XL) {
-        width: 60%;
+      width: 100%;
+      justify-content: space-around;
     }
 
-    .hero-role {
-        width: 90%;
-        margin: 5% auto;
+    div {
+      width: 50%;
+      margin: 5% auto;
+      padding: 1.25%;
+      text-align: center;
+      font-size: 1.2rem;
 
-        @include MQ(XL) {
-            margin: 0;
-        }
+      @include MQ(XL) {
+        width: 25%;
+        margin: 3% 0 0;
+      }
+
+      ul {
+        line-height: 2.5;
+      }
     }
 
-    .hero-ss-details {
-        @include flexBox(row wrap, center, center);
-
-        @include MQ(XL) {
-            width: 100%;
-            justify-content: space-around;
-        }
-
-        div {
-            width: 50%;
-            margin: 5% auto;
-            padding: 1.25%;
-            text-align: center;
-            font-size: 1.2rem;
-
-            @include MQ(XL) {
-                width: 25%;
-                margin: 3% 0 0;
-            }
-
-            ul {
-                line-height: 2.5;
-            }
-        }
-
-        .details-icon {
-            padding: 5%;
-        }
-
-        .card-details {
-            @include MQ(XL) {
-                width: 30%;
-            }
-        }
+    .details-icon {
+      padding: 5%;
     }
 
-    .hero-growth-box {
-        @include flexBox(row wrap, center, center);
-        
-        @include MQ(XL) {
-            width: 100%;
-            justify-content: space-around;
-        }
-
-        div {
-            width: 50%;
-            margin: 5% auto;
-            padding: 1.25%;
-            text-align: center;
-            font-size: 1.2rem;
-
-            @include MQ(XL) {
-                width: 30%;
-                margin: 2.5% 0 0;
-            }
-        }
-
-        .stat-growth {
-            width: 90%;
-
-            @include MQ(XL) {
-                width: 61%;
-                margin: 2% 0 0;
-            }
-        }
+    .card-details {
+      @include MQ(XL) {
+        width: 30%;
+      }
     }
+  }
+
+  .hero-growth-box {
+    @include flexBox(row wrap, center, center);
+
+    @include MQ(XL) {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    div {
+      width: 50%;
+      margin: 5% auto;
+      padding: 1.25%;
+      text-align: center;
+      font-size: 1.2rem;
+
+      @include MQ(XL) {
+        width: 30%;
+        margin: 2.5% 0 0;
+      }
+    }
+
+    .stat-growth {
+      width: 90%;
+
+      @include MQ(XL) {
+        width: 61%;
+        margin: 2% 0 0;
+      }
+    }
+  }
 }
 
 //Ability Styles
 .ability-box {
-        
-    h4 {
-        font-size: 1.6rem;
-    }
+  h4 {
+    font-size: 1.6rem;
+  }
 }
 
 .ability-details {
-    @include flexBox(row wrap, center, center);
+  @include flexBox(row wrap, center, center);
+  margin: 4% auto;
+
+  @media (min-width: $desktop) {
+    .ability-icon {
+      //align-self: center;
+      padding: 3rem;
+    }
+
+    .ability-text,
+    .ability-stats {
+      width: 36%;
+    }
+  }
+
+  div {
     margin: 4% auto;
-
-    @media (min-width: $desktop) {
-        .ability-icon {
-            //align-self: center;
-            padding: 3rem;
-        }
-
-        .ability-text,
-        .ability-stats {
-            width: 36%;
-        }
-    }
-
-    div {
-        margin: 4% auto;
-    }
+  }
 }
 
 //Fusion Items Styles
 .purple-fusions,
 .orange-fusions {
-    @include flexBox(row wrap, initial, initial);
+  @include flexBox(row wrap, initial, initial);
 }
 
 .fusion-box {
-    display: grid;
-    grid-template-areas:
-        "title title title"
-        "item1 item2 item3"
-        "item4 item5 item6";
-    grid-gap: 1.5rem;
-    margin: 5% auto;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "item1 item2 item3"
+    "item4 item5 item6";
+  grid-gap: 1.5rem;
+  margin: 5% auto;
 
-    @media (min-width: $desktop) {
-        margin: 0 3% 5%;
-    }
+  @media (min-width: $desktop) {
+    margin: 0 3% 5%;
+  }
 
-    h4 {
-        grid-area: title;
-        text-align: center;
-    }
+  h4 {
+    grid-area: title;
+    text-align: center;
+  }
 }
 
-.fusion-item, #sig-item {
-    position: relative;
+.fusion-item,
+#sig-item {
+  position: relative;
 
-    &:hover {
-        .tooltip {
-            visibility: visible;
-            opacity: 0.9;
-        }
-    }
-
+  &:hover {
     .tooltip {
-        visibility: hidden;
-        max-width: 220%;
-        width: 215%;
-        position: absolute;
-        top: 100%;
-        left: -60%;
-        z-index: 3;
-        border-radius: 7px;
-        padding: 5%;
-        background: $black;
-        color: $white;
-        text-align: center;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-
-        @media (min-width: $desktop) {
-            left: -56%;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            border: 5px solid;
-            border-color: transparent transparent $black transparent;
-
-            @media (min-width: $desktop) {
-                left: 48%;
-            }
-        }
-
-        h3 {
-            margin-top: 3%;
-        }
-
-        p, img {
-            margin: 0 1%;
-        }
-
-        .grn-txt {
-            color: $grn-txt-dm;
-        }
+      visibility: visible;
+      opacity: 0.9;
     }
+  }
+
+  .tooltip {
+    visibility: hidden;
+    max-width: 220%;
+    width: 215%;
+    position: absolute;
+    top: 100%;
+    left: -60%;
+    z-index: 3;
+    border-radius: 7px;
+    padding: 5%;
+    background: $black;
+    color: $white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    @media (min-width: $desktop) {
+      left: -56%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      border: 5px solid;
+      border-color: transparent transparent $black transparent;
+
+      @media (min-width: $desktop) {
+        left: 48%;
+      }
+    }
+
+    h3 {
+      margin-top: 3%;
+    }
+
+    p,
+    img {
+      margin: 0 1%;
+    }
+
+    .grn-txt {
+      color: $grn-txt-dm;
+    }
+  }
 }
 
 //Key Items Styles
 .key-item-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1.5rem;
-    justify-items: center;
-    width: 90%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
 
-    @media (min-width: $desktop) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .key-item-icon {
+    position: relative;
+
+    p {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px $black, -2px -2px 8px $black, 2px 2px 8px $black,
+        -2px -2px 8px $black;
     }
-
-    .key-item-icon {
-        position: relative;
-
-        p {
-            position: absolute;
-            bottom: 1rem;
-            right: 1rem;
-            color: #fff;
-            font-weight: bold;
-            text-shadow: 
-                2px 2px 8px $black, 
-                -2px -2px 8px $black, 
-                2px 2px 8px $black, 
-                -2px -2px 8px $black;
-        }
-    }
+  }
 }
 
 .key-item-note {
-    width: 90%;
-    margin: 4% auto;
-    font-size: 1.2rem;
-    text-align: center;
+  width: 90%;
+  margin: 4% auto;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 //Academy Tree Styles
 .tree-one,
 .tree-two {
-    margin-bottom: 12%;
+  margin-bottom: 12%;
 }
 
 .talent-tree {
+  @media (min-width: $desktop) {
+    @include flexBox(row nowrap, center, center);
+  }
+
+  .col-type-1,
+  .col-type-3 {
+    @include flexBox(row wrap, space-between, center);
 
     @media (min-width: $desktop) {
-        @include flexBox(row nowrap, center, center);
+      width: 20%;
+      display: grid;
+      grid-auto-rows: 0.25fr 1fr 1fr 1fr;
+      justify-content: initial;
+    }
+  }
 
+  .col-type-2 {
+    @include flexBox(row wrap, center, center);
+
+    @media (min-width: $desktop) {
+      width: 20%;
+      display: grid;
+      grid-auto-rows: 0.25fr 1.5fr 1.5fr;
+      justify-content: initial;
     }
 
-    .col-type-1,
-    .col-type-3 {
-        @include flexBox(row wrap, space-between, center);
-
-        @media (min-width: $desktop) {
-            width: 20%;
-            display: grid;
-            grid-auto-rows: 0.25fr 1fr 1fr 1fr;
-            justify-content: initial;
-        }
+    > :nth-child(2) {
+      @media (min-width: $desktop) {
+        align-self: flex-end;
+      }
     }
+  }
 
-    .col-type-2 {
-        @include flexBox(row wrap, center, center);
-
-        @media (min-width: $desktop) {
-            width: 20%;
-            display: grid;
-            grid-auto-rows: 0.25fr 1.5fr 1.5fr;
-            justify-content: initial;
-        }
-
-        > :nth-child(2) {
-            @media (min-width: $desktop) {
-                align-self: flex-end;
-            }
-        }
-    }
-
-
-    .col-type-2 {
-        
-        .talent-item {
-            width: 33%;
-            margin: 1%;
-
-            @media (min-width: $desktop) {
-                width: 100%;
-                margin-top: 5%;
-            }
-        }
-    }
-    .col-type-1,
-    .col-type-3 {
-
-        .talent-item {
-            width: 33%;
-
-            @media (min-width: $desktop) {
-                width: 100%;
-                margin-top: 5%;
-            }
-        }
-    }
-
-    .col-type-1,
-    .col-type-2,
-    .col-type-3 {
-        margin: 4% 0;
-
-        @media (min-width: $desktop) {
-            margin: 0;
-            padding: 0 1%;
-        }
-
-        h4 {
-            text-align: center;
-        }
-    }
-
+  .col-type-2 {
     .talent-item {
+      width: 33%;
+      margin: 1%;
 
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        h4 {
-
-            @media (min-width: $desktop) {
-                width: 60%;
-                margin: 0 auto;
-            }
-        }
-
-        h4, p {
-            text-align: center;
-            font-size: 1.1rem;
-        }
+      @media (min-width: $desktop) {
+        width: 100%;
+        margin-top: 5%;
+      }
     }
+  }
+  .col-type-1,
+  .col-type-3 {
+    .talent-item {
+      width: 33%;
+
+      @media (min-width: $desktop) {
+        width: 100%;
+        margin-top: 5%;
+      }
+    }
+  }
+
+  .col-type-1,
+  .col-type-2,
+  .col-type-3 {
+    margin: 4% 0;
+
+    @media (min-width: $desktop) {
+      margin: 0;
+      padding: 0 1%;
+    }
+
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .talent-item {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    h4 {
+      border: none;
+
+      @media (min-width: $desktop) {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+
+    h4,
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }
 }
 
 //Awakening Quest Styles
 
 .icon-column {
-    display: none;
+  display: none;
 }
 
 #awakening {
-    @include MQ(XL) {
-
-        .section-header {
-            margin: 0;
-        }
-
-        .section-body {
-            display: flex;
-            flex-wrap: wrap;
-        }
+  @include MQ(XL) {
+    .section-header {
+      margin: 0;
     }
 
-} 
+    .section-body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
 
 .quest-details {
-    @include MQ(XL) {
-        width: 60%;
-    }
+  @include MQ(XL) {
+    width: 60%;
+  }
 }
 
 .aw-quests {
-    .textbox {
-        margin: 5% auto;
+  .textbox {
+    margin: 5% auto;
 
-        .item-icon {
-            width: 100%;
-            text-align: center;
-        }
-
-        @include MQ(XL) {
-            @include flexBox(row wrap, space-evenly, initial);
-            margin: 2% auto;
-
-            h4 {
-                font-size: 1.6rem;
-            }
-
-            p {
-                width: 60%;
-                align-self: center;
-                font-size: 1.4rem;
-            }
-
-            .item-icon {
-                width: 15%;
-                text-align: left;
-            }
-        }
-
+    .item-icon {
+      width: 100%;
+      text-align: center;
     }
 
+    @include MQ(XL) {
+      @include flexBox(row wrap, space-evenly, initial);
+      margin: 2% auto;
 
+      h4 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        width: 60%;
+        align-self: center;
+        font-size: 1.4rem;
+      }
+
+      .item-icon {
+        width: 15%;
+        text-align: left;
+      }
+    }
+  }
 }
 
 .sig-item-recipe {
-    @include flexBox(row wrap, space-evenly, initial);
-    margin: 5% auto;
- 
-    .item-icon {
-        width: 20%;
-        text-align: center;
-        font-size: 1rem;
-    }
+  @include flexBox(row wrap, space-evenly, initial);
+  margin: 5% auto;
+
+  .item-icon {
+    width: 20%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #sig-item {
+    margin: 0 40% 5%;
+  }
+
+  @include MQ(XL) {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0 10% 0 7%;
 
     #sig-item {
-        margin: 0 40% 5%;
+      margin: 0 10% 0 0;
     }
-
-    @include MQ(XL) {
-        flex-wrap: nowrap;
-        margin: 0;
-        padding: 0 10% 0 7%;
-
-        #sig-item {
-            margin: 0 10% 0 0;
-        }
-    }
-
+  }
 }
 
 .sig-item-stats {
+  @include MQ(XL) {
+    width: 100%;
+  }
+
+  .stat-tables {
+    width: 75%;
+    margin: 5% auto;
+
     @include MQ(XL) {
-        width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+
+      .statbox {
+        width: 30%;
+        margin: 2% 4%;
+      }
     }
-
-    .stat-tables {
-        width: 75%;
-        margin: 5% auto;
-
-        @include MQ(XL) {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-
-            .statbox {
-                width: 30%;
-                margin: 2% 4%;
-            }
-        }
-    }
+  }
 }
