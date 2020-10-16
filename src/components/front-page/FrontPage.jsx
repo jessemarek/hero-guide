@@ -6,13 +6,13 @@ import AllGuides from "./AllGuides";
 const FrontPage = () => {
   const [newHeroes] = useState({
     title: "new-heroes",
-    guides: ["mog", "morfir", "kasar"],
+    guides: ["tareth", "jasper", "gizmo"],
     message: "*Updated: 22 October 2017",
   });
 
   const [newAwakenings] = useState({
     title: "new-awakenings",
-    guides: ["alice", "morfir", "kasar"],
+    guides: ["elric", "serafine", "slim"],
     message: "New Feature Coming Soon...",
   });
 
