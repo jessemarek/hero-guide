@@ -10,7 +10,7 @@ const GuideMenuCard = ({ guideURL, guide }) => {
           alt={`Artwork card and link to ${guide} guide.`}
         />
       </Link>
-      <p className="card-title">{guide.split("-").join(" ")}</p>
+      <p className="card-title card-back-title">{guide.split("-").join(" ")}</p>
     </li>
   );
 };
