@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
 //Components
 import Navbar from "./Navbar";
@@ -38,10 +38,23 @@ const App = () => {
   return (
     <Router>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+
       <Route exact path="/" component={FrontPage} />
+
       <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
       <Route exact path="/heroes/:hero" component={HeroGuide} />
       <Route exact path="/awakenings/:hero" component={AwakeningGuide} />
+
+      <Route
+        exact
+        path="/guides/heroes"
+        component={() => <Redirect to="/heroes" />}
+      />
+      <Route
+        exact
+        path="/guides/awakenings"
+        component={() => <Redirect to="/awakenings" />}
+      />
 
       <Route exact path="/guides/soulstones" component={SoulstoneGuide} />
       <Route exact path="/guides/forge" component={ForgeGuide} />

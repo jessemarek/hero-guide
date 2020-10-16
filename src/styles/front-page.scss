@@ -1,92 +1,88 @@
 /********************** Front Page Styles ************************/
 .logo {
-    width: 100%;
+  width: 100%;
 
-    @media (min-width: $desktop) {
-        width: 33%;
-        margin: 0 auto;
-    }
+  @media (min-width: $desktop) {
+    width: 33%;
+    margin: 0 auto;
+  }
 
-    img {
-        width: 50%;
-    }
+  img {
+    width: 50%;
+  }
 }
 
 .front-page.wrapper {
-    @media (min-width: $desktop) {
-        padding: 0;
-    }
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .front-page {
+  @media (min-width: $desktop) {
+    @include flexBox(row wrap, space-evenly, center);
+    margin: 0 0 3% 0;
+  }
+
+  section {
+    width: 100%;
+    @include flexBox(row wrap, flex-start, center);
+    margin: 2% 0;
 
     @media (min-width: $desktop) {
-        @include flexBox(row wrap, space-evenly, center);
-        margin: 0 0 3% 0;
+      width: 45%;
+      justify-content: space-evenly;
+      margin: 2%;
     }
 
-    section {
-        width: 100%;
-        @include flexBox(row wrap, flex-start, center);
-        margin: 2% 0;
-
-        @media (min-width: $desktop) {
-            width: 45%;
-            justify-content: space-evenly;
-            margin: 2%;
-        }
-
-        h4 {
-
-            @media (min-width: $desktop) {
-                text-align: center;
-            }
-        }
-
-        .date-updated {
-            width: 100%;
-            margin: 2%;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-
-        ul {
-
-            @media (min-width: $desktop) {
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-            }
-        }
+    h4 {
+      @media (min-width: $desktop) {
+        text-align: center;
+      }
     }
 
-    .menu-box {
-
-        @media (min-width: $desktop) {
-            width: 100%;
-            margin: 0 2%;
-        }
-
+    .message-box {
+      width: 100%;
+      margin: 2%;
+      text-align: center;
+      font-size: 1.2rem;
     }
+
+    ul {
+      @media (min-width: $desktop) {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .menu-box {
+    @media (min-width: $desktop) {
+      width: 100%;
+      margin: 0 2%;
+    }
+  }
 }
 
-.card-face, .card-back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.card-face,
+.card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .card-back {
-    position: absolute;
+  position: absolute;
 }
 
 .card-face {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .spoiler-card {
-    transition: 0.5s;
-    transform-style: preserve-3d;
+  transition: 0.5s;
+  transform-style: preserve-3d;
 }
 
 .spoiler-card.spoiler-off {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
