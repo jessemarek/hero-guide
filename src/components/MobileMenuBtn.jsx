@@ -8,7 +8,7 @@ const MobileMenuBtn = ({ refMenuBtn, refNavLinks }) => {
   };
 
   return (
-    <div
+    <button
       ref={refMenuBtn}
       id="mobile-nav-btn"
       className="mobile-menu-btn"
@@ -20,7 +20,7 @@ const MobileMenuBtn = ({ refMenuBtn, refNavLinks }) => {
       <span className="btn-bar"></span>
       <span className="btn-bar"></span>
       <span className="btn-bar"></span>
-    </div>
+    </button>
   );
 };
 

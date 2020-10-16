@@ -5,6 +5,9 @@
   position: fixed;
   top: 7px;
   left: 25px;
+  border: none;
+  background: transparent;
+  outline: none;
   z-index: 100;
 
   @media (min-width: $desktop) {
