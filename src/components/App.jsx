@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar setDarkMode={setDarkMode} />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Route exact path="/" component={LoadingSpinner} />
       <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
       <Route exact path="/heroes/:hero" component={HeroGuide} />

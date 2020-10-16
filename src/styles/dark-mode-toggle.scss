@@ -1,0 +1,36 @@
+.toggle-switch {
+  width: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  background: #292929;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1000;
+
+  .slider {
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 3px solid #292929;
+    border-radius: 25px;
+    background: white;
+    transition: all 0.3s ease;
+  }
+
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  input:checked + .slider {
+    transform: translate(35px);
+  }
+}
