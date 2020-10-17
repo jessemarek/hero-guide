@@ -131,10 +131,10 @@ const WorkshopGuide = () => {
             <table>
               <tbody>
                 <tr>
-                  <th style={{ padding: "8px 0;" }}>
+                  <th style={{ padding: "8px 0" }}>
                     <b>Level</b>
                   </th>
-                  <th style={{ padding: "8px 0;" }}>Crafting Time</th>
+                  <th style={{ padding: "8px 0" }}>Crafting Time</th>
                 </tr>
                 <tr>
                   <td>1</td>
