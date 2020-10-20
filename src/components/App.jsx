@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 //Components
 import Navbar from "./Navbar";
@@ -42,33 +47,35 @@ const App = () => {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       {/* moves window to the top of page when location changes */}
       <ScrollToTop />
-      {/* Front page / landing page */}
-      <Route exact path="/" component={FrontPage} />
-      {/* Hero related Guides */}
-      <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
-      <Route exact path="/heroes/:hero" component={HeroGuide} />
-      <Route exact path="/awakenings/:hero" component={AwakeningGuide} />
-      {/* redirects for 2 guides to put user on the proper page */}
-      <Route
-        exact
-        path="/guides/heroes"
-        component={() => <Redirect to="/heroes" />}
-      />
-      <Route
-        exact
-        path="/guides/awakenings"
-        component={() => <Redirect to="/awakenings" />}
-      />
-      {/* Soulstone/Forge/Runestone guides */}
-      <Route exact path="/guides/soulstones" component={SoulstoneGuide} />
-      <Route exact path="/guides/forge" component={ForgeGuide} />
-      <Route exact path="/guides/runestones" component={RunestoneGuide} />
-      {/* Heroes Village Guides */}
-      <Route exact path="/guides/furnace" component={FurnaceGuide} />
-      <Route exact path="/guides/academy" component={AcademyGuide} />
-      <Route exact path="/guides/workshop" component={WorkshopGuide} />
-      {/* Credits Page */}
-      <Route exact path="/credits" component={Credits} />
+      <Switch>
+        {/* Front page / landing page */}
+        <Route exact path="/" component={FrontPage} />
+        {/* Hero related Guides */}
+        <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
+        <Route path="/heroes/:hero" component={HeroGuide} />
+        <Route path="/awakenings/:hero" component={AwakeningGuide} />
+        {/* redirects for 2 guides to put user on the proper page */}
+        <Route
+          path="/guides/heroes"
+          component={() => <Redirect from="/guides/heroes" to="/heroes" />}
+        />
+        <Route
+          path="/guides/awakenings"
+          component={() => (
+            <Redirect from="/guides/awakenings" to="/awakenings" />
+          )}
+        />
+        {/* Soulstone/Forge/Runestone guides */}
+        <Route path="/guides/soulstones" component={SoulstoneGuide} />
+        <Route path="/guides/forge" component={ForgeGuide} />
+        <Route path="/guides/runestones" component={RunestoneGuide} />
+        {/* Heroes Village Guides */}
+        <Route path="/guides/furnace" component={FurnaceGuide} />
+        <Route path="/guides/academy" component={AcademyGuide} />
+        <Route path="/guides/workshop" component={WorkshopGuide} />
+        {/* Credits Page */}
+        <Route path="/credits" component={Credits} />
+      </Switch>
       {/* site footer at bottom of most pages and in sidebar on desktop views with sidebar */}
       <Footer />
     </Router>

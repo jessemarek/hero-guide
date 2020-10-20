@@ -16,6 +16,12 @@ header {
 
   @media (min-width: $desktop) {
     width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.credits-page {
+  header {
     margin: 5% auto 0;
   }
 }
