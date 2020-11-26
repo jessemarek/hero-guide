@@ -1,19 +1,25 @@
 import React from "react";
 
-//Returns a matching fusion item component from data in props
-//Otherwise returns <DefaultComponent /> if no match is found
+/**
+ * Returns a matching fusion item component from data in props.
+ * Otherwise returns a DefaultComponent if no match is found.
+ */
 export const returnComponent = (key, id, componentList, DefaultComponent) => {
   const TagName = componentList[key];
 
   return TagName ? <TagName key={id} /> : <DefaultComponent key={id} />;
 };
 
-//Callback for alphabetizing Hero names
+/**
+ * Callback for alphabetizing Hero names
+ */
 export const sortByProp = (prop) => {
   return (a, b) => (a[prop] < b[prop] ? -1 : 1);
 };
 
-//Takes in a number from the hero's abilities array and returns the corresponding ability type
+/**
+ * Takes in a number from the hero's abilities array and returns the corresponding ability type
+ */
 export const returnType = (num) => {
   switch (num) {
     case 1:
@@ -52,7 +58,9 @@ export const returnType = (num) => {
   }
 };
 
-//Returns a number of star icon <img>s of a specified type
+/**
+ * Returns a number of star icon <img>s of a specified type
+ */
 export const returnStars = (num, type) => {
   if (num > 0) {
     return (
@@ -71,8 +79,10 @@ export const returnStars = (num, type) => {
   }
 };
 
-//Format text from hero and item data from kabob case into
-//regular strings with spaces and capitalize the first letters
+/**
+ * Format text from hero and item data from kabob case into
+ * regular strings with spaces and capitalize the first letters
+ */
 export const formatText = (text) => {
   return text
     .split("-")
