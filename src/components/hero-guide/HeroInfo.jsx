@@ -13,6 +13,7 @@ const HeroInfo = (props) => {
     name,
     title,
     quote,
+    position,
     role,
     description,
     first_appeared,
@@ -38,7 +39,10 @@ const HeroInfo = (props) => {
           <div className="hero-role">
             <h4>Hero Info and Role</h4>
             <p>
-              <b>{role}:</b>&nbsp;{description}
+              <b>
+                {formatText(position)} Line {role}:
+              </b>
+              &nbsp;{description}
             </p>
           </div>
 
