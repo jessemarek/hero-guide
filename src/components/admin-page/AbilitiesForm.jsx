@@ -14,7 +14,11 @@ const AbilitiesForm = () => {
   const [abilityList, setAbilityList] = useRecoilState(abilitiesForm);
 
   const changeHandler = (event) => {
-    const { name, value } = event.target;
+    let { name, value } = event.target;
+
+    if (name === "stats") {
+      value = value.split(". ").join(";").split("\n").join(";");
+    }
 
     setFormValues({
       ...formValues,
