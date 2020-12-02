@@ -50,65 +50,36 @@ const FusionItemOptions = ({ fusionType }) => {
   const [formValues, setFormValues] = useRecoilState(fusionItemsForm);
 
   const changeHandler = (event) => {
-    const { name, value } = event.target;
+    const { value } = event.target;
+
+    const newValue = value
+      .split("\n")
+      .join("")
+      .split('[template_part path="../../shhg-templates/fusion-items/')
+      .join("")
+      .split('"]');
+
+    const newObj = {
+      slot_1: newValue[0],
+      slot_2: newValue[1],
+      slot_3: newValue[2],
+      slot_4: newValue[3],
+      slot_5: newValue[4],
+      slot_6: newValue[5],
+    };
+
     setFormValues({
       ...formValues,
-      [fusionType]: { ...formValues[fusionType], [name]: value },
+      [fusionType]: newObj,
     });
+    console.log(newObj);
   };
 
   return (
-    <>
-      <ol>
-        <li>
-          <input
-            name="slot_1"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_1}
-          />
-        </li>
-        <li>
-          <input
-            name="slot_2"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_2}
-          />
-        </li>
-        <li>
-          <input
-            name="slot_3"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_3}
-          />
-        </li>
-        <li>
-          <input
-            name="slot_4"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_4}
-          />
-        </li>
-        <li>
-          <input
-            name="slot_5"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_5}
-          />
-        </li>
-        <li>
-          <input
-            name="slot_6"
-            type="text"
-            onChange={changeHandler}
-            value={formValues[fusionType].slot_6}
-          />
-        </li>
-      </ol>
-    </>
+    <textarea
+      name={fusionType}
+      onChange={changeHandler}
+      value={Object.values(formValues[fusionType])}
+    />
   );
 };
