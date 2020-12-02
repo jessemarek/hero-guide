@@ -67,9 +67,7 @@ const HeroDetails = ({
           Available In
         </h4>
         <img
-          src={`/assets/images/icons/shops/${
-            available_in === "not-released" ? "unknown" : available_in
-          }.png`}
+          src={`/assets/images/icons/shops/${available_in}.png`}
           width="86"
           height="86"
           alt=""
