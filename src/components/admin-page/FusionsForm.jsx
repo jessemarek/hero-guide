@@ -1,6 +1,6 @@
 import React from "react";
-import { useRecoilValue, useRecoilState } from "recoil";
-import { fusionItemsForm, fusionItemList } from "../../state/adminFormState";
+import { useRecoilState } from "recoil";
+import { fusionItemsForm } from "../../state/adminFormState";
 
 const FusionsForm = () => {
   return (
