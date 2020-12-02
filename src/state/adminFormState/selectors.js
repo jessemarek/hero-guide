@@ -21,6 +21,12 @@ export const newHeroSubmission = selector({
     const academy = get(academyTreesForm);
     const awakening = get(awakeningQuestForm);
 
+    const formatForgeBonus = [
+      awakening.forge_bonus[1],
+      awakening.forge_bonus[2],
+      awakening.forge_bonus[3],
+    ];
+
     return {
       info,
       stats,
@@ -28,7 +34,10 @@ export const newHeroSubmission = selector({
       fusions,
       key_items,
       academy: [academy.tree_1, academy.tree_2],
-      awakening,
+      awakening: {
+        ...awakening,
+        forge_bonus: formatForgeBonus,
+      },
     };
   },
 });
