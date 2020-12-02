@@ -91,3 +91,17 @@ export const formatText = (text) => {
     )
     .join(" ");
 };
+
+/**
+ * Formats text from the quest data for an awakening
+ * to derive the chapter image filename
+ */
+export const getChapterIconFilename = (string) => {
+  return string
+    .toLowerCase()
+    .split(".")
+    .join("")
+    .split(" ")
+    .filter((word) => word !== "chapter" && word !== "-")
+    .join("-");
+};
