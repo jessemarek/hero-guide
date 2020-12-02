@@ -72,7 +72,6 @@ const FusionItemOptions = ({ fusionType }) => {
       ...formValues,
       [fusionType]: newObj,
     });
-    console.log(newObj);
   };
 
   return (
