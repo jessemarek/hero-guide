@@ -20,7 +20,7 @@ const SigItemRecipe = ({ quest_1, sig_item, sig_stats, forge_bonus }) => {
           {sig_stats.map((s, idx) => (
             <p key={idx}>
               {`${formatText(s.stat)} ${s.value} `}
-              <span className="grn-txt">{`+ ${s.value}`}</span>
+              <span className="grn-txt">{`+ ${s.enchant}`}</span>
             </p>
           ))}
           <h3>Forge Bonus Stats</h3>
