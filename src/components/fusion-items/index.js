@@ -303,7 +303,7 @@ export const equipment = {
   "crescent-staff": CrescentStaff,
   "hurricane-blade": HurricaneBlade,
   "master's-cap": MastersCap,
-  "paladins-chestplate": PaladinsChestplate,
+  "paladin's-chestplate": PaladinsChestplate,
   "pure-jade-chest": PureJadeChest,
   "songbird-ring": SongbirdRing,
   "sphere-of-the-sands": SphereOfTheSands,
