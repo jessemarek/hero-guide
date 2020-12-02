@@ -176,18 +176,6 @@ const ItemSelectDropDown = ({ formValues, changeHandler }) => {
         <option value="victory's-scepter">Victory's Scepter</option>
         <option value="zealot-battleplate">Zealot Battleplate</option>
       </optgroup>
-      <optgroup label="Red Items">
-        <option value="cloak-of-wisdom">Cloak of Wisdom</option>
-        <option value="crescent-staff">Cresent Staff</option>
-        <option value="hurricane-blade">Hurricane Blade</option>
-        <option value="master's-cap">Master's Cap</option>
-        <option value="paladins-chestplate">Paladin's Chestplate</option>
-        <option value="pure-jade-chest">Pure Jade Chest</option>
-        <option value="songbird-ring">Songbird Ring</option>
-        <option value="sphere-of-the-sands">Sphere of the Sands</option>
-        <option value="tyrants-helmet">Tyrant's Helmet</option>
-        <option value="widowmaker">Widowmaker</option>
-      </optgroup>
     </select>
   );
 };
