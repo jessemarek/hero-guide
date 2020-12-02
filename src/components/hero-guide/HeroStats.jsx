@@ -1,4 +1,5 @@
 import React from "react";
+import Medallion from "./Medallion";
 
 //Utils
 import { returnStars } from "../../utils/index";
@@ -85,7 +86,11 @@ const HeroStats = ({ card_type, stat_growth, medallions }) => {
 
       <div className="hero-medallion">
         <h4>Hero Medallions</h4>
-        {medallions.length === 0 ? <p>None</p> : medallions.map((m) => m)}
+        {medallions.length === 0 ? (
+          <p>None</p>
+        ) : (
+          medallions.map((m) => <Medallion type={m} />)
+        )}
       </div>
     </div>
   );
