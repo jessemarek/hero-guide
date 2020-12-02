@@ -1,7 +1,7 @@
 import React from "react";
 
 //Utils
-import { formatText } from "../../utils/index";
+import { formatText, getChapterIconFilename } from "../../utils/index";
 
 const QuestOne = ({ sig_item, quest_1 }) => {
   return (
@@ -9,7 +9,9 @@ const QuestOne = ({ sig_item, quest_1 }) => {
       <h4>{`1st Quest - Craft Signature Item: ${formatText(sig_item)}`}</h4>
       <div id="quest-icon1" className="item-icon">
         <img
-          src="/assets/images/icons/chapter-icons/campaign/14-empty-handed.png"
+          src={`/assets/images/icons/chapter-icons/campaign/${getChapterIconFilename(
+            quest_1.chapter
+          )}.png`}
           width="86"
           height="86"
           alt=""
