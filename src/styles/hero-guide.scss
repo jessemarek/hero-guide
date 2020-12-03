@@ -7,7 +7,6 @@
   text-transform: capitalize;
 }
 
-#hero-info,
 #awakening {
   ul {
     display: block;
@@ -94,6 +93,10 @@
       }
 
       ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: circle;
+        text-align: left;
         line-height: 2.5;
       }
     }
