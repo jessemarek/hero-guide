@@ -40,42 +40,50 @@ const HeroDetails = ({
         <ul>
           <li>
             {`Requires ${card_type === 1 ? 10 : card_type === 2 ? 30 : 80}`}{" "}
-            <img
-              src="/assets/images/icons/hero-info/ss.png"
-              width="16"
-              alt=""
-            />{" "}
+            <span className="soulstone-icon">
+              <img
+                src="/assets/images/icons/hero-info/ss.png"
+                width="16"
+                alt=""
+              />
+            </span>{" "}
             to Summon
           </li>
           <li>
             {`Additional Cards grant ${
               card_type === 1 ? 7 : card_type === 2 ? 18 : 30
             } `}
-            <img
-              src="/assets/images/icons/hero-info/ss.png"
-              width="16"
-              alt=""
-            />
+            <span className="soulstone-icon">
+              <img
+                src="/assets/images/icons/hero-info/ss.png"
+                width="16"
+                alt=""
+              />
+            </span>
           </li>
           <li>
             Additional Cards drop in{" "}
-            <img
-              src={`/assets/images/icons/shops/${chest_type}-chest.png`}
-              width="24"
-              alt=""
-            />
+            <span className="chest-icon">
+              <img
+                src={`/assets/images/icons/shops/${chest_type}-chest.png`}
+                width="24"
+                alt=""
+              />
+            </span>
           </li>
         </ul>
       </div>
 
       <div className="hero-details-icon">
         <h4>
-          <img
-            className="details.icon"
-            src="/assets/images/icons/hero-info/ss.png"
-            width="16"
-            alt=""
-          />{" "}
+          <span className="soulstone-icon">
+            <img
+              className="details.icon"
+              src="/assets/images/icons/hero-info/ss.png"
+              width="20"
+              alt=""
+            />
+          </span>{" "}
           Available In
         </h4>
         <img
