@@ -9,6 +9,18 @@ const HeroDetails = ({
   chest_type,
   available_in,
 }) => {
+  const shopName = {
+    campaign: "Campaign",
+    arena: "Arena Armory",
+    "epic-arena": "Champion's Corner",
+    "crucible-of-fire": "Crucible Supply Wagon",
+    "guild-hall": "Guild Emporium",
+    "hall-of-legends": "Legendary Shop",
+    "mystic-ruins": "Mystic Ruins",
+    "traveling-treant": "Traveling Treant",
+    "not-released": "Not Released",
+  };
+
   return (
     <div className="hero-ss-details">
       <div className="hero-details-icon">
@@ -33,7 +45,7 @@ const HeroDetails = ({
               width="16"
               alt=""
             />{" "}
-            to summon
+            to Summon
           </li>
           <li>
             {`Additional Cards grant ${
@@ -46,7 +58,7 @@ const HeroDetails = ({
             />
           </li>
           <li>
-            Additional cards drop in{" "}
+            Additional Cards drop in{" "}
             <img
               src={`/assets/images/icons/shops/${chest_type}-chest.png`}
               width="24"
@@ -72,7 +84,7 @@ const HeroDetails = ({
           height="86"
           alt=""
         />
-        <p>{formatText(available_in)}</p>
+        <p>{shopName[available_in]}</p>
       </div>
     </div>
   );
