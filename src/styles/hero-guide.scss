@@ -92,8 +92,8 @@
       ul {
         display: flex;
         flex-direction: column;
-        padding-left: 2rem;
-        list-style-type: circle;
+        padding-left: 1rem;
+        //list-style-type: circle;
         text-align: left;
         line-height: 2.5;
       }
@@ -101,6 +101,16 @@
 
     .details-icon {
       padding: 5%;
+    }
+
+    .soulstone-icon {
+      position: relative;
+      bottom: -0.25rem;
+    }
+
+    .chest-icon {
+      position: relative;
+      bottom: -0.5rem;
     }
 
     .card-details {
