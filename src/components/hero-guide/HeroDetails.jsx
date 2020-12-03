@@ -46,12 +46,12 @@ const HeroDetails = ({
             />
           </li>
           <li>
+            Additional cards drop in{" "}
             <img
               src={`/assets/images/icons/shops/${chest_type}-chest.png`}
               width="24"
               alt=""
-            />{" "}
-            {`Drops in ${formatText(chest_type)} Chest`}
+            />
           </li>
         </ul>
       </div>
