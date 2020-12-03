@@ -30,12 +30,12 @@ const AbilityBox = ({ hero, ability, type }) => {
         </div>
 
         <div className="ability-text">
-          <h4>Ability Description</h4>
+          <h4>Description</h4>
           <p>{ability.description}</p>
         </div>
 
         <div className="ability-stats">
-          <h4>Ability Stats</h4>
+          <h4>Stats</h4>
           <ul className="grn-txt">
             {ability.stats.map((a, idx) => (
               <li key={idx}>{a}</li>
