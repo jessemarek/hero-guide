@@ -7,7 +7,7 @@ import FusionBox from "./FusionBox";
 //Utils
 import { returnComponent } from "../../utils/index";
 
-const FusionItems = ({ fusionItems }) => {
+const FusionItems = ({ fusionItems, awakened, sig_item }) => {
   return (
     <section id="fusion-items" className="guide-section">
       <div className="section-header">
@@ -69,6 +69,8 @@ const FusionItems = ({ fusionItems }) => {
             componentList={equipment}
             defaultComponent={equipment["unknown"]}
             returnComponent={returnComponent}
+            awakened={awakened}
+            sig_item={sig_item}
           />
 
           <FusionBox
@@ -78,6 +80,8 @@ const FusionItems = ({ fusionItems }) => {
             componentList={equipment}
             defaultComponent={equipment["unknown"]}
             returnComponent={returnComponent}
+            awakened={awakened}
+            sig_item={sig_item}
           />
 
           <FusionBox
@@ -87,6 +91,8 @@ const FusionItems = ({ fusionItems }) => {
             componentList={equipment}
             defaultComponent={equipment["unknown"]}
             returnComponent={returnComponent}
+            awakened={awakened}
+            sig_item={sig_item}
           />
         </div>
       </div>
