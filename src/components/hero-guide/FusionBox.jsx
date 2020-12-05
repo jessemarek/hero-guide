@@ -38,7 +38,6 @@ const FusionBox = ({
                         <span className="grn-txt">{`+ ${s.enchant}`}</span>
                       </p>
                     ))}
-                    <br />
                     <h3>Recipe</h3>
                     <img
                       src={`/assets/images/icons/signature-items/quest1/${awakening.quest_1.fragment}.png`}
