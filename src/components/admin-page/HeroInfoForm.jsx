@@ -218,6 +218,7 @@ const FirstAppearedInputArea = ({ changeHandler }) => {
           <option value="conjuring-stone">Conjuring Stone</option>
           <option value="purchase-hero">Purchase Hero</option>
           <option value="hero-chest">Chest Event</option>
+          <option value="purchase-only">Purchase Only</option>
         </select>
       </label>
     </div>
@@ -320,6 +321,7 @@ const AvailableInInputArea = ({ changeHandler }) => {
           <option value="hall-of-legends">Legendary Shop</option>
           <option value="mystic-ruins">Mystic Ruins</option>
           <option value="not-released">Not Released</option>
+          <option value="purchase-only">Purchase Only</option>
         </select>
       </label>
     </div>
