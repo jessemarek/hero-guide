@@ -4,7 +4,7 @@ import { sortByProp } from "../../utils";
 import LoadingSpinner from "../LoadingSpinner";
 
 const SoulstoneGuide = () => {
-  const [heroList, setHeroList] = useState([]);
+  const [heroList, setHeroList] = useState(null);
   //Change Title
   useEffect(() => {
     document.title = "SH Hero Guide -- Soulstones";
