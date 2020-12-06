@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import { sortByProp } from "../../utils";
+import LoadingSpinner from "../LoadingSpinner";
 
 const SoulstoneGuide = () => {
   const [heroList, setHeroList] = useState([]);
@@ -147,16 +148,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "campaign")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "campaign")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -198,16 +203,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "arena")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "arena")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -249,16 +258,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "epic-arena")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "epic-arena")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -300,16 +313,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "crucible-of-fire")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "crucible-of-fire")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -351,16 +368,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "guild-hall")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "guild-hall")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -402,16 +423,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "hall-of-legends")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "hall-of-legends")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -437,23 +462,27 @@ const SoulstoneGuide = () => {
               <img
                 src="/assets/images/icons/shops/gold-chest.png"
                 alt=""
-                width="30"
+                width="24"
               />
             </span>
           </p>
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.chest_type === "gold")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.chest_type === "gold")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -479,7 +508,7 @@ const SoulstoneGuide = () => {
               <img
                 src="/assets/images/icons/shops/diamond-chest.png"
                 alt=""
-                width="30"
+                width="24"
               />
             </span>{" "}
             <b>Note:</b> Heroes that are in{" "}
@@ -487,7 +516,7 @@ const SoulstoneGuide = () => {
               <img
                 src="/assets/images/icons/shops/gold-chest.png"
                 alt=""
-                width="30"
+                width="24"
               />
             </span>{" "}
             can also drop
@@ -495,16 +524,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.chest_type === "diamond")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.chest_type === "diamond")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -531,16 +564,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "not-released")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "not-released")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
@@ -567,16 +604,20 @@ const SoulstoneGuide = () => {
           <br />
           <div>
             <ul id="hero-list" className="hero-menus">
-              {heroList
-                .filter((hero) => hero.available_in === "purchase-only")
-                .map((hero, idx) => (
-                  <li key={idx} className="credit-icon">
-                    <img
-                      src={`/assets/images/icons/portraits/${hero.name}.png`}
-                      alt=""
-                    />
-                  </li>
-                ))}
+              {heroList ? (
+                heroList
+                  .filter((hero) => hero.available_in === "purchase-only")
+                  .map((hero, idx) => (
+                    <li key={idx} className="credit-icon">
+                      <img
+                        src={`/assets/images/icons/portraits/${hero.name}.png`}
+                        alt=""
+                      />
+                    </li>
+                  ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </ul>
           </div>
         </div>
