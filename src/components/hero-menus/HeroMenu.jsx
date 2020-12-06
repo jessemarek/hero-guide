@@ -41,6 +41,9 @@ const HeroMenu = () => {
     axiosWithAuth()
       .get("/api/heroes")
       .then((res) => {
+        res.data
+          //Alphabetize the Hero List by name
+          .sort(sortByProp("name"));
         setHeroList(res.data);
       })
       .catch((err) => console.log(err.response));
@@ -105,8 +108,6 @@ const HeroMenu = () => {
                 .filter((hero) => filterByButton(hero, activeBtn))
                 //Filter by search input value
                 .filter((hero) => filterByName(hero, searchField))
-                //Alphabetize the Hero List by name
-                .sort(sortByProp("name"))
                 //Create a Hero Card for each hero in the list
                 .map((hero, idx) => <HeroCard key={idx + 1} hero={hero} />)
             ) : (
@@ -124,8 +125,6 @@ const HeroMenu = () => {
                 .filter((hero) => filterByButton(hero, activeBtn))
                 //Filter by search input value
                 .filter((hero) => filterByName(hero, searchField))
-                //Alphabetize the Hero List by name
-                .sort(sortByProp("name"))
                 //Create a Hero Card for each hero in the list
                 .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />)
             ) : (
