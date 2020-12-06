@@ -263,6 +263,17 @@ const CardTypeInputArea = ({ changeHandler }) => {
         />{" "}
         3 Star
       </label>
+      <label>
+        <input
+          name="card_type"
+          type="radio"
+          onChange={changeHandler}
+          value="4"
+          checked={formValues.card_type === "4"}
+          required
+        />{" "}
+        Purchase Only Hero
+      </label>
     </div>
   );
 };
@@ -272,6 +283,17 @@ const ChestTypeInputArea = ({ changeHandler }) => {
   return (
     <div>
       <p>Chest Type</p>
+      <label>
+        <input
+          name="chest_type"
+          type="radio"
+          onChange={changeHandler}
+          value="none"
+          checked={formValues.chest_type === "none"}
+          required
+        />{" "}
+        None
+      </label>
       <label>
         <input
           name="chest_type"
