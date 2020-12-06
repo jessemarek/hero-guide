@@ -47,6 +47,7 @@ const HeroInfo = (props) => {
           </div>
 
           <HeroDetails
+            name={name}
             first_appeared={first_appeared}
             card_type={card_type}
             chest_type={chest_type}
