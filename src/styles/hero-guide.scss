@@ -88,7 +88,13 @@
         width: 25%;
         margin: 3% 0 0;
       }
+    }
 
+    .details-icon {
+      padding: 5%;
+    }
+
+    .card-details {
       ul {
         display: flex;
         flex-direction: column;
@@ -97,15 +103,14 @@
         text-align: left;
         line-height: 2.5;
       }
-    }
-
-    .details-icon {
-      padding: 5%;
-    }
-
-    .card-details {
       @include MQ(XL) {
         width: 30%;
+      }
+    }
+
+    .card-details.purchase-hero {
+      ul {
+        text-align: center;
       }
     }
   }
