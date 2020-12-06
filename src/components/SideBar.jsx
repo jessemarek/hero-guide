@@ -1,7 +1,9 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, useParams } from "react-router-dom";
 
 const SideBar = () => {
+  const { guide } = useParams();
+
   return (
     <header>
       <aside className="section-bookmarks">
@@ -32,7 +34,7 @@ const SideBar = () => {
 
           {/* Bookmarks for awakening guides */}
           <Route path="/awakenings/:hero">
-            <a className="bookmark-link" href="#">
+            <a className="bookmark-link" href={`/heroes/${guide}`}>
               Full Hero Guide
             </a>
           </Route>
