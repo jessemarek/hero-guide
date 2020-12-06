@@ -103,16 +103,6 @@
       padding: 5%;
     }
 
-    .soulstone-icon {
-      position: relative;
-      bottom: -0.25rem;
-    }
-
-    .chest-icon {
-      position: relative;
-      bottom: -0.5rem;
-    }
-
     .card-details {
       @include MQ(XL) {
         width: 30%;
