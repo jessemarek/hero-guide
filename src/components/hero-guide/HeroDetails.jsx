@@ -107,7 +107,7 @@ const HeroDetails = ({
               <li>
                 <img
                   src={`/assets/images/icons/hero-info/${name}-card.png`}
-                  width=""
+                  width="50"
                   alt=""
                 />
               </li>
@@ -131,7 +131,7 @@ const HeroDetails = ({
               <li>
                 <img
                   src={`/assets/images/icons/hero-info/${name}-special-avatar.png`}
-                  width=""
+                  width="50"
                   alt=""
                 />
               </li>
@@ -155,7 +155,7 @@ const HeroDetails = ({
               <li>
                 <img
                   src={`/assets/images/icons/hero-info/${name}-special-frame.png`}
-                  width=""
+                  width="50"
                   alt=""
                 />
               </li>
