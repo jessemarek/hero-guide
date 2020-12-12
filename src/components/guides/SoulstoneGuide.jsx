@@ -1,10 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { axiosWithAuth } from "../../utils/axiosWithAuth";
-import { sortByProp } from "../../utils";
+import React, { useEffect } from "react";
+import { useRecoilState } from "recoil";
+import { heroListState } from "../../state/heroState";
+
+// Components
 import LoadingSpinner from "../LoadingSpinner";
 
+// Utils
+import { axiosWithAuth } from "../../utils/axiosWithAuth";
+import { sortByProp } from "../../utils";
+
 const SoulstoneGuide = () => {
-  const [heroList, setHeroList] = useState(null);
+  const [heroList, setHeroList] = useRecoilState(heroListState);
   //Change Title
   useEffect(() => {
     document.title = "SH Hero Guide -- Soulstones";
