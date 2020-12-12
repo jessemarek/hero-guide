@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, useRouteMatch } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { heroListState } from "../../state/heroState";
 
 //Components
 import SearchBar from "./SearchBar";
@@ -16,7 +18,7 @@ const HeroMenu = () => {
 
   /************************* STATE *************************/
   //List of Heroes
-  const [heroList, setHeroList] = useState([]);
+  const [heroList, setHeroList] = useRecoilState(heroListState);
 
   //Active filter button
   const [activeBtn, setActiveBtn] = useState("all");
@@ -102,7 +104,7 @@ const HeroMenu = () => {
         <ul id="hero-list">
           {/* Displays for Hero Guide Menu */}
           <Route path={"/heroes"}>
-            {heroList.length ? (
+            {heroList ? (
               heroList
                 //Sort through the hero list by battlefield position
                 .filter((hero) => filterByButton(hero, activeBtn))
@@ -117,7 +119,7 @@ const HeroMenu = () => {
 
           {/* Displays for Awakening Quest Menu */}
           <Route path={"/awakenings"}>
-            {heroList.length ? (
+            {heroList ? (
               heroList
                 //Filter out heroes that don't have an awakening
                 .filter((hero) => hero.awakened)

@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { heroState } from "../../state/heroState";
 
 //Components
 import HeroInfo from "./HeroInfo";
@@ -16,16 +18,17 @@ import { axiosWithAuth } from "../../utils/axiosWithAuth";
 const HeroGuide = () => {
   const { hero } = useParams();
 
-  const [heroData, setHeroData] = useState(null);
+  const [heroData, setHeroData] = useRecoilState(heroState);
 
   useEffect(() => {
     axiosWithAuth()
       .get(`/api/heroes/${hero}`)
       .then((res) => {
-        console.log(res.data);
         setHeroData(res.data);
       })
       .catch((err) => console.log(err.response));
+
+    return () => setHeroData(null);
   }, [hero]);
 
   return (
