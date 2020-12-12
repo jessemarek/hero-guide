@@ -13,7 +13,7 @@ const FrontPage = () => {
 
   const [newAwakenings] = useState({
     title: "new-awakenings",
-    guides: ["konrad", "serafine", "mazir"],
+    guides: ["konrad", "serafine", "sagar"],
     message:
       "*No longer displays new awakenings. Instead these are some of my favorite awakened heroes",
   });
