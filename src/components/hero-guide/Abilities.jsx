@@ -2,6 +2,15 @@ import React from "react";
 
 import AbilityBox from "./AbilityBox";
 
+/* {
+  hasSkin: false,
+  skin:{
+    name: "skin-name",
+    ability: "skin-ability",
+    details: "ability details"
+  }
+} */
+
 const Abilities = ({ hero, abilities }) => {
   return (
     <section id="abilities" className="guide-section">
