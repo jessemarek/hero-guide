@@ -1,8 +1,11 @@
 import React from "react";
 import { Route, useParams } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { heroState } from "../state/heroState";
 
 const SideBar = () => {
   const { guide } = useParams();
+  const heroData = useRecoilValue(heroState);
 
   return (
     <header>
@@ -27,9 +30,11 @@ const SideBar = () => {
             <a className="bookmark-link" href="#academy">
               Heroic Academy Trees
             </a>
-            <a className="bookmark-link" href="#awakening">
-              Awakening Quest
-            </a>
+            {heroData && heroData.awakening.awakened ? (
+              <a className="bookmark-link" href="#awakening">
+                Awakening Quest
+              </a>
+            ) : null}
           </Route>
 
           {/* Bookmarks for awakening guides */}
