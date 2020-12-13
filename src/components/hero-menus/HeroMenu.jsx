@@ -7,6 +7,7 @@ import { heroListState } from "../../state/heroState";
 import SearchBar from "./SearchBar";
 import HeroCard from "./HeroCard";
 import AwakeningCard from "./AwakeningCard";
+import HeroSkinCard from "./HeroSkinCard";
 
 //Utils
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
@@ -90,6 +91,11 @@ const HeroMenu = () => {
           <h3>Awakening Quests</h3>
         </Route>
 
+        {/* Displays for Hero Skins Menu */}
+        <Route path={"/skins"}>
+          <h3>Hero Skins</h3>
+        </Route>
+
         <h5>Select a Hero</h5>
 
         <SearchBar
@@ -129,6 +135,23 @@ const HeroMenu = () => {
                 .filter((hero) => filterByName(hero, searchField))
                 //Create a Hero Card for each hero in the list
                 .map((hero, idx) => <AwakeningCard key={idx + 1} hero={hero} />)
+            ) : (
+              <LoadingSpinner />
+            )}
+          </Route>
+
+          {/* Displays for Hero Skins Menu */}
+          <Route path={"/skins"}>
+            {heroList ? (
+              heroList
+                //Filter out heroes that don't have a skin
+                .filter((hero) => hero.hasSkin)
+                //Sort through the hero list by battlefield position
+                .filter((hero) => filterByButton(hero, activeBtn))
+                //Filter by search input value
+                .filter((hero) => filterByName(hero, searchField))
+                //Create a Hero Card for each hero in the list
+                .map((hero, idx) => <HeroSkinCard key={idx + 1} hero={hero} />)
             ) : (
               <LoadingSpinner />
             )}
