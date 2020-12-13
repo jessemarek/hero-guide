@@ -39,6 +39,7 @@ const HeroGuide = () => {
           <Abilities
             hero={heroData.hero_info.name}
             abilities={heroData.abilities}
+            skin={heroData.skin}
           />
           <FusionItems
             fusionItems={heroData.fusion_items}
