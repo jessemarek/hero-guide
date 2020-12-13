@@ -23,6 +23,7 @@ const FrontPage = () => {
     guides: [
       "heroes",
       "awakenings",
+      "skins",
       "soulstones",
       "forge",
       "runestones",
