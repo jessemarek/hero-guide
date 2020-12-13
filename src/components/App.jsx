@@ -51,7 +51,7 @@ const App = () => {
         {/* Front page / landing page */}
         <Route exact path="/" component={FrontPage} />
         {/* Hero related Guides */}
-        <Route exact path="/(heroes|awakenings)/" component={HeroMenu} />
+        <Route exact path="/(heroes|awakenings|skins)/" component={HeroMenu} />
         <Route path="/heroes/:hero" component={HeroGuide} />
         <Route path="/awakenings/:hero" component={AwakeningGuide} />
         {/* redirects for 2 guides to put user on the proper page */}
