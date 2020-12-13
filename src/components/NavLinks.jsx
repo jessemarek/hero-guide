@@ -30,7 +30,11 @@ const NavLinks = ({ refMenuBtn, refNavLinks }) => {
               Awakenings
             </Link>
           </li>
-          {/* <li><Link to="/skins" onClick={closeMenu}>Skins</Link></li> */}
+          <li>
+            <Link to="/skins" onClick={closeMenu}>
+              Skins
+            </Link>
+          </li>
         </ul>
       </li>
       <li className="nav-dropdown">
