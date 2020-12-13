@@ -1,17 +1,9 @@
 import React from "react";
 
 import AbilityBox from "./AbilityBox";
+import SkinAbility from "./SkinAbility";
 
-/* {
-  hasSkin: false,
-  skin:{
-    name: "skin-name",
-    ability: "skin-ability",
-    details: "ability details"
-  }
-} */
-
-const Abilities = ({ hero, abilities }) => {
+const Abilities = ({ hero, abilities, skin }) => {
   return (
     <section id="abilities" className="guide-section">
       <div className="section-header">
@@ -23,6 +15,9 @@ const Abilities = ({ hero, abilities }) => {
           <AbilityBox key={idx} hero={hero} ability={a} type={idx + 1} />
         ))}
       </div>
+      {skin !== "none" && skin.ability !== "none" ? (
+        <SkinAbility hero={hero} skin={skin} />
+      ) : null}
     </section>
   );
 };
