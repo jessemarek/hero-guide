@@ -32,7 +32,9 @@ const HeroMenu = () => {
   useEffect(() => {
     document.title = `SH Hero Guide -- ${
       url.includes("heroes") ? "Heroes" : ""
-    }${url.includes("awakenings") ? "Awakenings" : ""}`;
+    }${url.includes("awakenings") ? "Awakenings" : ""}${
+      url.includes("skins") ? "Hero Skins" : ""
+    }`;
 
     return () => {
       document.title = "Soul Hunters Hero Guide";
