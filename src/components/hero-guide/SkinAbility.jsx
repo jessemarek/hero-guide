@@ -6,7 +6,7 @@ const SkinAbility = ({ hero, skin }) => {
     <div className="ability-box">
       <h4>
         {formatText(skin.ability)} - Unlocks with{" "}
-        <span className="red-txt">{formatText(skin.skin_name)}</span> Skin
+        <span className="red-txt">{formatText(skin.skin_name)} Skin</span>
       </h4>
 
       <div className="ability-details">
@@ -27,7 +27,7 @@ const SkinAbility = ({ hero, skin }) => {
         <div className="ability-stats">
           <h4>Info</h4>
           <p className="grn-txt">
-            Ability only available while {formatText(skin.skin_name)} is
+            Ability only available while {formatText(skin.skin_name)} Skin is
             equipped
           </p>
         </div>
