@@ -54,7 +54,7 @@ const App = () => {
         <Route exact path="/(heroes|awakenings|skins)/" component={HeroMenu} />
         <Route path="/heroes/:hero" component={HeroGuide} />
         <Route path="/awakenings/:hero" component={AwakeningGuide} />
-        {/* redirects for 2 guides to put user on the proper page */}
+        {/* redirects for 3 guides to put user on the proper page */}
         <Route
           path="/guides/heroes"
           component={() => <Redirect from="/guides/heroes" to="/heroes" />}
@@ -64,6 +64,10 @@ const App = () => {
           component={() => (
             <Redirect from="/guides/awakenings" to="/awakenings" />
           )}
+        />
+        <Route
+          path="/guides/skins"
+          component={() => <Redirect from="/guides/skins" to="/skins" />}
         />
         {/* Soulstone/Forge/Runestone guides */}
         <Route path="/guides/soulstones" component={SoulstoneGuide} />
